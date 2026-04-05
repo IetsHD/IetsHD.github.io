@@ -509,7 +509,7 @@
       return cars.filter(car => {
         const matchesType = activeType === "All" || car.type === activeType;
         const query = searchTerm.trim().toLowerCase();
-        const matchesSearch = !query || [car.name, car.brand, car.type, car.fuel, String(car.year)]
+        const matchesSearch = !query || [car.name, car.brand, car.type, car.fuel, String(car.klasse)]
           .join(" ")
           .toLowerCase()
           .includes(query);
