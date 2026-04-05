@@ -372,7 +372,6 @@
         type: "Compacts",
         price: 6000,
         fuel: "?",
-        transmission: "?",
         seats: 2,
         Klasse: "C",
         Kofferbak: "100 KG",
@@ -507,7 +506,7 @@
     function formatPrice(value) {
       return new Intl.NumberFormat("en-US", {
         style: "currency",
-        currency: "USD",
+        currency: "EUR",
         maximumFractionDigits: 0
       }).format(value);
     }
@@ -588,11 +587,9 @@
       const specs = [
         ["Brand", car.brand],
         ["Type", car.type],
-        ["Transmission", car.transmission],
-        ["Engine", car.engine],
-        ["Mileage", car.mileage],
+        ["Klasse", car.klasse],
+        ["Kofferbak", car.kofferbak],
         ["Seats", car.seats],
-        ["Color", car.color],
         ["Fuel", car.fuel]
       ];
 
