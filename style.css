@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0b1220;
+  color: white;
+}
+
+.app { padding: 20px; }
+
+.filters button {
+  margin: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.car-card {
+  background: #1a2336;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.car-card img {
+  width: 100%;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.open { display: flex; }
+
+.modal-card {
+  background: #1a2336;
+  padding: 20px;
+  max-width: 500px;
+}
