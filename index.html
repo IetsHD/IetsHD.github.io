@@ -1,36 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CarDealer Catalog</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Car Dealer Catalog</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="app">
-    <div class="topbar">
-      <div>
-        <h1>CarDealer Catalog</h1>
-        <p>Browse and filter vehicles</p>
-      </div>
-    </div>
 
-    <input id="searchInput" placeholder="Search..." />
-    <div id="filterBar" class="filters"></div>
-    <div id="catalogGrid" class="catalog-grid"></div>
+<h1>Car Catalog</h1>
+
+<!-- Filters -->
+<div class="controls">
+  <select id="categoryFilter">
+    <option value="all">All Categories</option>
+    <option value="Sedan">Sedan</option>
+    <option value="SUV">SUV</option>
+    <option value="Compact">Compact</option>
+    <option value="Sports">Sports</option>
+  </select>
+
+  <input type="text" id="searchInput" placeholder="Search...">
+</div>
+
+<!-- Car Grid -->
+<div id="carGrid" class="grid"></div>
+
+<!-- Modal -->
+<div id="modal" class="modal hidden">
+  <div class="modal-content">
+    <span id="closeModal">&times;</span>
+    <div id="modalDetails"></div>
   </div>
+</div>
 
-  <div id="detailsModal" class="modal">
-    <div class="modal-card">
-      <img id="modalImage" />
-      <h2 id="modalTitle"></h2>
-      <p id="modalPrice"></p>
-      <p id="modalDescription"></p>
-      <div id="modalSpecs"></div>
-      <button id="closeModalBtn">Close</button>
-    </div>
-  </div>
-
-  <script src="app.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
