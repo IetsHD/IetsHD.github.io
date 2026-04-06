@@ -47,7 +47,7 @@ function renderCars(list) {
       <h3>${car.brand} ${car.name}</h3>
       <p>€${car.price}</p>
       <span class="badge">${car.klasse}</span>
-      <span class="badge">${car.kofferbak}</span>
+      <span class="badge">${car.kofferbak}KG</span>
       <span class="badge">${car.seats}</span>
     `;
 
