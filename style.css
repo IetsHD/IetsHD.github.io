@@ -59,6 +59,7 @@ input, select {
   padding: 3px 8px;
   border-radius: 5px;
   font-size: 12px;
+  font-weight: bold;
 }
 
 /* Modal */
