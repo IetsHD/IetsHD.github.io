@@ -3,7 +3,7 @@ const cars = [
     name: "Panto",
     brand: "Benefactor",
     price: 6000,
-    category: "Compact",
+    category: "Compacts",
     klasse: "C",
     kofferbak: 150,
     seats: 2,
@@ -64,7 +64,7 @@ function showDetails(car) {
     <p><b>Price:</b> €${car.price}</p>
     <p><b>Category:</b> ${car.category}</p>
     <p><b>Class:</b> ${car.klasse}</p>
-    <p><b>Trunk Space:</b> ${car.kofferbak}L</p>
+    <p><b>Trunk Space:</b> ${car.kofferbak}KG</p>
     <p><b>Seats:</b> ${car.seats}</p>
   `;
 
