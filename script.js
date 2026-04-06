@@ -5,19 +5,19 @@ const cars = [
     price: 6000,
     category: "Compacts",
     klasse: "C",
-    kofferbak: 150,
+    kofferbak: 100,
     seats: 2,
-    image: "https://via.placeholder.com/200"
+    image: "https://i.ibb.co/TqxY9D1S/Panto.png"
   },
   {
-    name: "Asea",
+    name: "Rhapsody",
     brand: "Declasse",
-    price: 6000,
-    category: "Sedan",
+    price: 8500,
+    category: "Compacts",
     klasse: "D",
-    kofferbak: 400,
+    kofferbak: 100,
     seats: 4,
-    image: "https://via.placeholder.com/200"
+    image: "https://i.ibb.co/zW7FHQJY/Rhapsody.png"
   },
   {
     name: "Blazer",
