@@ -3,36 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Item Catalogus</title>
+  <title>LS Properties Item Catalogue</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Item Catalogus</h1>
-    <p>Kies een categorie en filter items op naam, categorie, type of materiaal.</p>
-  </header>
+  <main class="app">
+    <header>
+      <h1>LS Properties</h1>
+      <h2>Item Catalogus</h2>
+    </header>
 
-  <section class="categories" id="categoryIcons"></section>
+    <section class="category-grid" id="categoryGrid"></section>
 
-  <section class="filters">
-    <input id="searchInput" type="text" placeholder="Zoek op naam..." />
+    <section class="filters">
+      <input id="searchInput" type="text" placeholder="Zoek op naam..." />
 
-    <select id="categoryFilter">
-      <option value="">Alle categorieën</option>
-    </select>
+      <select id="categoryFilter">
+        <option value="">Alle categorieën</option>
+      </select>
 
-    <select id="typeFilter">
-      <option value="">Alle types</option>
-    </select>
+      <select id="typeFilter">
+        <option value="">Alle types</option>
+      </select>
 
-    <select id="materialFilter">
-      <option value="">Alle materialen</option>
-    </select>
-  </section>
+      <select id="materialFilter">
+        <option value="">Alle materialen</option>
+      </select>
+    </section>
 
-  <main>
-    <h2 id="activeTitle">Alle items</h2>
-    <div class="item-grid" id="itemList"></div>
+    <h2 id="listTitle">Alle items</h2>
+
+    <section class="items-grid" id="itemsGrid"></section>
   </main>
 
   <script src="script.js"></script>

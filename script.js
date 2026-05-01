@@ -1,5 +1,5 @@
 const categories = [
-  { name: "Crafting", icon: "🛠️" },
+  { name: "Crafting", icon: "⚒️" },
   { name: "Recycling", icon: "♻️" },
   { name: "Smelting", icon: "🔥" },
   { name: "Jewelry", icon: "💍" }
@@ -7,70 +7,73 @@ const categories = [
 
 const items = [
   {
-    name: "Wooden Handle",
+    name: "Wooden Crate",
     category: "Crafting",
-    type: "Component",
-    materials: ["Wood", "Glue"]
+    type: "Structure",
+    icon: "📦",
+    materials: ["Wood", "Nails"]
   },
   {
     name: "Iron Ingot",
     category: "Smelting",
     type: "Metal",
+    icon: "⬛",
     materials: ["Iron Ore", "Coal"]
-  },
-  {
-    name: "Gold Ring",
-    category: "Jewelry",
-    type: "Accessory",
-    materials: ["Gold Ingot", "Gemstone"]
   },
   {
     name: "Scrap Metal",
     category: "Recycling",
     type: "Material",
+    icon: "🪨",
     materials: ["Broken Tools", "Metal Waste"]
+  },
+  {
+    name: "Gold Ring",
+    category: "Jewelry",
+    type: "Accessory",
+    icon: "💍",
+    materials: ["Gold Ingot", "Gemstone"]
   },
   {
     name: "Silver Necklace",
     category: "Jewelry",
     type: "Accessory",
-    materials: ["Silver Ingot", "String"]
+    icon: "📿",
+    materials: ["Silver Ingot", "Gemstone"]
   }
 ];
 
-let activeCategory = "";
+let selectedCategory = "";
 
-const categoryIcons = document.getElementById("categoryIcons");
-const itemList = document.getElementById("itemList");
+const categoryGrid = document.getElementById("categoryGrid");
+const itemsGrid = document.getElementById("itemsGrid");
 const searchInput = document.getElementById("searchInput");
 const categoryFilter = document.getElementById("categoryFilter");
 const typeFilter = document.getElementById("typeFilter");
 const materialFilter = document.getElementById("materialFilter");
-const activeTitle = document.getElementById("activeTitle");
+const listTitle = document.getElementById("listTitle");
 
 function renderCategories() {
-  categoryIcons.innerHTML = "";
+  categoryGrid.innerHTML = "";
 
   categories.forEach(category => {
     const card = document.createElement("div");
     card.className = "category-card";
+    if (selectedCategory === category.name) card.classList.add("active");
+
     card.innerHTML = `
-      <div class="category-icon">${category.icon}</div>
-      <strong>${category.name}</strong>
+      <div class="icon">${category.icon}</div>
+      <h3>${category.name}</h3>
     `;
 
     card.addEventListener("click", () => {
-      activeCategory = activeCategory === category.name ? "" : category.name;
-      categoryFilter.value = activeCategory;
+      selectedCategory = selectedCategory === category.name ? "" : category.name;
+      categoryFilter.value = selectedCategory;
       renderCategories();
       renderItems();
     });
 
-    if (activeCategory === category.name) {
-      card.classList.add("active");
-    }
-
-    categoryIcons.appendChild(card);
+    categoryGrid.appendChild(card);
   });
 }
 
@@ -91,27 +94,28 @@ function fillFilters() {
 }
 
 function renderItems() {
-  const search = searchInput.value.toLowerCase();
-  const category = categoryFilter.value;
-  const type = typeFilter.value;
-  const material = materialFilter.value;
+  const searchValue = searchInput.value.toLowerCase();
+  const categoryValue = categoryFilter.value;
+  const typeValue = typeFilter.value;
+  const materialValue = materialFilter.value;
 
-  activeCategory = category;
-  activeTitle.textContent = category ? category + " items" : "Alle items";
+  selectedCategory = categoryValue;
 
   const filteredItems = items.filter(item => {
-    return (
-      item.name.toLowerCase().includes(search) &&
-      (category === "" || item.category === category) &&
-      (type === "" || item.type === type) &&
-      (material === "" || item.materials.includes(material))
-    );
+    const matchesName = item.name.toLowerCase().includes(searchValue);
+    const matchesCategory = !categoryValue || item.category === categoryValue;
+    const matchesType = !typeValue || item.type === typeValue;
+    const matchesMaterial = !materialValue || item.materials.includes(materialValue);
+
+    return matchesName && matchesCategory && matchesType && matchesMaterial;
   });
 
-  itemList.innerHTML = "";
+  listTitle.textContent = categoryValue ? `${categoryValue} items` : "Alle items";
+
+  itemsGrid.innerHTML = "";
 
   if (filteredItems.length === 0) {
-    itemList.innerHTML = "<p>Geen items gevonden.</p>";
+    itemsGrid.innerHTML = `<p>Geen items gevonden.</p>`;
     return;
   }
 
@@ -120,14 +124,22 @@ function renderItems() {
     card.className = "item-card";
 
     card.innerHTML = `
-      <h3>${item.name}</h3>
-      <p><strong>Categorie:</strong> ${item.category}</p>
-      <p><strong>Type:</strong> ${item.type}</p>
-      <p><strong>Materialen:</strong></p>
-      ${item.materials.map(material => `<span class="tag">${material}</span>`).join("")}
+      <div class="item-top">
+        <div class="item-icon">${item.icon}</div>
+        <div>
+          <h3>${item.name}</h3>
+          <p>Categorie: <span class="gold">${item.category}</span></p>
+          <p>Type: <span class="gold">${item.type}</span></p>
+        </div>
+      </div>
+
+      <p>Materialen:</p>
+      <div class="materials">
+        ${item.materials.map(material => `<span class="material">${material}</span>`).join("")}
+      </div>
     `;
 
-    itemList.appendChild(card);
+    itemsGrid.appendChild(card);
   });
 
   renderCategories();
