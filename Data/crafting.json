@@ -23,6 +23,22 @@
     "icon": "",
     "materials": ["1x Lege Fles", "3x Rotte Peer"]
   },
+  {
+    "name": "Trash-Juice Moonshine",
+    "category": "Crafting",
+    "type": "Fishing",
+    "tags": ["Lege Wijnfles", "1x Hobo Azijn", "4x Beschimmeld Brood", "5x Rotte Appel"],
+    "icon": "",
+    "materials": ["1x Lege Wijnfles", "Hobo Azijn", "Beschimmeld Brood", "Rotte Appel"]
+  },
+  {
+    "name": "Trash-Juice Moonshine",
+    "category": "Crafting",
+    "type": "Fishing",
+    "tags": ["Lege Wijnfles", "Hobo Azijn", "Rotte Perzik", "Rotte Peer"],
+    "icon": "",
+    "materials": ["1x Lege Wijnfles", "1x Hobo Azijn", "4x Rotte Perzik", "5x Rotte Peer"]
+  },
     {
     "name": "Hobo-Balls (Licht)",
     "category": "Crafting",
@@ -43,9 +59,9 @@
     "name": "Hobo-Balls (Zoet)",
     "category": "Crafting",
     "type": "Fishing",
-    "tags": ["1", "2", "3"],
+    "tags": ["Rotte Aardbeien", "Rotte Banaan", "Rotte Perzik"],
     "icon": "",
-    "materials": ["1x ", "1x ", "2x "]
+    "materials": ["1x Rotte Aardbeien", "1x Rotte Banaan", "1x Rotte Perzik"]
   },
     {
     "name": "Hobo-Balls (Zoet)",
@@ -86,5 +102,93 @@
     "tags": ["Hammer", "Verroeste Spijkers", "Metalen Blik", "Oude Duct Tape", "Rubber", "Gebroken Rommel"],
     "icon": "",
     "materials": ["10% Hammer", "4x Verroeste Spijkers", "8x Metalen Blik", "15x Oude Duct Tape", "15x Rubber", "40x Gebroken Rommel"]
+  },
+  {
+    "name": "Vis Emmer",
+    "category": "Crafting",
+    "type": "Fishing",
+    "tags": ["Hammer", "Rubber", "Oude Duct Tape", "Metalen Blik", "Gebroken Rommel"],
+    "icon": "",
+    "materials": ["10% Hammer", "10x Rubber", "15x Oude Duct Tape", "20x Metalen Blik", "25x Gebroken Rommel"]
+  },
+  {
+    "name": "Vieze Bandage",
+    "category": "Crafting",
+    "type": "Fishing",
+    "tags": ["Restje Sterke Drank", "Oude Duct Tape", "Gescheurde Kleding"],
+    "icon": "",
+    "materials": ["1x Restje Sterke Drank", "1x Oude Duct Tape", "3x Gescheurde Kleding"]
+  },
+  {
+    "name": "Zware Vieze Bandage",
+    "category": "Crafting",
+    "type": "Fishing",
+    "tags": ["Oude Duct Tape", "Beschimmeld Brood", "Restje Sterke Drank", "Gescheurde Kleding"],
+    "icon": "",
+    "materials": ["1x Oude Duct Tape", "2x Beschimmeld Brood", "2x Restje Sterke Drank", "3x Gescheurde Kleding"]
+  },
+  {
+    "name": "Aluminium poeder",
+    "category": "Crafting",
+    "type": "Fishing",
+    "tags": ["Hammer", "Hobo Azijn", "Roestige Schaar"],
+    "icon": "",
+    "materials": ["0.5% Hammer", "1x Hobo Azijn", "2x Roestige Schaar"]
+  },
+  {
+    "name": "IJzer poeder",
+    "category": "Crafting",
+    "type": "Fishing",
+    "tags": ["Hammer", "Hobo Azijn", "Roestige Tang"],
+    "icon": "",
+    "materials": ["0.5% Hammer", "1x Hobo Azijn", "2x Roestige Tang"]
+  },
+  {
+    "name": "Aluminium poeder",
+    "category": "Crafting",
+    "type": "Fishing",
+    "tags": ["Hammer", "Hobo Azijn", "Metalen Blik"],
+    "icon": "",
+    "materials": ["0.5% Hammer", "1x Hobo Azijn", "2x Metalen Blik"]
+  },
+  {
+    "name": "IJzer poeder",
+    "category": "Crafting",
+    "type": "Fishing",
+    "tags": ["Hammer", "Hobo Azijn", "Oude Hagelpatroon"],
+    "icon": "",
+    "materials": ["0.5% Hammer", "1x Hobo Azijn", "2x Oude Hagelpatroon"]
+  },
+  {
+    "name": "",
+    "category": "Crafting",
+    "type": "Fishing",
+    "tags": ["", "", "", "", "", ""],
+    "icon": "",
+    "materials": ["", "", "", "", "", ""]
+  },
+  {
+    "name": "",
+    "category": "Crafting",
+    "type": "Fishing",
+    "tags": ["", "", "", "", "", ""],
+    "icon": "",
+    "materials": ["", "", "", "", "", ""]
+  },
+  {
+    "name": "",
+    "category": "Crafting",
+    "type": "Fishing",
+    "tags": ["", "", "", "", "", ""],
+    "icon": "",
+    "materials": ["", "", "", "", "", ""]
+  },
+  {
+    "name": "",
+    "category": "Crafting",
+    "type": "Fishing",
+    "tags": ["", "", "", "", "", ""],
+    "icon": "",
+    "materials": ["", "", "", "", "", ""]
   }
 ]
