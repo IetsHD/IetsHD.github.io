@@ -1,0 +1,9 @@
+[
+  {
+    "name": "Gold Ring",
+    "category": "Jewelry",
+    "type": "Accessory",
+    "icon": "💍",
+    "materials": ["Gold Ingot", "Gemstone"]
+  }
+]

@@ -1,0 +1,9 @@
+[
+  {
+    "name": "Scrap Metal",
+    "category": "Recycling",
+    "type": "Material",
+    "icon": "🪨",
+    "materials": ["Broken Tools", "Metal Waste"]
+  }
+]
