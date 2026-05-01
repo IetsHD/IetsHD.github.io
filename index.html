@@ -1,38 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
-  <meta charset="UTF-8">
-  <title>Car Dealer Catalog</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crafting Catalogus</title>
+    <link rel="stylesheet" href="style.css"> <!-- Later toevoegen voor styling -->
 </head>
 <body>
-
-<h1>Car Catalog</h1>
-
-<!-- Filters -->
-<div class="controls">
-  <select id="categoryFilter">
-    <option value="all">All Categories</option>
-    <option value="Sedan">Sedan</option>
-    <option value="SUV">SUV</option>
-    <option value="Compact">Compact</option>
-    <option value="Sports">Sports</option>
-  </select>
-
-  <input type="text" id="searchInput" placeholder="Search...">
-</div>
-
-<!-- Car Grid -->
-<div id="carGrid" class="grid"></div>
-
-<!-- Modal -->
-<div id="modal" class="modal hidden">
-  <div class="modal-content">
-    <span id="closeModal">&times;</span>
-    <div id="modalDetails"></div>
-  </div>
-</div>
-
-<script src="script.js"></script>
+    <header>
+        <h1>Mijn Crafting Catalogus</h1>
+    </header>
+    <main>
+        <section id="items-list">
+            <h2>Beschikbare Items:</h2>
+            <ul>
+                <li><a href="lockpick.html">Lockpick</a></li>
+                <li><a href="advanced-lockpick.html">Advanced Lockpick</a></li>
+                <li><a href="item3.html">Ander Item</a></li>
+                <!-- Meer items hier -->
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Mijn Catalogus</p>
+    </footer>
 </body>
 </html>

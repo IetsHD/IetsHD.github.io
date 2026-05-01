@@ -1,93 +1,48 @@
+/* style.css */
 body {
-  font-family: Arial, sans-serif;
-  background: #0f172a;
-  color: white;
-  margin: 0;
-  padding: 20px;
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-h1 {
-  text-align: center;
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
 }
 
-/* Controls */
-.controls {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  margin-bottom: 20px;
+main {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
 }
 
-input, select {
-  padding: 8px;
-  border-radius: 6px;
-  border: none;
+ul {
+    list-style: none;
+    padding: 0;
 }
 
-/* Grid */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 15px;
+li {
+    margin-bottom: 10px;
 }
 
-/* Card */
-.card {
-  background: #1e293b;
-  padding: 10px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: transform 0.2s;
+a {
+    color: #007bff;
+    text-decoration: none;
 }
 
-.card:hover {
-  transform: scale(1.05);
+a:hover {
+    text-decoration: underline;
 }
 
-.card img {
-  width: 100%;
-  border-radius: 8px;
-}
-
-.card h3 {
-  margin: 10px 0 5px;
-}
-
-.badge {
-  display: inline-block;
-  background: #105529;
-  padding: 3px 8px;
-  border-radius: 5px;
-  font-size: 12px;
-  font-weight: bold;
-}
-
-/* Modal */
-.modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.8);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hidden {
-  display: none;
-}
-
-.modal-content {
-  background: #1e293b;
-  padding: 20px;
-  border-radius: 10px;
-  width: 300px;
-}
-
-#closeModal {
-  float: right;
-  cursor: pointer;
-  font-size: 20px;
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #777;
+    font-size: 0.9em;
 }
