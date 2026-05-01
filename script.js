@@ -90,7 +90,7 @@ function renderItems() {
       item.name.toLowerCase().includes(searchValue) &&
       (!categoryValue || item.category === categoryValue) &&
       (!typeValue || item.type === typeValue) &&
-      (!materialValue || item.materials.includes(materialValue))
+      (!materialValue || item.tags.includes(materialValue))
     );
   });
 
