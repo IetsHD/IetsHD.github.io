@@ -13,7 +13,7 @@ const itemsGrid = document.getElementById("itemsGrid");
 const searchInput = document.getElementById("searchInput");
 const categoryFilter = document.getElementById("categoryFilter");
 const typeFilter = document.getElementById("typeFilter");
-const materialFilter = document.getElementById("materialFilter");
+const tagsFilter = document.getElementById("tagsFilter");
 const listTitle = document.getElementById("listTitle");
 
 async function loadItems() {
@@ -59,21 +59,21 @@ function renderCategories() {
 function fillFilters() {
   categoryFilter.innerHTML = `<option value="">Alle categorieën</option>`;
   typeFilter.innerHTML = `<option value="">Alle types</option>`;
-  materialFilter.innerHTML = `<option value="">Alle materialen</option>`;
+  tagsFilter.innerHTML = `<option value="">Alle tags</option>`;
 
   categories.forEach(category => {
     categoryFilter.innerHTML += `<option value="${category.name}">${category.name}</option>`;
   });
 
   const types = [...new Set(items.map(item => item.type))].sort();
-  const materials = [...new Set(items.flatMap(item => item.materials))].sort();
+  const tags = [...new Set(items.flatMap(item => item.tags || []))].sort();
 
   types.forEach(type => {
     typeFilter.innerHTML += `<option value="${type}">${type}</option>`;
   });
 
-  materials.forEach(material => {
-    materialFilter.innerHTML += `<option value="${material}">${material}</option>`;
+  tags.forEach(tags => {
+    tagsFilter.innerHTML += `<option value="${tags}">${tags}</option>`;
   });
 }
 
@@ -81,7 +81,7 @@ function renderItems() {
   const searchValue = searchInput.value.toLowerCase();
   const categoryValue = categoryFilter.value;
   const typeValue = typeFilter.value;
-  const materialValue = materialFilter.value;
+  const tagsValue = tagsFilter.value;
 
   selectedCategory = categoryValue;
 
@@ -90,7 +90,7 @@ function renderItems() {
       item.name.toLowerCase().includes(searchValue) &&
       (!categoryValue || item.category === categoryValue) &&
       (!typeValue || item.type === typeValue) &&
-      (!materialValue || item.materials.includes(materialValue))
+      (!tagsValue || (item.tags || []).includes(tagsValue))
     );
   });
 
@@ -132,6 +132,6 @@ function renderItems() {
 searchInput.addEventListener("input", renderItems);
 categoryFilter.addEventListener("change", renderItems);
 typeFilter.addEventListener("change", renderItems);
-materialFilter.addEventListener("change", renderItems);
+tagFilter.addEventListener("change", renderItems);
 
 loadItems();
