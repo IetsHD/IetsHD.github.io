@@ -27,6 +27,7 @@
     "name": "Hobo-Balls (Licht)",
     "category": "Crafting",
     "type": "Fishing",
+    "materials1": ["Rotte Appel", "Rotte Aardbeien", "Rotte Banaan"],
     "icon": "",
     "materials": ["1x Rotte Appel", "1x Rotte Aardbeien", "2x Rotte Banaan"]
   },
@@ -34,6 +35,7 @@
     "name": "Hobo-Balls (Licht)",
     "category": "Crafting",
     "type": "Fishing",
+    "tags": ["Oude Kaas", "Open Blik Maïs", "Beschimmeld Brood"],
     "icon": "",
     "materials": ["1x Oude Kaas", "1x Open Blik Maïs", "2x Beschimmeld Brood"]
   },
@@ -41,6 +43,7 @@
     "name": "Hobo-Balls (Zoet)",
     "category": "Crafting",
     "type": "Fishing",
+    "tags": ["1", "2", "3"],
     "icon": "",
     "materials": ["1x ", "1x ", "2x "]
   },
@@ -48,6 +51,7 @@
     "name": "Hobo-Balls (Zoet)",
     "category": "Crafting",
     "type": "Fishing",
+    "tags": ["Oude Kaas", "Beschimmeld Brood", "Rotte Peer"],
     "icon": "",
     "materials": ["1x Oude Kaas", "1x Beschimmeld Brood", "3x Rotte Peer"]
   },
@@ -55,6 +59,7 @@
     "name": "Hobo-Balls (Zwaar)",
     "category": "Crafting",
     "type": "Fishing",
+    "tags": ["Restje Sterke Drank", "Rotte Banaan", "Rotte Appel"],
     "icon": "",
     "materials": ["2x Restje Sterke Drank", "2x Rotte Banaan", "4x Rotte Appel"]
   },
@@ -62,6 +67,7 @@
     "name": "Hobo-Balls (Zwaar)",
     "category": "Crafting",
     "type": "Fishing",
+    "tags": ["Rotte Peer", "Oude Kaas", "Beschimmeld Brood"],
     "icon": "",
     "materials": ["2x Rotte Peer", "2x Oude Kaas", "4x Beschimmeld Brood"]
   },
@@ -69,6 +75,7 @@
     "name": "Oude Rugzak",
     "category": "Crafting",
     "type": "Fishing",
+    "tags": ["Hammer", "Oude Duct Tape", "Rubber", "Gescheurde Kleding"],
     "icon": "",
     "materials": ["10% Hammer", "15x Oude Duct Tape", "20x Rubber", "50x Gescheurde Kleding"]
   },
@@ -76,6 +83,7 @@
     "name": "Oude Tacklebox",
     "category": "Crafting",
     "type": "Fishing",
+    "tags": ["Hammer", "Verroeste Spijkers", "Metalen Blik", "Oude Duct Tape", "Rubber", "Gebroken Rommel"],
     "icon": "",
     "materials": ["10% Hammer", "4x Verroeste Spijkers", "8x Metalen Blik", "15x Oude Duct Tape", "15x Rubber", "40x Gebroken Rommel"]
   }
