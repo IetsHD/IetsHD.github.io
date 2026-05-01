@@ -51,7 +51,7 @@ header h2 {
 .category-card:hover,
 .category-card.active {
   transform: translateY(-4px);
-  box-shadow: 0 0 20px rgba(245, 180, 0, 0.35);
+  box-shadow: 0 0 20px rgba(20, 255, 137, 0.35);
 }
 
 .category-card .icon {
