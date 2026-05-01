@@ -5,44 +5,7 @@ const categories = [
   { name: "Jewelry", icon: "💍" }
 ];
 
-const items = [
-  {
-    name: "Wooden Crate",
-    category: "Crafting",
-    type: "Structure",
-    icon: "📦",
-    materials: ["Wood", "Nails"]
-  },
-  {
-    name: "Iron Ingot",
-    category: "Smelting",
-    type: "Metal",
-    icon: "⬛",
-    materials: ["Iron Ore", "Coal"]
-  },
-  {
-    name: "Scrap Metal",
-    category: "Recycling",
-    type: "Material",
-    icon: "🪨",
-    materials: ["Broken Tools", "Metal Waste"]
-  },
-  {
-    name: "Gold Ring",
-    category: "Jewelry",
-    type: "Accessory",
-    icon: "💍",
-    materials: ["Gold Ingot", "Gemstone"]
-  },
-  {
-    name: "Silver Necklace",
-    category: "Jewelry",
-    type: "Accessory",
-    icon: "📿",
-    materials: ["Silver Ingot", "Gemstone"]
-  }
-];
-
+let items = [];
 let selectedCategory = "";
 
 const categoryGrid = document.getElementById("categoryGrid");
@@ -52,6 +15,19 @@ const categoryFilter = document.getElementById("categoryFilter");
 const typeFilter = document.getElementById("typeFilter");
 const materialFilter = document.getElementById("materialFilter");
 const listTitle = document.getElementById("listTitle");
+
+async function loadItems() {
+  try {
+    const response = await fetch("items.json");
+    items = await response.json();
+
+    fillFilters();
+    renderCategories();
+    renderItems();
+  } catch (error) {
+    console.error("Fout bij laden items:", error);
+  }
+}
 
 function renderCategories() {
   categoryGrid.innerHTML = "";
