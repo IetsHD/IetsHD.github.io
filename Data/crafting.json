@@ -1,11 +1,4 @@
 [
-  {
-    "name": "Wooden Crate",
-    "category": "Crafting",
-    "type": "Structure",
-    "icon": "📦",
-    "materials": ["Wood", "Nails"]
-  },
     {
     "name": "Hobo Azijn",
     "category": "Crafting",
@@ -39,20 +32,48 @@
     "category": "Crafting",
     "type": "Fishing",
     "icon": "",
-    "materials": ["1x Oude Kaas", "1x Open Blik Maïs", "2x Rotte Banaan"]
+    "materials": ["1x Oude Kaas", "1x Open Blik Maïs", "2x Beschimmeld Brood"]
   },
     {
-    "name": "Wooden Crate",
+    "name": "Hobo-Balls (Zoet)",
     "category": "Crafting",
     "type": "Fishing",
     "icon": "",
-    "materials": ["Wood", "Nails"]
+    "materials": ["1x ", "1x ", "2x "]
   },
     {
-    "name": "Wooden Crate",
+    "name": "Hobo-Balls (Zoet)",
     "category": "Crafting",
     "type": "Fishing",
     "icon": "",
-    "materials": ["Wood", "Nails"]
+    "materials": ["1x Oude Kaas", "1x Beschimmeld Brood", "3x Rotte Peer"]
+  },
+    {
+    "name": "Hobo-Balls (Zwaar)",
+    "category": "Crafting",
+    "type": "Fishing",
+    "icon": "",
+    "materials": ["2x Restje Sterke Drank", "2x Rotte Banaan", "4x Rotte Appel"]
+  },
+  {
+    "name": "Hobo-Balls (Zwaar)",
+    "category": "Crafting",
+    "type": "Fishing",
+    "icon": "",
+    "materials": ["2x Rotte Peer", "2x Oude Kaas", "4x Beschimmeld Brood"]
+  },
+  {
+    "name": "Oude Rugzak",
+    "category": "Crafting",
+    "type": "Fishing",
+    "icon": "",
+    "materials": ["10% Hammer", "15x Oude Duct Tape", "20x Rubber", "50x Gescheurde Kleding"]
+  },
+    {
+    "name": "Oude Tacklebox",
+    "category": "Crafting",
+    "type": "Fishing",
+    "icon": "",
+    "materials": ["10% Hammer", "4x Verroeste Spijkers", "8x Metalen Blik", "15x Oude Duct Tape", "15x Rubber", "40x Gebroken Rommel"]
   }
 ]
