@@ -13,7 +13,7 @@ const itemsGrid = document.getElementById("itemsGrid");
 const searchInput = document.getElementById("searchInput");
 const categoryFilter = document.getElementById("categoryFilter");
 const typeFilter = document.getElementById("typeFilter");
-const tagsFilter = document.getElementById("tagsFilter");
+const tagFilter = document.getElementById("tagFilter");
 const listTitle = document.getElementById("listTitle");
 
 async function loadItems() {
@@ -59,7 +59,7 @@ function renderCategories() {
 function fillFilters() {
   categoryFilter.innerHTML = `<option value="">Alle categorieën</option>`;
   typeFilter.innerHTML = `<option value="">Alle types</option>`;
-  tagsFilter.innerHTML = `<option value="">Alle tags</option>`;
+  tagFilter.innerHTML = `<option value="">Alle tags</option>`;
 
   categories.forEach(category => {
     categoryFilter.innerHTML += `<option value="${category.name}">${category.name}</option>`;
@@ -72,8 +72,8 @@ function fillFilters() {
     typeFilter.innerHTML += `<option value="${type}">${type}</option>`;
   });
 
-  tags.forEach(tags => {
-    tagsFilter.innerHTML += `<option value="${tags}">${tags}</option>`;
+  tags.forEach(tag => {
+    tagFilter.innerHTML += `<option value="${tag}">${tag}</option>`;
   });
 }
 
@@ -81,7 +81,7 @@ function renderItems() {
   const searchValue = searchInput.value.toLowerCase();
   const categoryValue = categoryFilter.value;
   const typeValue = typeFilter.value;
-  const tagsValue = tagsFilter.value;
+  const tagValue = tagFilter.value;
 
   selectedCategory = categoryValue;
 
@@ -90,7 +90,7 @@ function renderItems() {
       item.name.toLowerCase().includes(searchValue) &&
       (!categoryValue || item.category === categoryValue) &&
       (!typeValue || item.type === typeValue) &&
-      (!tagsValue || (item.tags || []).includes(tagsValue))
+      (!tagValue || (item.tags || []).includes(tagValue))
     );
   });
 
