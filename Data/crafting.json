@@ -227,7 +227,7 @@
     "name": "SNS Grip",
     "category": "Crafting",
     "type": "Zwerver_Crafting",
-    "tags": ["Hammer", "Gebroken Rommel", "Lege fles", "Gescheurde Kleding", "Oude Duct Tape", "150x Geld"],
+    "tags": ["Hammer", "Gebroken Rommel", "Lege fles", "Gescheurde Kleding", "Oude Duct Tape", "Geld"],
     "icon": "",
     "materials": ["10% Hammer", "4x Gebroken Rommel", "6x Lege fles", "15x Gescheurde Kleding", "20x Oude Duct Tape", "150x Geld"]
   },
