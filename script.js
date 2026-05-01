@@ -1,105 +1,143 @@
-const cars = [
+const categories = [
+  { name: "Crafting", icon: "🛠️" },
+  { name: "Recycling", icon: "♻️" },
+  { name: "Smelting", icon: "🔥" },
+  { name: "Jewelry", icon: "💍" }
+];
+
+const items = [
   {
-    name: "Panto",
-    brand: "Benefactor",
-    price: 6000,
-    category: "Compacts",
-    klasse: "C",
-    kofferbak: 100,
-    seats: 2,
-    image: "https://i.ibb.co/TqxY9D1S/Panto.png"
+    name: "Wooden Handle",
+    category: "Crafting",
+    type: "Component",
+    materials: ["Wood", "Glue"]
   },
   {
-    name: "Rhapsody",
-    brand: "Declasse",
-    price: 8500,
-    category: "Compacts",
-    klasse: "D",
-    kofferbak: 100,
-    seats: 4,
-    image: "https://i.ibb.co/zW7FHQJY/Rhapsody.png"
+    name: "Iron Ingot",
+    category: "Smelting",
+    type: "Metal",
+    materials: ["Iron Ore", "Coal"]
   },
   {
-    name: "Blazer",
-    brand: "Annis",
-    price: 7500,
-    category: "SUV",
-    klasse: "B",
-    kofferbak: 300,
-    seats: 2,
-    image: "https://via.placeholder.com/200"
+    name: "Gold Ring",
+    category: "Jewelry",
+    type: "Accessory",
+    materials: ["Gold Ingot", "Gemstone"]
+  },
+  {
+    name: "Scrap Metal",
+    category: "Recycling",
+    type: "Material",
+    materials: ["Broken Tools", "Metal Waste"]
+  },
+  {
+    name: "Silver Necklace",
+    category: "Jewelry",
+    type: "Accessory",
+    materials: ["Silver Ingot", "String"]
   }
 ];
 
-const grid = document.getElementById("carGrid");
+let activeCategory = "";
+
+const categoryIcons = document.getElementById("categoryIcons");
+const itemList = document.getElementById("itemList");
 const searchInput = document.getElementById("searchInput");
 const categoryFilter = document.getElementById("categoryFilter");
+const typeFilter = document.getElementById("typeFilter");
+const materialFilter = document.getElementById("materialFilter");
+const activeTitle = document.getElementById("activeTitle");
 
-function renderCars(list) {
-  grid.innerHTML = "";
+function renderCategories() {
+  categoryIcons.innerHTML = "";
 
-  list.forEach(car => {
+  categories.forEach(category => {
     const card = document.createElement("div");
-    card.className = "card";
-
+    card.className = "category-card";
     card.innerHTML = `
-      <img src="${car.image}">
-      <h3>${car.brand} ${car.name}</h3>
-      <p>€${car.price}</p>
-      <span class="badge">${car.klasse}</span>
-      <span class="badge">${car.kofferbak} KG</span>
-      <span class="badge">${car.seats} Seats</span>
+      <div class="category-icon">${category.icon}</div>
+      <strong>${category.name}</strong>
     `;
 
-    card.onclick = () => showDetails(car);
+    card.addEventListener("click", () => {
+      activeCategory = activeCategory === category.name ? "" : category.name;
+      categoryFilter.value = activeCategory;
+      renderCategories();
+      renderItems();
+    });
 
-    grid.appendChild(card);
+    if (activeCategory === category.name) {
+      card.classList.add("active");
+    }
+
+    categoryIcons.appendChild(card);
   });
 }
 
-function showDetails(car) {
-  const modal = document.getElementById("modal");
-  const details = document.getElementById("modalDetails");
+function fillFilters() {
+  categories.forEach(category => {
+    categoryFilter.innerHTML += `<option value="${category.name}">${category.name}</option>`;
+  });
 
-  details.innerHTML = `
-    <h2>${car.brand} ${car.name}</h2>
-    <p><b>Price:</b> €${car.price}</p>
-    <p><b>Category:</b> ${car.category}</p>
-    <p><b>Class:</b> ${car.klasse}</p>
-    <p><b>Trunk Space:</b> ${car.kofferbak}KG</p>
-    <p><b>Seats:</b> ${car.seats}</p>
-  `;
+  const types = [...new Set(items.map(item => item.type))];
+  types.forEach(type => {
+    typeFilter.innerHTML += `<option value="${type}">${type}</option>`;
+  });
 
-  modal.classList.remove("hidden");
+  const materials = [...new Set(items.flatMap(item => item.materials))];
+  materials.forEach(material => {
+    materialFilter.innerHTML += `<option value="${material}">${material}</option>`;
+  });
 }
 
-document.getElementById("closeModal").onclick = () => {
-  document.getElementById("modal").classList.add("hidden");
-};
-
-function filterCars() {
+function renderItems() {
   const search = searchInput.value.toLowerCase();
   const category = categoryFilter.value;
+  const type = typeFilter.value;
+  const material = materialFilter.value;
 
-  const filtered = cars.filter(car => {
-    const matchesSearch =
-      car.name.toLowerCase().includes(search) ||
-      car.brand.toLowerCase().includes(search) ||
-      car.klasse.toLowerCase().includes(search) ||
-      car.kofferbak.toString().includes(search) ||
-      car.seats.toString().includes(search);
+  activeCategory = category;
+  activeTitle.textContent = category ? category + " items" : "Alle items";
 
-    const matchesCategory =
-      category === "all" || car.category === category;
-
-    return matchesSearch && matchesCategory;
+  const filteredItems = items.filter(item => {
+    return (
+      item.name.toLowerCase().includes(search) &&
+      (category === "" || item.category === category) &&
+      (type === "" || item.type === type) &&
+      (material === "" || item.materials.includes(material))
+    );
   });
 
-  renderCars(filtered);
+  itemList.innerHTML = "";
+
+  if (filteredItems.length === 0) {
+    itemList.innerHTML = "<p>Geen items gevonden.</p>";
+    return;
+  }
+
+  filteredItems.forEach(item => {
+    const card = document.createElement("div");
+    card.className = "item-card";
+
+    card.innerHTML = `
+      <h3>${item.name}</h3>
+      <p><strong>Categorie:</strong> ${item.category}</p>
+      <p><strong>Type:</strong> ${item.type}</p>
+      <p><strong>Materialen:</strong></p>
+      ${item.materials.map(material => `<span class="tag">${material}</span>`).join("")}
+    `;
+
+    itemList.appendChild(card);
+  });
+
+  renderCategories();
 }
 
-searchInput.addEventListener("input", filterCars);
-categoryFilter.addEventListener("change", filterCars);
+searchInput.addEventListener("input", renderItems);
+categoryFilter.addEventListener("change", renderItems);
+typeFilter.addEventListener("change", renderItems);
+materialFilter.addEventListener("change", renderItems);
 
-// Initial render
-renderCars(cars);
+fillFilters();
+renderCategories();
+renderItems();

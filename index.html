@@ -1,28 +1,40 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crafting Catalogus</title>
-    <link rel="stylesheet" href="style.css"> <!-- Later toevoegen voor styling -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Item Catalogus</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>Mijn Crafting Catalogus</h1>
-    </header>
-    <main>
-        <section id="items-list">
-            <h2>Beschikbare Items:</h2>
-            <ul>
-                <li><a href="lockpick.html">Lockpick</a></li>
-                <li><a href="advanced-lockpick.html">Advanced Lockpick</a></li>
-                <li><a href="item3.html">Ander Item</a></li>
-                <!-- Meer items hier -->
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 Mijn Catalogus</p>
-    </footer>
+  <header>
+    <h1>Item Catalogus</h1>
+    <p>Kies een categorie en filter items op naam, categorie, type of materiaal.</p>
+  </header>
+
+  <section class="categories" id="categoryIcons"></section>
+
+  <section class="filters">
+    <input id="searchInput" type="text" placeholder="Zoek op naam..." />
+
+    <select id="categoryFilter">
+      <option value="">Alle categorieën</option>
+    </select>
+
+    <select id="typeFilter">
+      <option value="">Alle types</option>
+    </select>
+
+    <select id="materialFilter">
+      <option value="">Alle materialen</option>
+    </select>
+  </section>
+
+  <main>
+    <h2 id="activeTitle">Alle items</h2>
+    <div class="item-grid" id="itemList"></div>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
