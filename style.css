@@ -21,7 +21,7 @@ header {
 }
 
 header h1 {
-  color: #f5b400;
+  color: #1ef570;
   margin: 0;
   font-size: 28px;
 }
@@ -40,7 +40,7 @@ header h2 {
 
 .category-card {
   background: #07111f;
-  border: 2px solid #d4a100;
+  border: 2px solid #1ef570;
   border-radius: 16px;
   padding: 30px;
   text-align: center;
