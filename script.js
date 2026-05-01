@@ -1,8 +1,8 @@
 const categories = [
-  { name: "Crafting", icon: "⚒️" },
-  { name: "Recycling", icon: "♻️" },
-  { name: "Smelting", icon: "🔥" },
-  { name: "Jewelry", icon: "💍" }
+  { name: "Crafting", icon: "⚒️", file: "data/crafting.json" },
+  { name: "Recycling", icon: "♻️", file: "data/recycling.json" },
+  { name: "Smelting", icon: "🔥", file: "data/smelting.json" },
+  { name: "Jewelry", icon: "💍", file: "data/jewelry.json" }
 ];
 
 let items = [];
@@ -17,16 +17,17 @@ const materialFilter = document.getElementById("materialFilter");
 const listTitle = document.getElementById("listTitle");
 
 async function loadItems() {
-  try {
-    const response = await fetch("items.json");
-    items = await response.json();
+  items = [];
 
-    fillFilters();
-    renderCategories();
-    renderItems();
-  } catch (error) {
-    console.error("Fout bij laden items:", error);
+  for (const category of categories) {
+    const response = await fetch(category.file);
+    const categoryItems = await response.json();
+    items.push(...categoryItems);
   }
+
+  fillFilters();
+  renderCategories();
+  renderItems();
 }
 
 function renderCategories() {
@@ -35,7 +36,10 @@ function renderCategories() {
   categories.forEach(category => {
     const card = document.createElement("div");
     card.className = "category-card";
-    if (selectedCategory === category.name) card.classList.add("active");
+
+    if (selectedCategory === category.name) {
+      card.classList.add("active");
+    }
 
     card.innerHTML = `
       <div class="icon">${category.icon}</div>
@@ -45,7 +49,6 @@ function renderCategories() {
     card.addEventListener("click", () => {
       selectedCategory = selectedCategory === category.name ? "" : category.name;
       categoryFilter.value = selectedCategory;
-      renderCategories();
       renderItems();
     });
 
@@ -62,12 +65,13 @@ function fillFilters() {
     categoryFilter.innerHTML += `<option value="${category.name}">${category.name}</option>`;
   });
 
-  const types = [...new Set(items.map(item => item.type))];
+  const types = [...new Set(items.map(item => item.type))].sort();
+  const materials = [...new Set(items.flatMap(item => item.materials))].sort();
+
   types.forEach(type => {
     typeFilter.innerHTML += `<option value="${type}">${type}</option>`;
   });
 
-  const materials = [...new Set(items.flatMap(item => item.materials))];
   materials.forEach(material => {
     materialFilter.innerHTML += `<option value="${material}">${material}</option>`;
   });
@@ -82,20 +86,20 @@ function renderItems() {
   selectedCategory = categoryValue;
 
   const filteredItems = items.filter(item => {
-    const matchesName = item.name.toLowerCase().includes(searchValue);
-    const matchesCategory = !categoryValue || item.category === categoryValue;
-    const matchesType = !typeValue || item.type === typeValue;
-    const matchesMaterial = !materialValue || item.materials.includes(materialValue);
-
-    return matchesName && matchesCategory && matchesType && matchesMaterial;
+    return (
+      item.name.toLowerCase().includes(searchValue) &&
+      (!categoryValue || item.category === categoryValue) &&
+      (!typeValue || item.type === typeValue) &&
+      (!materialValue || item.materials.includes(materialValue))
+    );
   });
 
   listTitle.textContent = categoryValue ? `${categoryValue} items` : "Alle items";
-
   itemsGrid.innerHTML = "";
 
   if (filteredItems.length === 0) {
     itemsGrid.innerHTML = `<p>Geen items gevonden.</p>`;
+    renderCategories();
     return;
   }
 
@@ -125,13 +129,9 @@ function renderItems() {
   renderCategories();
 }
 
-loadItems();
-
 searchInput.addEventListener("input", renderItems);
 categoryFilter.addEventListener("change", renderItems);
 typeFilter.addEventListener("change", renderItems);
 materialFilter.addEventListener("change", renderItems);
 
-fillFilters();
-renderCategories();
-renderItems();
+loadItems();
