@@ -66,7 +66,7 @@ function fillFilters() {
   });
 
   const types = [...new Set(items.map(item => item.type))].sort();
-  const materials = [...new Set(items.flatMap(item => item.tags))].sort();
+  const materials = [...new Set(items.flatMap(item => item.materials))].sort();
 
   types.forEach(type => {
     typeFilter.innerHTML += `<option value="${type}">${type}</option>`;
@@ -90,7 +90,7 @@ function renderItems() {
       item.name.toLowerCase().includes(searchValue) &&
       (!categoryValue || item.category === categoryValue) &&
       (!typeValue || item.type === typeValue) &&
-      (!materialValue || item.tags.includes(materialValue))
+      (!materialValue || item.materials.includes(materialValue))
     );
   });
 
