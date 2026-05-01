@@ -66,7 +66,7 @@ function fillFilters() {
   });
 
   const types = [...new Set(items.map(item => item.type))].sort();
-  const materials = [...new Set(items.flatMap(item => item.materials))].sort();
+  const materials = [...new Set(items.flatMap(item => item.tags))].sort();
 
   types.forEach(type => {
     typeFilter.innerHTML += `<option value="${type}">${type}</option>`;
