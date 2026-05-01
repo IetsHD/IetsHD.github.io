@@ -256,44 +256,44 @@
     "materials": ["10% Hammer", "3x Gebroken handboeien", "5x Aluminium poeder", "10x IJzeren Klomp", "15x Metalen Blik", "35x Oude Duct Tape","350x Geld"]
   },
   {
-    "name": "",
+    "name": "P890 Slide",
     "category": "Crafting",
     "type": "Fishing",
-    "tags": ["", "", "", "", "", ""],
+    "tags": ["Hammer", "Platina Klomp", "IJzer poeder", "WD-40", "Metalen Blik", "Koperen Klomp", "Gebroken Rommel", "Geld"],
     "icon": "",
-    "materials": ["", "", "", "", "", ""]
+    "materials": ["10% Hammer", "4x Platina Klomp", "5x IJzer poeder", "5x WD-40", "10x Metalen Blik", "10x Koperen Klomp", "12x Gebroken Rommel", "250x Geld"]
   },
   {
-    "name": "",
+    "name": "P890 Grip",
     "category": "Crafting",
     "type": "Fishing",
-    "tags": ["", "", "", "", "", ""],
+    "tags": ["Hammer", "Versleten autoband", "Gebroken Rommel", "Elektronisch afval", "Gescheurde Kleding", "Oude Duct Tape", "Geld"],
     "icon": "",
-    "materials": ["", "", "", "", "", ""]
+    "materials": ["10% Hammer", "2x Versleten autoband", "5x Gebroken Rommel", "10x Elektronisch afval", "15x Gescheurde Kleding", "40x Oude Duct Tape", "250x Geld"]
   },
   {
-    "name": "",
+    "name": "P890 Trigger",
     "category": "Crafting",
     "type": "Fishing",
-    "tags": ["", "", "", "", "", ""],
+    "tags": ["Hammer", "Gouden Klomp", "Elektronisch afval", "Gebroken Rommel", "Oude Duct Tape", "Roestige Veer", "Geld"],
     "icon": "",
-    "materials": ["", "", "", "", "", ""]
+    "materials": ["10% Hammer", "3x Gouden Klomp", "5x Elektronisch afval", "10x Gebroken Rommel", "15x Oude Duct Tape", "15x Roestige Veer", "250x Geld"]
   },
   {
-    "name": "",
+    "name": "Switchblade",
     "category": "Crafting",
     "type": "Fishing",
-    "tags": ["", "", "", "", "", ""],
+    "tags": ["Hammer", "Roestige Schaar", "WD-40", "Gescheurde Kleding", "Oude Sleutels", "Roestige Veer", "Oude Duct Tape", "Geld"],
     "icon": "",
-    "materials": ["", "", "", "", "", ""]
+    "materials": ["10% Hammer", "2x Roestige Schaar", "2x WD-40", "3x Gescheurde Kleding", "4x Oude Sleutels", "5x Roestige Veer", "6x Oude Duct Tape", "250x Geld"]
   },
   {
-    "name": "",
+    "name": "Flashlight",
     "category": "Crafting",
     "type": "Fishing",
-    "tags": ["", "", "", "", "", ""],
+    "tags": ["Hammer", "Gebroken Telefoon", "Gescheurde Kleding", "Oude Duct Tape", "Oude Paperclip", "Gebroken Rommel", "Elektronisch afval", "Geld"],
     "icon": "",
-    "materials": ["", "", "", "", "", ""]
+    "materials": ["10% Hammer", "1x Gebroken Telefoon", "2x Gescheurde Kleding", "8x Oude Duct Tape", "10x Oude Paperclip", "10x Gebroken Rommel", "12x Elektronisch afval", "250x Geld"]
   },
   {
     "name": "",
