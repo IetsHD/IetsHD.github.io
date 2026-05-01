@@ -32,14 +32,14 @@
     "category": "Crafting",
     "type": "Fishing",
     "icon": "",
-    "materials": ["Wood", "Nails"]
+    "materials": ["1x Rotte Appel", "1x Rotte Aardbeien", "2x Rotte Banaan"]
   },
     {
-    "name": "Wooden Crate",
+    "name": "Hobo-Balls (Licht)",
     "category": "Crafting",
     "type": "Fishing",
     "icon": "",
-    "materials": ["Wood", "Nails"]
+    "materials": ["1x Oude Kaas", "1x Open Blik Maïs", "2x Rotte Banaan"]
   },
     {
     "name": "Wooden Crate",
