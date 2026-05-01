@@ -54,6 +54,10 @@ function renderCategories() {
 }
 
 function fillFilters() {
+  categoryFilter.innerHTML = `<option value="">Alle categorieën</option>`;
+  typeFilter.innerHTML = `<option value="">Alle types</option>`;
+  materialFilter.innerHTML = `<option value="">Alle materialen</option>`;
+
   categories.forEach(category => {
     categoryFilter.innerHTML += `<option value="${category.name}">${category.name}</option>`;
   });
@@ -120,6 +124,8 @@ function renderItems() {
 
   renderCategories();
 }
+
+loadItems();
 
 searchInput.addEventListener("input", renderItems);
 categoryFilter.addEventListener("change", renderItems);
