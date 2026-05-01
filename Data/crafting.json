@@ -5,5 +5,54 @@
     "type": "Structure",
     "icon": "📦",
     "materials": ["Wood", "Nails"]
+  },
+    {
+    "name": "Hobo Azijn",
+    "category": "Crafting",
+    "type": "Fishing",
+    "icon": "",
+    "materials": ["1x Lege Fles", "3x Rotte Appel"]
+  },
+    {
+    "name": "Hobo Azijn",
+    "category": "Crafting",
+    "type": "Fishing",
+    "icon": "",
+    "materials": ["1x Lege Fles", "3x Rotte Perzik"]
+  },
+    {
+    "name": "Hobo Azijn",
+    "category": "Crafting",
+    "type": "Fishing",
+    "icon": "",
+    "materials": ["1x Lege Fles", "3x Rotte Peer"]
+  },
+    {
+    "name": "Hobo-Balls (Licht)",
+    "category": "Crafting",
+    "type": "Fishing",
+    "icon": "",
+    "materials": ["Wood", "Nails"]
+  },
+    {
+    "name": "Wooden Crate",
+    "category": "Crafting",
+    "type": "Fishing",
+    "icon": "",
+    "materials": ["Wood", "Nails"]
+  },
+    {
+    "name": "Wooden Crate",
+    "category": "Crafting",
+    "type": "Fishing",
+    "icon": "",
+    "materials": ["Wood", "Nails"]
+  },
+    {
+    "name": "Wooden Crate",
+    "category": "Crafting",
+    "type": "Fishing",
+    "icon": "",
+    "materials": ["Wood", "Nails"]
   }
 ]
