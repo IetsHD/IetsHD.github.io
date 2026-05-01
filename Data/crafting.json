@@ -11,6 +11,7 @@
     "name": "Hobo Azijn",
     "category": "Crafting",
     "type": "Fishing",
+    "tags": ["Lege Fles", "Rotte Perzik"],
     "icon": "",
     "materials": ["1x Lege Fles", "3x Rotte Perzik"]
   },
@@ -18,6 +19,7 @@
     "name": "Hobo Azijn",
     "category": "Crafting",
     "type": "Fishing",
+    "tags": ["Lege Fles", "Rotte Peer"],
     "icon": "",
     "materials": ["1x Lege Fles", "3x Rotte Peer"]
   },
