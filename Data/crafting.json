@@ -27,9 +27,9 @@
     "name": "Trash-Juice Moonshine",
     "category": "Crafting",
     "type": "Fishing",
-    "tags": ["Lege Wijnfles", "1x Hobo Azijn", "4x Beschimmeld Brood", "5x Rotte Appel"],
+    "tags": ["Lege Wijnfles", "Hobo Azijn", "Beschimmeld Brood", "Rotte Appel"],
     "icon": "",
-    "materials": ["1x Lege Wijnfles", "Hobo Azijn", "Beschimmeld Brood", "Rotte Appel"]
+    "materials": ["1x Lege Wijnfles", "1x Hobo Azijn", "4x Beschimmeld Brood", "5x Rotte Appel"]
   },
   {
     "name": "Trash-Juice Moonshine",
@@ -158,6 +158,126 @@
     "tags": ["Hammer", "Hobo Azijn", "Oude Hagelpatroon"],
     "icon": "",
     "materials": ["0.5% Hammer", "1x Hobo Azijn", "2x Oude Hagelpatroon"]
+  },
+  {
+    "name": "Tuinhandschoenen",
+    "category": "Crafting",
+    "type": "Fishing",
+    "tags": ["Gescheurde Kleding", "Oude Duct Tape", "Oude Paperclip"],
+    "icon": "",
+    "materials": ["2x Gescheurde Kleding", "2x Oude Duct Tape", "3x Oude Paperclip"]
+  },
+  {
+    "name": "Fijne weegschaal",
+    "category": "Crafting",
+    "type": "Fishing",
+    "tags": ["Wrench", "Blueprint Weegschaal", "Gebroken Telefoon", "Oude Duct Tape", "Elektronisch afval", "Flessendoppen", "Oude Paperclip"],
+    "icon": "",
+    "materials": ["5% Wrench", "10% Blueprint Weegschaal", "1x Gebroken Telefoon", "3x Oude Duct Tape", "3x Elektronisch afval", "5x Flessendoppen", "8x Oude Paperclip"]
+  },
+  {
+    "name": "Grinder",
+    "category": "Crafting",
+    "type": "Fishing",
+    "tags": ["Wrench", "Roestige Schroevendraaier", "Oude Duct Tape", "WD-40", "Metalen Blik", "Verroeste spijkers"],
+    "icon": "",
+    "materials": ["5% Wrench", "1x Roestige Schroevendraaier", "1x Oude Duct Tape", "1x WD-40", "2x Metalen Blik", "4x Verroeste spijkers"]
+  },
+  {
+    "name": "Geavanceerde lockpick",
+    "category": "Crafting",
+    "type": "Fishing",
+    "tags": ["Hammer", "Roestige Schroevendraaier", "Roestige Veer", "Roestige Schaar", "Oude Duct Tape"],
+    "icon": "",
+    "materials": ["0.5% Hammer", "1x Roestige Schroevendraaier", "2x Roestige Veer", "2x Roestige Schaar", "3x Oude Duct Tape"]
+  },
+  {
+    "name": "Thermiet",
+    "category": "Crafting",
+    "type": "Fishing",
+    "tags": ["Hammer", "Lege fles", "Restje Sterke Drank", "IJzer poeder", "Aluminium poeder", "Koperen Klomp", "Oude Duct Tape"],
+    "icon": "",
+    "materials": ["0.5% Hammer", "1x Lege fles", "2x Restje Sterke Drank", "3x IJzer poeder", "3x Aluminium poeder", "3x Koperen Klomp", "5x Oude Duct Tape"]
+  },
+  {
+    "name": "Body Armor",
+    "category": "Crafting",
+    "type": "Fishing",
+    "tags": ["Hammer", "Rubber", "Verpletterd Blikje", "Gescheurde Kleding", "Oude Duct Tape", "Metalen Blik"],
+    "icon": "",
+    "materials": ["0.5% Hammer", "5x Rubber", "8x Verpletterd Blikje", "8x Gescheurde Kleding", "8x Oude Duct Tape", "10x Metalen Blik"]
+  },
+  {
+    "name": "",
+    "category": "Crafting",
+    "type": "Fishing",
+    "tags": ["", "", "", "", "", ""],
+    "icon": "",
+    "materials": ["", "", "", "", "", ""]
+  },
+  {
+    "name": "Armor Plate",
+    "category": "Crafting",
+    "type": "Fishing",
+    "tags": ["Hammer", "Oude Duct Tape", "Kogelhuls", "Rubber", "Metalen Blik", "Koperen Klomp"],
+    "icon": "",
+    "materials": ["0.5% Hammer", "2x Oude Duct Tape", "2x Kogelhuls", "2x Rubber", "3x Metalen Blik", "3x Koperen Klomp"]
+  },
+  {
+    "name": "SNS Frame",
+    "category": "Crafting",
+    "type": "Fishing",
+    "tags": ["Hammer", "IJzeren Klomp", "Oude Aansteker", "Gebroken Rommel", "Verpletterd Blikje", "Oude Duct Tape", "Metalen Blik", "Geld"],
+    "icon": "",
+    "materials": ["10% Hammer", "4x IJzeren Klomp", "5x Oude Aansteker", "8x Gebroken Rommel", "15x Verpletterd Blikje", "15x Oude Duct Tape", "20x Metalen Blik", "250x Geld"]
+  },
+  {
+    "name": "SNS Grip",
+    "category": "Crafting",
+    "type": "Fishing",
+    "tags": ["Hammer", "Gebroken Rommel", "Lege fles", "Gescheurde Kleding", "Oude Duct Tape", "150x Geld"],
+    "icon": "",
+    "materials": ["10% Hammer", "4x Gebroken Rommel", "6x Lege fles", "15x Gescheurde Kleding", "20x Oude Duct Tape", "150x Geld"]
+  },
+  {
+    "name": "SNS Trigger",
+    "category": "Crafting",
+    "type": "Fishing",
+    "tags": ["Hammer", "Koperen Klomp", "Roestige Veer", "Verroeste spijkers", "Gebroken Rommel", "Geld"],
+    "icon": "",
+    "materials": ["10% Hammer", "3x Koperen Klomp", "10x Roestige Veer", "10x Verroeste spijkers", "12x Gebroken Rommel", "150x Geld"]
+  },
+  {
+    "name": "P890 Frame",
+    "category": "Crafting",
+    "type": "Fishing",
+    "tags": ["Hammer", "Gebroken handboeien", "Aluminium poeder", "IJzeren Klomp", "Metalen Blik", "Oude Duct Tape", "Geld"],
+    "icon": "",
+    "materials": ["10% Hammer", "3x Gebroken handboeien", "5x Aluminium poeder", "10x IJzeren Klomp", "15x Metalen Blik", "35x Oude Duct Tape","350x Geld"]
+  },
+  {
+    "name": "",
+    "category": "Crafting",
+    "type": "Fishing",
+    "tags": ["", "", "", "", "", ""],
+    "icon": "",
+    "materials": ["", "", "", "", "", ""]
+  },
+  {
+    "name": "",
+    "category": "Crafting",
+    "type": "Fishing",
+    "tags": ["", "", "", "", "", ""],
+    "icon": "",
+    "materials": ["", "", "", "", "", ""]
+  },
+  {
+    "name": "",
+    "category": "Crafting",
+    "type": "Fishing",
+    "tags": ["", "", "", "", "", ""],
+    "icon": "",
+    "materials": ["", "", "", "", "", ""]
   },
   {
     "name": "",
