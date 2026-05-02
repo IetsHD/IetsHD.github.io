@@ -608,6 +608,173 @@
     "materials": ["5% Wrench", "20% Blueprint Weegschaal", "1x Electronic Kit", "4x Koper", "5x Plastic", "5x Metaalschroot", "5x IJzer", "8x Elektronische schroot", "10x Aluminium"]
   },
   {
+    "name": "Leeg zakje",
+    "category": "Crafting",
+    "type": "Craft",
+    "tags": ["Hammer", "Plastic"],
+    "icon": "",
+    "materials": ["1% Hammer", "1x Plastic"]
+  },
+  {
+    "name": "Gieter",
+    "category": "Crafting",
+    "type": "Craft",
+    "tags": ["Hammer", "Aluminium", "Koper", "Metaalschroot"],
+    "icon": "",
+    "materials": ["1% Hammer", "3x Aluminium", "5x Koper", "5x Metaalschroot"]
+  },
+  {
+    "name": "Goudpan",
+    "category": "Crafting",
+    "type": "Craft",
+    "tags": ["Hammer", "IJzer", "Staal"],
+    "icon": "",
+    "materials": ["1% Hammer", "5x IJzer", "10x Staal"]
+  },
+  {
+    "name": "Snoeischaar",
+    "category": "Crafting",
+    "type": "Craft",
+    "tags": ["Hammer", "Plastic", "IJzer", "Rubber"],
+    "icon": "",
+    "materials": ["1% Hammer", "2x Plastic", "3x IJzer", "5x Rubber"]
+  },
+  {
+    "name": "Grinder",
+    "category": "Crafting",
+    "type": "Craft",
+    "tags": ["Hammer", "Rubber", "IJzer", "Plastic"],
+    "icon": "",
+    "materials": ["1% Hammer", "2x Rubber", "4x IJzer", "6x Plastic"]
+  },
+  {
+    "name": "Pickaxe",
+    "category": "Crafting",
+    "type": "Craft",
+    "tags": ["Hammer", "Houten planken", "IJzer", "Acetaat Vezels"],
+    "icon": "",
+    "materials": ["1% Hammer", "2x Houten planken", "5x IJzer", "8x Acetaat Vezels"]
+  },
+  {
+    "name": "Schep",
+    "category": "Crafting",
+    "type": "Craft",
+    "tags": ["Hammer", "Houten planken", "IJzer", "Acetaat Vezels"],
+    "icon": "",
+    "materials": ["1% Hammer", "2x Houten planken", "5x IJzer", "8x Acetaat Vezels"]
+  },
+  {
+    "name": "Lege Spuit",
+    "category": "Crafting",
+    "type": "Craft",
+    "tags": ["Hammer", "Blueprint", "Plastic", "Aluminium", "IJzer"],
+    "icon": "",
+    "materials": ["1% Hammer", "5% Blueprint Lege Spuit", "1x Plastic", "1x Aluminium", "1x IJzer"]
+  },{
+    "name": "Tuinhandschoenen",
+    "category": "Crafting",
+    "type": "Craft",
+    "tags": ["Hammer", "Stof", "Acetaat Vezels"],
+    "icon": "",
+    "materials": ["1% Hammer", "5x Stof", "10x Acetaat Vezels"]
+  },
+  {
+    "name": "Duffel Bag",
+    "category": "Crafting",
+    "type": "Craft",
+    "tags": ["Hammer", "Stof", "Acetaat Vezels"],
+    "icon": "",
+    "materials": ["1% Hammer", "10x Stof", "15x Acetaat Vezels"]
+  },
+  {
+    "name": "Body Armor",
+    "category": "Crafting",
+    "type": "Craft",
+    "tags": ["Hammer", "Blueprint", "Aluminium", "Metaalschroot", "Craft Parts", "Stof", "Leer", "Acetaat Vezels"],
+    "icon": "",
+    "materials": ["5% Hammer", "5% Blueprint vest", "1x Aluminium", "2x Metaalschroot", "3x Craft Parts", "5x Stof", "6x Leer", "10x Acetaat Vezels"]
+  },
+  {
+    "name": "Thermiet",
+    "category": "Crafting",
+    "type": "Craft",
+    "tags": ["Wrench", "Blueprint", "IJzer poeder", "Aluminium poeder", "Craft Parts", "Elektronische schroot", "Koper", "Staal"],
+    "icon": "",
+    "materials": ["10% Wrench", "20% Blueprint Thermiet", "2x IJzer poeder", "2x Aluminium poeder", "3x Craft Parts", "15x Elektronische schroot", "25x Koper", "40x Staal"]
+  },
+  {
+    "name": "Dynamiet",
+    "category": "Crafting",
+    "type": "Craft",
+    "tags": ["Wrench", "Blueprint Dynamiet", "Houten planken", "Aluminium poeder", "IJzer poeder", "Elektronische schroot", "Staal", "Koper"],
+    "icon": "",
+    "materials": ["10% Wrench", "20% Blueprint Dynamiet", "1x Houten planken", "2x Aluminium poeder", "3x IJzer poeder", "15x Elektronische schroot", "35x Staal", "40x Koper"]
+  },
+  {
+    "name": "C4",
+    "category": "Crafting",
+    "type": "Craft",
+    "tags": ["Wrench", "Blueprint", "IJzer poeder", "Aluminium poeder", "Elektronische schroot", "Staal", "Koper"],
+    "icon": "",
+    "materials": ["10% Wrench", "20% Blueprint C4", "3x IJzer poeder", "3x Aluminium poeder", "15x Elektronische schroot", "30x Staal", "35x Koper"]
+  },
+  {
+    "name": "Diamandboormachine",
+    "category": "Crafting",
+    "type": "Craft",
+    "tags": ["Wrench", "Blueprint", "Electronic Kit", "IJzer poeder", "Ongesneden diamant", "Kristallijn", "Craft Parts", "Elektronische schroot", "Rubber", "Koper"],
+    "icon": "",
+    "materials": ["15% Wrench", "25% Blueprint Diamandboormachine", "1x Electronic Kit", "1x IJzer poeder", "1x Ongesneden diamant", "2x Kristallijn", "5x Craft Parts", "15x Elektronische schroot", "20x Rubber", "30x Koper"]
+  },
+  {
+    "name": "Laser Drill",
+    "category": "Crafting",
+    "type": "Craft",
+    "tags": ["Wrench", "Blueprint", "Electronic Kit", "Kristallijn", "Koper", "Craft Parts", "Rubber", "Elektronische schroot", "Metaalschroot"],
+    "icon": "",
+    "materials": ["15% Wrench", "25% Blueprint Laser Drill", "1x Electronic Kit", "5x Kristallijn", "10x Koper", "15x Craft Parts", "15x Rubber", "20x Elektronische schroot", "20x Metaalschroot"]
+  },
+  {
+    "name": "Trojan USB",
+    "category": "Crafting",
+    "type": "Craft",
+    "tags": ["Wrench", "Blueprint", "Staal", "Aluminium poeder", "Elektronische schroot", "Plastic"],
+    "icon": "",
+    "materials": ["10% Wrench", "10% Blueprint Trojan USB", "2x Staal", "3x Aluminium poeder", "5x Elektronische schroot", "5x Plastic"]
+  },
+  {
+    "name": "Gasbrander",
+    "category": "Crafting",
+    "type": "Craft",
+    "tags": ["Wrench", "Blueprint", "IJzer poeder", "Elektronische schroot", "Craft Parts", "Koper", "Rubber", "Metaalschroot"],
+    "icon": "",
+    "materials": ["15% Wrench", "25% Blueprint Gasbrander", "3x IJzer poeder", "5x Elektronische schroot", "10x Craft Parts", "10x Koper", "15x Rubber", "20x Metaalschroot"]
+  },
+  {
+    "name": "Beginnersbaken",
+    "category": "Crafting",
+    "type": "Craft",
+    "tags": ["Wrench", "Electronic Kit", "IJzer poeder", "Kristallijn", "Craft Parts", "Rubber", "Elektronische schroot", "Metaalschroot", "20x Koper"],
+    "icon": "",
+    "materials": ["15% Wrench", "1x Electronic Kit", "1x IJzer poeder", "1x Kristallijn", "10x Craft Parts", "10x Rubber", "10x Elektronische schroot", "15x Metaalschroot", "20x Koper"]
+  },
+  {
+    "name": "Lustrous Locator",
+    "category": "Crafting",
+    "type": "Craft",
+    "tags": ["Wrench", "Electronic Kit", "Kristallijn", "IJzer poeder", "Craft Parts", "Rubber", "Elektronische schroot", "Metaalschroot", "Koper"],
+    "icon": "",
+    "materials": ["15% Wrench", "1x Electronic Kit", "1x Kristallijn", "2x IJzer poeder", "10x Craft Parts", "10x Rubber", "10x Elektronische schroot", "15x Metaalschroot", "20x Koper"]
+  },
+  {
+    "name": "",
+    "category": "Crafting",
+    "type": "Craft",
+    "tags": [""],
+    "icon": "",
+    "materials": [""]
+  },
+  {
     "name": "",
     "category": "Crafting",
     "type": "Craft",
