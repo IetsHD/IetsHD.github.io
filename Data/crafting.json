@@ -171,7 +171,7 @@
     "name": "Fijne weegschaal",
     "category": "Crafting",
     "type": "Zwerver Tafel",
-    "tags": ["Wrench", "Blueprint Weegschaal", "Gebroken Telefoon", "Oude Duct Tape", "Elektronisch afval", "Flessendoppen", "Oude Paperclip"],
+    "tags": ["Wrench", "Blueprint", "Gebroken Telefoon", "Oude Duct Tape", "Elektronisch afval", "Flessendoppen", "Oude Paperclip"],
     "icon": "",
     "materials": ["5% Wrench", "10% Blueprint Weegschaal", "1x Gebroken Telefoon", "3x Oude Duct Tape", "3x Elektronisch afval", "5x Flessendoppen", "8x Oude Paperclip"]
   },
@@ -584,28 +584,28 @@
     "materials": ["5% Wrench", "10% Blueprint Electronic Kit", "2x Aluminium", "5x Elektronische schroot", "5x Rubber", "5x Craft Parts", "8x Plastic", "10x Metaalschroot", "20x Koper"]
   },
   {
-    "name": "",
+    "name": "Circuit Tester",
     "category": "Crafting",
     "type": "Craft",
-    "tags": [""],
+    "tags": ["Wrench", "Blueprint", "Aluminium", "Plastic", "Elektronische schroot", "Rubber", "Craft Parts", "Metaalschroot", "Koper"],
     "icon": "",
-    "materials": [""]
+    "materials": ["5% Wrench", "10% Blueprint Circuit Tester", "3x Aluminium", "5x Plastic", "5x Elektronische schroot", "5x Rubber", "5x Craft Parts", "6x Metaalschroot", "10x Koper"]
   },
   {
-    "name": "",
+    "name": "Glas Snijder",
     "category": "Crafting",
     "type": "Craft",
-    "tags": [""],
+    "tags": ["Wrench", "Blueprint", "Metaalschroot", "Rubber", "Craft Parts", "Staal", "Koper"],
     "icon": "",
-    "materials": [""]
+    "materials": ["5% Wrench", "10% Blueprint Glas Snijder", "5x Metaalschroot", "5x Rubber", "5x Craft Parts", "10x Staal", "10x Koper"]
   },
   {
-    "name": "",
+    "name": "Fijne weegschaal",
     "category": "Crafting",
     "type": "Craft",
-    "tags": [""],
+    "tags": ["Wrench", "Blueprint", "Electronic Kit", "Koper", "Plastic", "Metaalschroot", "IJzer", "Elektronische schroot", "Aluminium"],
     "icon": "",
-    "materials": [""]
+    "materials": ["5% Wrench", "20% Blueprint Weegschaal", "1x Electronic Kit", "4x Koper", "5x Plastic", "5x Metaalschroot", "5x IJzer", "8x Elektronische schroot", "10x Aluminium"]
   },
   {
     "name": "",
