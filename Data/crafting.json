@@ -488,11 +488,147 @@
     "materials": ["2x Reclame"]
   },
   {
-    "name": "",
+    "name": "Lamineer vellen",
     "category": "Crafting",
     "type": "Werkbank",
-    "tags": ["Lamineer vellen"],
+    "tags": ["Plastic"],
     "icon": "",
     "materials": ["2x Plastic"]
+  },
+  {
+    "name": "Lockpick",
+    "category": "Crafting",
+    "type": "Craft",
+    "tags": ["Hammer", "Plastic", "Metaalschroot"],
+    "icon": "",
+    "materials": ["5% Hammer", "3x Plastic", "10x Metaalschroot"]
+  },
+  {
+    "name": "Geavanceerde lockpick",
+    "category": "Crafting",
+    "type": "Craft",
+    "tags": ["Hammer", "Blueprint", "Schroevendraaierset", "Rubber", "Koper", "Metaalschroot"],
+    "icon": "",
+    "materials": ["5% Hammer", "10% Blueprint Advanced Lockpick", "1x Schroevendraaierset", "2x Rubber", "3x Koper", "6x Metaalschroot"]
+  },
+  {
+    "name": "Schroevendraaierset",
+    "category": "Crafting",
+    "type": "Craft",
+    "tags": ["Hammer", "Rubber", "Plastic", "Metaalschroot"],
+    "icon": "",
+    "materials": ["5% Hammer", "5x Rubber", "6x Plastic", "10x Metaalschroot"]
+  },
+  {
+    "name": "Tang",
+    "category": "Crafting",
+    "type": "Craft",
+    "tags": ["Hammer", "Blueprint", "Rubber", "Plastic", "Craft Parts", "Metaalschroot"],
+    "icon": "",
+    "materials": ["5% Hammer", "10% Blueprint Tang", "2x Rubber", "4x Plastic", "5x Craft Parts", "6x Metaalschroot"]
+  },
+  {
+    "name": "Vishengel",
+    "category": "Crafting",
+    "type": "Craft",
+    "tags": ["Hammer", "Blueprint", "Houten planken", "Molen", "Stof", "Rubber", "Aluminium Folie", "Acetaat Vezels"],
+    "icon": "",
+    "materials": ["5% Hammer", "10% Blueprint Hengel", "1x Houten planken", "1x Molen", "1x Stof", "1x Rubber", "1x Aluminium Folie", "10x Acetaat Vezels"]
+  },
+  {
+    "name": "ZipTie",
+    "category": "Crafting",
+    "type": "Craft",
+    "tags": ["Hammer", "Blueprint", "Plastic", "Acetaat Vezels", "Rubber"],
+    "icon": "",
+    "materials": ["5% Hammer", "10% Blueprint Zip Ties", "6x Plastic", "10x Acetaat Vezels", "10x Rubber"]
+  },
+  {
+    "name": "Kniptang",
+    "category": "Crafting",
+    "type": "Craft",
+    "tags": ["Blueprint", "Hammer", "Craft Parts", "Aluminium", "Metaalschroot", "Rubber", "Staal", "Acetaat Vezels", "Koper"],
+    "icon": "",
+    "materials": ["10% Hammer", "10% Blueprint Kniptang", "5x Craft Parts", "5x Aluminium", "6x Metaalschroot", "6x Rubber", "8x Staal", "10x Acetaat Vezels", "10x Koper"]
+  },
+  {
+    "name": "Handboeien",
+    "category": "Crafting",
+    "type": "Craft",
+    "tags": ["Hammer", "Blueprint", "Koper", "IJzer", "Staal", "Aluminium", "Metaalschroot"],
+    "icon": "",
+    "materials": ["10% Hammer", "20% Blueprint Handboeien", "8x Koper", "10x IJzer", "10x Staal", "15x Aluminium", "15x Metaalschroot"]
+  },
+  {
+    "name": "Betonschaar",
+    "category": "Crafting",
+    "type": "Craft",
+    "tags": ["Hammer", "Blueprint", "Koper", "Craft Parts", "IJzer", "Aluminium", "Metaalschroot", "Rubber", "Staal"],
+    "icon": "",
+    "materials": ["10% Hammer", "20% Blueprint Betonschaar", "4x Koper", "5x Craft Parts", "5x IJzer", "8x Aluminium", "10x Metaalschroot", "10x Rubber", "15x Staal"]
+  },
+  {
+    "name": "Elektrische zaag",
+    "category": "Crafting",
+    "type": "Craft",
+    "tags": ["Hammer", "Rubber", "Koper", "Aluminium", "IJzer", "Craft Parts", "Metaalschroot", "Staal"],
+    "icon": "",
+    "materials": ["10% Hammer", "4x Rubber", "4x Koper", "5x Aluminium", "5x IJzer", "5x Craft Parts", "8x Metaalschroot", "10x Staal"]
+  },
+  {
+    "name": "Electronic Kit",
+    "category": "Crafting",
+    "type": "Craft",
+    "tags": ["Wrench", "Blueprint", "Aluminium", "Elektronische schroot", "Rubber", "Craft Parts", "Plastic", "Metaalschroot", "Koper"],
+    "icon": "",
+    "materials": ["5% Wrench", "10% Blueprint Electronic Kit", "2x Aluminium", "5x Elektronische schroot", "5x Rubber", "5x Craft Parts", "8x Plastic", "10x Metaalschroot", "20x Koper"]
+  },
+  {
+    "name": "",
+    "category": "Crafting",
+    "type": "Craft",
+    "tags": [""],
+    "icon": "",
+    "materials": [""]
+  },
+  {
+    "name": "",
+    "category": "Crafting",
+    "type": "Craft",
+    "tags": [""],
+    "icon": "",
+    "materials": [""]
+  },
+  {
+    "name": "",
+    "category": "Crafting",
+    "type": "Craft",
+    "tags": [""],
+    "icon": "",
+    "materials": [""]
+  },
+  {
+    "name": "",
+    "category": "Crafting",
+    "type": "Craft",
+    "tags": [""],
+    "icon": "",
+    "materials": [""]
+  },
+  {
+    "name": "",
+    "category": "Crafting",
+    "type": "Craft",
+    "tags": [""],
+    "icon": "",
+    "materials": [""]
+  },
+  {
+    "name": "",
+    "category": "Crafting",
+    "type": "Craft",
+    "tags": [""],
+    "icon": "",
+    "materials": [""]
   }
 ]
