@@ -3,39 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wasbeer Crafting Catalogus</title>
+  <title>Netjes Geregeld</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main class="app">
-    <header>
-      <h1>Wasbeer Crafting Catalogus</h1>
-      <h2>Item Catalogus</h2>
-    </header>
+  <header>
+    <div>
+      <h1>Netjes Geregeld</h1>
+      <p>Boodschappenlijst</p>
+    </div>
 
-    <section class="category-grid" id="categoryGrid"></section>
+    <button class="cart-btn">Winkelwagen</button>
+  </header>
 
-    <section class="filters">
-      <input id="searchInput" type="text" placeholder="Zoek op naam..." />
+  <main>
+    <input id="search" type="text" placeholder="Zoek producten..." />
 
-      <select id="categoryFilter">
-        <option value="">Alle categorieën</option>
-      </select>
+    <div id="categories"></div>
 
-      <select id="typeFilter">
-        <option value="">Alle types</option>
-      </select>
-
-      <select id="tagFilter">
-  <option value="">Alle tags</option>
-</select>
-</section>
-
-    <h2 id="listTitle">Alle items</h2>
-
-    <section class="items-grid" id="itemsGrid"></section>
+    <section id="products"></section>
   </main>
 
-  <script src="script.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
