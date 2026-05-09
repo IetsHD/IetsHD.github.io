@@ -767,35 +767,91 @@
     "materials": ["15% Wrench", "1x Electronic Kit", "1x Kristallijn", "2x IJzer poeder", "10x Craft Parts", "10x Rubber", "10x Elektronische schroot", "15x Metaalschroot", "20x Koper"]
   },
   {
-    "name": "",
+    "name": "Schatzoeker",
     "category": "Crafting",
     "type": "Craft",
-    "tags": [""],
+    "tags": ["Wrench", "Electronic Kit", "Kristallijn", "IJzer poeder", "Craft Parts", "Rubber", "Elektronische schroot", "Metaalschroot", "Koper"],
     "icon": "",
-    "materials": [""]
+    "materials": ["15% Wrench", "1x Electronic Kit", "1x Kristallijn", "3x IJzer poeder", "10x Craft Parts", "10x Rubber", "10x Elektronische schroot", "15x Metaalschroot", "25x Koper"]
   },
   {
-    "name": "",
+    "name": "Goudzoekers Graal",
     "category": "Crafting",
     "type": "Craft",
-    "tags": [""],
+    "tags": ["Wrench", "Electronic Kit", "Kristallijn", "IJzer poeder", "1Rubber", "Elektronische schroot", "Craft Parts", "Metaalschroot", "Koper"],
     "icon": "",
-    "materials": [""]
+    "materials": ["15% Wrench", "1x Electronic Kit", "1x Kristallijn", "4x IJzer poeder", "10x Rubber", "10x Elektronische schroot", "15x Craft Parts", "15x Metaalschroot", "25x Koper"]
   },
   {
-    "name": "",
+    "name": "Archeo Ace",
     "category": "Crafting",
     "type": "Craft",
-    "tags": [""],
+    "tags": ["Wrench", "Electronic Kit", "Kristallijn", "IJzer poeder", "Rubber", "Elektronische schroot", "Metaalschroot", "Craft Parts", "Koper"],
     "icon": "",
-    "materials": [""]
+    "materials": ["15% Wrench", "1x Electronic Kit", "1x Kristallijn", "5x IJzer poeder", "10x Rubber", "10x Elektronische schroot", "15x Metaalschroot", "20x Craft Parts", "25x Koper"]
   },
   {
-    "name": "",
+    "name": "Ijzer poeder",
     "category": "Crafting",
     "type": "Craft",
-    "tags": [""],
+    "tags": ["Hammer", "Glasplaat", "Kristallijn", "IJzer"],
     "icon": "",
-    "materials": [""]
+    "materials": ["1% Hammer", "2x Glasplaat", "2x Kristallijn", "5x IJzer"]
+  },
+  {
+    "name": "Aluminium poeder",
+    "category": "Crafting",
+    "type": "Craft",
+    "tags": ["Hammer", "Kristallijn", "Aluminium"],
+    "icon": "",
+    "materials": ["1% Hammer", "2x Kristallijn", "4x Aluminium"]
+  },
+  {
+    "name": "Kristalijn",
+    "category": "Crafting",
+    "type": "Craft",
+    "tags": ["Hammer", "Robijn"],
+    "icon": "",
+    "materials": ["1% Hammer", "1x Robijn"]
+  },
+  {
+    "name": "Aluminium Folie",
+    "category": "Crafting",
+    "type": "Craft",
+    "tags": ["Hammer", "Gesmolten Aluminium"],
+    "icon": "",
+    "materials": ["1% Hammer", "1x Gesmolten Aluminium"]
+  },
+  {
+    "name": "Nylon Touw",
+    "category": "Crafting",
+    "type": "Craft",
+    "tags": ["15% Wrench", "1x Kristallijn", "3x Gesmolten Aluminium", "5x Rubber", "8x Stof", "10x Acetaat Vezels", "64x Gesmolten Plastic"],
+    "icon": "",
+    "materials": ["15% Wrench", "1x Kristallijn", "3x Gesmolten Aluminium", "5x Rubber", "8x Stof", "10x Acetaat Vezels", "64x Gesmolten Plastic"]
+  },
+  {
+    "name": "Crowbar",
+    "category": "Crafting",
+    "type": "Craft",
+    "tags": ["Hammer", "Rubber", "Craft Parts", "Staal", "Metaalschroot"],
+    "icon": "",
+    "materials": ["20% Hammer", "5x Rubber", "10x Craft Parts", "15x Staal", "20x Metaalschroot"]
+  },
+  {
+    "name": "Jutten Zak",
+    "category": "Crafting",
+    "type": "Craft",
+    "tags": ["Wrench", "Nylon Touw", "Craft Parts", "Leer", "Stof", "Acetaat Vezels"],
+    "icon": "",
+    "materials": ["20% Wrench", "2x Nylon Touw", "5x Craft Parts", "10x Leer", "20x Stof", "25x Acetaat Vezels"]
+  },
+  {
+    "name": "Adrenaline Injectie",
+    "category": "Crafting",
+    "type": "Craft",
+    "tags": ["Adrenaline Ampul", "Lege spuit", "Alcohol Doekje", "Geld"],
+    "icon": "",
+    "materials": ["1x Adrenaline Ampul", "1x Lege spuit", "2x Alcohol Doekje", "3000x Geld"]
   }
 ]
