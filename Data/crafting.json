@@ -5,10 +5,7 @@
     "type": "Zwerver Tafel",
     "tags": ["Lege Fles", "Rotte Appel"],
     "icon": "",
-    "materials": [
-      { "name": "Lege Fles", "amount": 1 },
-      { "name": "Rotte Appel", "amount": 3 }
-    ]
+    "materials": ["1x Lege Fles", "3x Rotte Appel"]
   },
     {
     "name": "Hobo Azijn",
