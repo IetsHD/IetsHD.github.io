@@ -1,9 +1,0 @@
-[
-  {
-    "name": "Iron Ingot",
-    "category": "Smelting",
-    "type": "Metal",
-    "icon": "⬛",
-    "materials": ["Iron Ore", "Coal"]
-  }
-]
