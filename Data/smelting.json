@@ -1,0 +1,13 @@
+[
+  {
+    "name": "Hobo Azijn 4",
+    "category": "Crafting",
+    "type": "Zwerver Tafel",
+    "icon": "",
+    "materials": [
+      { "name": "Lege Fles", "amount": 1 },
+      { "name": "NRotte Appel", "amount": 3 }
+    ],
+    "tags": ["Lege Fles", "Rotte Appel"]
+  }
+]
