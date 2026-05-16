@@ -140,3 +140,25 @@ select {
   padding: 8px 12px;
   border-radius: 8px;
 }
+
+.calculator-box {
+  grid-column: 1 / -1;
+  background: #081425;
+  border: 1px solid #2a3952;
+  border-radius: 14px;
+  padding: 24px;
+}
+
+.calculator-result {
+  margin-top: 20px;
+}
+
+.material-row {
+  display: flex;
+  justify-content: space-between;
+  background: #101c30;
+  border: 1px solid #24324a;
+  padding: 12px 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
