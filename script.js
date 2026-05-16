@@ -1,8 +1,8 @@
 const categories = [
-  { name: "Crafting", icon: "⚒️", file: "data/crafting.json" },
-  { name: "Recycling", icon: "♻️", file: "data/recycling.json" },
-  { name: "Smelting", icon: "🔥", file: "data/smelting.json" },
-  { name: "Jewelry", icon: "💍", file: "data/jewelry.json" }
+  { name: "Crafting", icon: "⚒️", file: "Data/crafting.json" },
+  { name: "Recycling", icon: "♻️", file: "Data/recycling.json" },
+  { name: "Smelting", icon: "🔥", file: "Data/smelting.json" },
+  { name: "Jewelry", icon: "💍", file: "Data/jewelry.json" }
 ];
 
 let items = [];
