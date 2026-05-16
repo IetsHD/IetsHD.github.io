@@ -202,19 +202,6 @@ function renderItems() {
         </div>
       </div>
 
-      ${
-        item.tags && item.tags.length > 0
-          ? `
-            <p>Tags:</p>
-            <div class="materials">
-              ${item.tags.map(tag => `
-                <span class="material">${tag}</span>
-              `).join("")}
-            </div>
-          `
-          : ""
-      }
-
       <p>Materialen voor ${craftAmount}x:</p>
 
       <div class="materials">
