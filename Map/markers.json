@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Paleto Bay",
+    "x": 958,
+    "y": 259,
+    "description": "Voorbeeldmarker aan de noordkant van de kaart"
+  },
+  {
+    "name": "Sandy Shores",
+    "x": 1257,
+    "y": 774,
+    "description": "Voorbeeldmarker bij Sandy Shores"
+  },
+  {
+    "name": "Downtown Los Santos",
+    "x": 982,
+    "y": 1529,
+    "description": "Voorbeeldmarker in de stad"
+  },
+  {
+    "name": "Los Santos International Airport",
+    "x": 820,
+    "y": 1788,
+    "description": "Voorbeeldmarker bij het vliegveld"
+  }
+]

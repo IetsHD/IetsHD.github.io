@@ -3,48 +3,31 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Interactieve Map</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Interactieve kaart</title>
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="topbar">
-    <div>
-      <h1>Interactieve map</h1>
-      <p>Markers staan in <code>markers.js</code>. Beweeg over de kaart voor live coördinaten.</p>
-    </div>
-    <label class="search">
-      <span>Zoeken</span>
-      <input id="searchInput" type="search" placeholder="Zoek marker..." />
-    </label>
-  </header>
+  <aside class="panel">
+    <h1>Interactieve kaart</h1>
+    <p>
+      Markers worden geladen uit <code>markers.json</code>. Klik op een marker om de naam te zien.
+    </p>
+    <p class="hint">
+      Tip: klik op de kaart om de x/y-coördinaten te tonen. Gebruik die waarden in <code>markers.json</code>.
+    </p>
+    <div id="status">Markers laden...</div>
+    <h2>Markers</h2>
+    <div id="markerList" class="marker-list"></div>
+  </aside>
 
-  <main>
-    <aside class="sidebar">
-      <h2>Markers</h2>
-      <div id="markerList" class="marker-list"></div>
-    </aside>
+  <main id="map" aria-label="Interactieve kaart"></main>
 
-    <section class="map-panel">
-      <div class="controls" aria-label="Map bediening">
-        <button id="zoomIn" type="button">+</button>
-        <button id="zoomOut" type="button">−</button>
-        <button id="resetMap" type="button">Reset</button>
-      </div>
-
-      <div id="coordinateBox" class="coordinate-box" aria-live="polite">
-        x: -, y: -
-      </div>
-
-      <div id="mapViewport" class="map-viewport">
-        <div id="mapContent" class="map-content">
-          <img id="mapImage" src="map.png" alt="Map" draggable="false" />
-          <div id="markerLayer" class="marker-layer"></div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <script src="markers.js"></script>
-  <script src="script.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>

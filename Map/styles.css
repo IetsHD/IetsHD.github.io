@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #17212b;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  background: #f3f6f8;
+}
+
+.panel {
+  z-index: 1000;
+  padding: 18px;
+  background: rgba(255, 255, 255, 0.96);
+  border-right: 1px solid #d9e1e8;
+  overflow: auto;
+}
+
+.panel h1 {
+  margin: 0 0 10px;
+  font-size: 22px;
+}
+
+.panel h2 {
+  margin: 20px 0 10px;
+  font-size: 16px;
+}
+
+.panel p {
+  line-height: 1.45;
+}
+
+code {
+  padding: 2px 5px;
+  background: #edf2f7;
+  border-radius: 5px;
+}
+
+.hint,
+#status {
+  font-size: 14px;
+  color: #53616f;
+}
+
+.marker-list {
+  display: grid;
+  gap: 8px;
+}
+
+.marker-button {
+  width: 100%;
+  padding: 10px 12px;
+  text-align: left;
+  background: #ffffff;
+  border: 1px solid #d9e1e8;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.marker-button:hover,
+.marker-button:focus {
+  outline: none;
+  border-color: #2a7de1;
+}
+
+#map {
+  width: 100%;
+  height: 100vh;
+  background: #17a6c1;
+}
+
+.leaflet-container {
+  font: inherit;
+}
+
+.popup-title {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 16px;
+}
+
+.popup-meta {
+  color: #53616f;
+  font-size: 12px;
+}
+
+.coord-snippet {
+  margin-top: 8px;
+  padding: 8px;
+  background: #f6f8fa;
+  border-radius: 8px;
+  white-space: pre-wrap;
+  font-size: 12px;
+}
+
+@media (max-width: 800px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+  }
+
+  .panel {
+    max-height: 42vh;
+    border-right: 0;
+    border-bottom: 1px solid #d9e1e8;
+  }
+
+  #map {
+    height: 58vh;
+  }
+}
