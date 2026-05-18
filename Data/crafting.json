@@ -6,7 +6,7 @@
     "icon": "",
     "materials": [
       { "name": "Lege Fles", "amount": 1 },
-      { "name": "NRotte Appel", "amount": 3 }
+      { "name": "Rotte Appel", "amount": 3 }
     ],
     "tags": ["Lege Fles", "Rotte Appel"]
   }
