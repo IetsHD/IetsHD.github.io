@@ -13,51 +13,51 @@
 
 const MAP_MARKERS = [
   {
-    id: "airport",
-    title: "Los Santos International Airport",
-    type: "Transport",
-    x: 690,
-    y: 1810,
-    description: "Vliegveld onderaan de kaart."
+    id: "Pado_Verwerk",
+    title: "Verwerktafel Pado's",
+    type: "Verwerk",
+    x: 816,
+    y: 459,
+    description: "Lift gebouw inlopen."
   },
   {
-    id: "port",
-    title: "Port of South Los Santos",
-    type: "Haven",
+    id: "Wiet_Pluk",
+    title: "Wiet Pluk",
+    type: "Pluk",
     x: 1115,
     y: 1810,
-    description: "Havengebied aan de zuidkant van Los Santos."
+    description: "Links van het Hobo kampje."
   },
   {
-    id: "downtown",
-    title: "Downtown Los Santos",
-    type: "Stad",
-    x: 900,
-    y: 1530,
-    description: "Centrum van de stad."
+    id: "Coke_Verwerk",
+    title: "Verwerktafel Coke",
+    type: "Verwerk",
+    x: 1342,
+    y: 559,
+    description: "In het huis in de basement."
   },
   {
-    id: "sandy-shores",
-    title: "Sandy Shores",
-    type: "Dorp",
-    x: 1250,
-    y: 735,
-    description: "Plaats aan de zuidkant van de Alamo Sea."
+    id: "Poppy_Pluk",
+    title: "Poppy Pluk",
+    type: "Pluk",
+    x: 991,
+    y: 674,
+    description: "Onder richting het water."
   },
   {
-    id: "paleto-bay",
-    title: "Paleto Bay",
-    type: "Dorp",
-    x: 960,
-    y: 255,
-    description: "Plaats in het noorden van de map."
+    id: "Poppy_Verwerk",
+    title: "Verwerktafel Poppy",
+    type: "Verwerk",
+    x: 745,
+    y: 1466,
+    description: "In de filmstudio en dan op een klein dakje."
   },
   {
-    id: "military-base",
-    title: "Fort Zancudo",
-    type: "Basis",
-    x: 540,
-    y: 835,
-    description: "Militaire basis aan de westkant van de map."
+    id: "Wiet_Verwerk",
+    title: "Verwerktafel Wiet",
+    type: "Verwerk",
+    x: 938,
+    y: 1678,
+    description: "BIj het gebouw de trap op."
   }
 ];
