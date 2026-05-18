@@ -15,7 +15,7 @@ const map = L.map("map", {
   attributionControl: false
 });
 
-const bounds = [[0, 0], [MAP_HEIGHT, MAP_WIDTH]];
+const bounds = [[2048, 2048], [MAP_HEIGHT, MAP_WIDTH]];
 
 L.imageOverlay(MAP_IMAGE, bounds).addTo(map);
 map.fitBounds(bounds);
