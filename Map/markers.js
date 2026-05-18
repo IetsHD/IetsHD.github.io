@@ -4,8 +4,8 @@ const STORAGE_KEY = "gta-map-app-markers-v1";
 const MAP_IMAGE = "Map.png";
 
 // Afmetingen van de meegeleverde kaart.
-const MAP_WIDTH = 1536;
-const MAP_HEIGHT = 1536;
+const MAP_WIDTH = 2048;
+const MAP_HEIGHT = 2048;
 
 const map = L.map("map", {
   crs: L.CRS.Simple,
