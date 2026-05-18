@@ -28,7 +28,8 @@ const markerList = document.querySelector("#markerList");
 const searchInput = document.querySelector("#searchInput");
 
 function xyToLatLng(x, y) {
-  return [y, x];
+  // Leaflet gebruikt y=0 onderaan, terwijl pixelcoördinaten y=0 bovenaan starten.
+  return [IMAGE_HEIGHT - y, x];
 }
 
 function markerPopup(marker) {
@@ -91,7 +92,8 @@ searchInput.addEventListener("input", (event) => {
 // Klik op de map om pixelcoördinaten voor nieuwe markers te vinden.
 map.on("click", (event) => {
   const x = Math.round(event.latlng.lng);
-  const y = Math.round(event.latlng.lat);
+  const y = Math.round(IMAGE_HEIGHT - event.latlng.lat);
+
   console.log(`Marker positie: x: ${x}, y: ${y}`);
 });
 
