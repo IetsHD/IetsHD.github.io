@@ -17,7 +17,7 @@ const MAP_MARKERS = [
     title: "Verwerktafel Pado's",
     type: "Verwerk",
     x: 817,
-    y: 443,
+    y: 451,
     description: "Lift gebouw inlopen."
   },
   {
