@@ -16,8 +16,8 @@ const MAP_MARKERS = [
     id: "Pado_Verwerk",
     title: "Verwerktafel Pado's",
     type: "Verwerk",
-    x: 816,
-    y: 459,
+    x: 817,
+    y: 443,
     description: "Lift gebouw inlopen."
   },
   {
@@ -40,8 +40,8 @@ const MAP_MARKERS = [
     id: "Poppy_Pluk",
     title: "Poppy Pluk",
     type: "Pluk",
-    x: 991,
-    y: 674,
+    x: 978,
+    y: 652,
     description: "Onder richting het water."
   },
   {
