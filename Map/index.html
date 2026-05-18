@@ -10,7 +10,7 @@
   <header class="topbar">
     <div>
       <h1>Interactieve map</h1>
-      <p>Markers staan in <code>markers.js</code>. Klik op de kaart om coördinaten te zien.</p>
+      <p>Markers staan in <code>markers.js</code>. Beweeg over de kaart voor live coördinaten.</p>
     </div>
     <label class="search">
       <span>Zoeken</span>
@@ -29,6 +29,10 @@
         <button id="zoomIn" type="button">+</button>
         <button id="zoomOut" type="button">−</button>
         <button id="resetMap" type="button">Reset</button>
+      </div>
+
+      <div id="coordinateBox" class="coordinate-box" aria-live="polite">
+        x: -, y: -
       </div>
 
       <div id="mapViewport" class="map-viewport">

@@ -9,6 +9,7 @@ const searchInput = document.querySelector("#searchInput");
 const zoomInButton = document.querySelector("#zoomIn");
 const zoomOutButton = document.querySelector("#zoomOut");
 const resetButton = document.querySelector("#resetMap");
+const coordinateBox = document.querySelector("#coordinateBox");
 
 let scale = 1;
 let offsetX = 0;
@@ -154,14 +155,32 @@ function renderMarkers(filter = "") {
   });
 }
 
-function viewportToImage(clientX, clientY) {
+function viewportToImage(clientX, clientY, clamp = true) {
   const rect = viewport.getBoundingClientRect();
   const x = Math.round((clientX - rect.left - offsetX) / scale);
   const y = Math.round((clientY - rect.top - offsetY) / scale);
+
+  if (!clamp) return { x, y };
+
   return {
     x: Math.max(0, Math.min(IMAGE_WIDTH, x)),
     y: Math.max(0, Math.min(IMAGE_HEIGHT, y))
   };
+}
+
+function updateCoordinateBox(clientX, clientY) {
+  const position = viewportToImage(clientX, clientY, false);
+  const isInsideMap =
+    position.x >= 0 && position.x <= IMAGE_WIDTH &&
+    position.y >= 0 && position.y <= IMAGE_HEIGHT;
+
+  coordinateBox.textContent = `x: ${position.x}, y: ${position.y}`;
+  coordinateBox.classList.toggle("outside", !isInsideMap);
+}
+
+function clearCoordinateBox() {
+  coordinateBox.textContent = "x: -, y: -";
+  coordinateBox.classList.add("outside");
 }
 
 viewport.addEventListener("mousedown", (event) => {
@@ -174,16 +193,29 @@ viewport.addEventListener("mousedown", (event) => {
 });
 
 window.addEventListener("mousemove", (event) => {
+  if (event.target.closest && event.target.closest("#mapViewport")) {
+    updateCoordinateBox(event.clientX, event.clientY);
+  }
+
   if (!isDragging) return;
   offsetX = startOffsetX + event.clientX - dragStartX;
   offsetY = startOffsetY + event.clientY - dragStartY;
   clampOffsets();
   applyTransform();
+  updateCoordinateBox(event.clientX, event.clientY);
 });
 
 window.addEventListener("mouseup", () => {
   isDragging = false;
   viewport.classList.remove("dragging");
+});
+
+viewport.addEventListener("mousemove", (event) => {
+  updateCoordinateBox(event.clientX, event.clientY);
+});
+
+viewport.addEventListener("mouseleave", () => {
+  if (!isDragging) clearCoordinateBox();
 });
 
 viewport.addEventListener("wheel", (event) => {
@@ -208,3 +240,4 @@ window.addEventListener("resize", resetMap);
 
 renderMarkers();
 resetMap();
+clearCoordinateBox();
