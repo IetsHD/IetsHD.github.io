@@ -3,72 +3,84 @@
   "name": "Wiet Pluk",
   "x": 1155,
   "y": 321,
-  "description": "Requirement: Planten kennis 0"
+  "description": "Requirement: Planten kennis 0",
+  "color": "green"
   },
   {
   "name": "Coke Pluk",
   "x": 713,
   "y": 653,
-  "description": "Requirement: Planten kennis 4"
+  "description": "Requirement: Planten kennis 4",
+  "color": "green"
   },
   {
   "name": "Paddo Pluk",
   "x": 1199,
   "y": 1824,
-  "description": "Requirement: Planten kennis 5"
+  "description": "Requirement: Planten kennis 5",
+  "color": "green"
   },
   {
   "name": "Poppy Pluk",
   "x": 990,
   "y": 672,
-  "description": "Requirement: Planten kennis 6"
+  "description": "Requirement: Planten kennis 6",
+  "color": "green"
   },
   {
   "name": "Wiet Verwerk",
   "x": 939,
   "y": 1679,
-  "description": "Requirement: chemische kennis 0"
+  "description": "Requirement: chemische kennis 0",
+  "color": "red"
 },
 {
   "name": "Coke Verwerk",
   "x": 1342,
   "y": 561,
-  "description": "Requirement: chemische kennis 4"
+  "description": "Requirement: chemische kennis 4",
+  "color": "red"
 },
 {
   "name": "Paddo Verwerk",
   "x": 817,
   "y": 460,
-  "description": "Requirement: chemische kennis 5"
+  "description": "Requirement: chemische kennis 5",
+  "color": "red"
 },
 {
   "name": "Poppy Verwerk",
   "x": 747,
   "y": 1465,
-  "description": "Requirement: chemische kennis 6"
+  "description": "Requirement: chemische kennis 6",
+  "color": "red"
 },
 {
   "name": "Repair Tafel",
   "x": 1169,
   "y": 1745,
-  "description": "Requirement: Crafting 5"
+  "description": "Requirement: Crafting 5",
+  "color": "red"
 },
 {
   "name": "Craft / Refine",
   "x": 1192,
   "y": 790,
-  "description": "Requirement: Crafting 0"
+  "description": "Requirement: Crafting 0",
+  "color": "blue"
 },
 {
   "name": "Weapon Craft",
   "x": 1105,
   "y": 1640,
-  "description": "Requirement: Crafting 0"
+  "description": "Requirement: Crafting 0",
+  "color": "blue"
 },
 {
   "name": "Zwerver Craft",
   "x": 1038,
   "y": 1457,
-  "description": "Requirement: Crafting 0"
+  "description": "Requirement: Crafting 0",
+  "color": "blue"
 }
 ]
