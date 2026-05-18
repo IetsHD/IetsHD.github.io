@@ -1,26 +1,74 @@
 [
   {
-  "name": "Pado Verwerk",
-  "x": 817,
-  "y": 460,
-  "description": "Verwerktafel voor de pado's."
-},
+  "name": "Wiet Pluk",
+  "x": 1155,
+  "y": 321,
+  "description": "Requirement: Planten kennis 0"
+  },
   {
-  "name": "Coke Verwerk",
-  "x": 1342,
-  "y": 561,
-  "description": "Verwerktafel voor de coke."
-},
+  "name": "Coke Pluk",
+  "x": 713,
+  "y": 653,
+  "description": "Requirement: Planten kennis 4"
+  },
   {
-  "name": "Poppy Verwerk",
-  "x": 747,
-  "y": 1465,
-  "description": "Verwerktafel voor de poppy's."
-},
+  "name": "Paddo Pluk",
+  "x": 1199,
+  "y": 1824,
+  "description": "Requirement: Planten kennis 5"
+  },
+  {
+  "name": "Poppy Pluk",
+  "x": 990,
+  "y": 672,
+  "description": "Requirement: Planten kennis 6"
+  },
   {
   "name": "Wiet Verwerk",
   "x": 939,
   "y": 1679,
-  "description": "Verwerktafel voor de wiet."
+  "description": "Requirement: chemische kennis 0"
+},
+{
+  "name": "Coke Verwerk",
+  "x": 1342,
+  "y": 561,
+  "description": "Requirement: chemische kennis 4"
+},
+{
+  "name": "Paddo Verwerk",
+  "x": 817,
+  "y": 460,
+  "description": "Requirement: chemische kennis 5"
+},
+{
+  "name": "Poppy Verwerk",
+  "x": 747,
+  "y": 1465,
+  "description": "Requirement: chemische kennis 6"
+},
+{
+  "name": "Repair Tafel",
+  "x": 1169,
+  "y": 1745,
+  "description": "Requirement: Crafting 5"
+},
+{
+  "name": "Craft / Refine",
+  "x": 1192,
+  "y": 790,
+  "description": "Requirement: Crafting 0"
+},
+{
+  "name": "Weapon Craft",
+  "x": 1105,
+  "y": 1640,
+  "description": "Requirement: Crafting 0"
+},
+{
+  "name": "Zwerver Craft",
+  "x": 1038,
+  "y": 1457,
+  "description": "Requirement: Crafting 0"
 }
 ]
