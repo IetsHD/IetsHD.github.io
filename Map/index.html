@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Interactieve GTA Map</title>
+
+  <!-- Leaflet voor de interactieve kaart -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIINfQn+COUccxYAgqLOM4j7V+9xM40gWeM="
+    crossorigin=""
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>Interactieve map</h1>
+      <p>Markers staan in <code>markers.js</code>. Klik op een marker voor details.</p>
+    </div>
+    <label class="search">
+      <span>Zoeken</span>
+      <input id="searchInput" type="search" placeholder="Bijv. vliegveld, haven..." />
+    </label>
+  </header>
+
+  <main>
+    <aside class="sidebar">
+      <h2>Markers</h2>
+      <div id="markerList" class="marker-list"></div>
+    </aside>
+    <section id="map" aria-label="Interactieve kaart"></section>
+  </main>
+
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""
+  ></script>
+  <script src="markers.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
