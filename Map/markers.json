@@ -1,26 +1,26 @@
 [
   {
-    "name": "Paleto Bay",
-    "x": 958,
-    "y": 259,
-    "description": "Voorbeeldmarker aan de noordkant van de kaart"
-  },
+  "name": "Pado Verwerk",
+  "x": 817,
+  "y": 460,
+  "description": "Verwerktafel voor de pado's."
+},
   {
-    "name": "Sandy Shores",
-    "x": 1257,
-    "y": 774,
-    "description": "Voorbeeldmarker bij Sandy Shores"
-  },
+  "name": "Coke Verwerk",
+  "x": 1342,
+  "y": 561,
+  "description": "Verwerktafel voor de coke."
+},
   {
-    "name": "Downtown Los Santos",
-    "x": 982,
-    "y": 1529,
-    "description": "Voorbeeldmarker in de stad"
-  },
+  "name": "Poppy Verwerk",
+  "x": 747,
+  "y": 1465,
+  "description": "Verwerktafel voor de poppy's."
+},
   {
-    "name": "Los Santos International Airport",
-    "x": 820,
-    "y": 1788,
-    "description": "Voorbeeldmarker bij het vliegveld"
-  }
+  "name": "Wiet Verwerk",
+  "x": 939,
+  "y": 1679,
+  "description": "Verwerktafel voor de wiet."
+}
 ]
