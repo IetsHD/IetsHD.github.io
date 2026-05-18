@@ -4,14 +4,11 @@
   x en y zijn pixelcoördinaten op de afbeelding map.png.
   De afbeelding is 2048 x 2048 pixels.
 
-  Belangrijk:
-  - x = afstand vanaf de linkerkant
-  - y = afstand vanaf de bovenkant
+  x = afstand vanaf de linkerkant
+  y = afstand vanaf de bovenkant
 
-  Tip om een nieuwe locatie te bepalen:
-  - Open de map in de browser.
-  - Klik op een plek op de kaart.
-  - In de console verschijnt de x/y positie die je kunt overnemen.
+  Tip:
+  Open de map, klik op een plek, en kopieer de x/y uit de melding of console.
 */
 
 const MAP_MARKERS = [
