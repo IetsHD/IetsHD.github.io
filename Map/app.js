@@ -1,6 +1,10 @@
 const IMAGE_URL = "map.png";
 const MARKERS_URL = "markers.json";
 
+const DEFAULT_MARKER_COLOR = "#e74c3c";
+const DEFAULT_COLOR_MARKER_SIZE = [30, 42];
+const DEFAULT_CUSTOM_ICON_SIZE = [36, 36];
+
 function escapeHtml(value) {
   return String(value)
     .replaceAll("&", "&amp;")
@@ -17,6 +21,83 @@ function loadImageSize(src) {
     img.onerror = () => reject(new Error(`Kan afbeelding niet laden: ${src}`));
     img.src = src;
   });
+}
+
+function normalizeIconSize(value) {
+  if (
+    Array.isArray(value) &&
+    value.length === 2 &&
+    Number.isFinite(value[0]) &&
+    Number.isFinite(value[1])
+  ) {
+    return value;
+  }
+
+  return DEFAULT_CUSTOM_ICON_SIZE;
+}
+
+function getMarkerColor(marker) {
+  const rawColor = typeof marker.color === "string"
+    ? marker.color
+    : typeof marker.markerColor === "string"
+      ? marker.markerColor
+      : DEFAULT_MARKER_COLOR;
+
+  const color = rawColor.trim();
+
+  // Voorkomt dat onveilige tekst in het style-attribuut terechtkomt.
+  const hasUnsafeCharacters = /[;"'<>\\]/.test(color);
+
+  if (
+    color &&
+    !hasUnsafeCharacters &&
+    typeof CSS !== "undefined" &&
+    typeof CSS.supports === "function" &&
+    CSS.supports("color", color)
+  ) {
+    return color;
+  }
+
+  return DEFAULT_MARKER_COLOR;
+}
+
+function createColoredMarkerIcon(marker) {
+  const color = getMarkerColor(marker);
+
+  return L.divIcon({
+    className: "colored-map-icon",
+    html: `<span class="map-pin" style="--marker-color: ${color};"></span>`,
+    iconSize: DEFAULT_COLOR_MARKER_SIZE,
+    iconAnchor: [DEFAULT_COLOR_MARKER_SIZE[0] / 2, DEFAULT_COLOR_MARKER_SIZE[1]],
+    popupAnchor: [0, -DEFAULT_COLOR_MARKER_SIZE[1]]
+  });
+}
+
+function createImageMarkerIcon(marker) {
+  const iconSize = normalizeIconSize(marker.iconSize);
+  const iconAnchor = Array.isArray(marker.iconAnchor)
+    ? marker.iconAnchor
+    : [iconSize[0] / 2, iconSize[1]];
+  const popupAnchor = Array.isArray(marker.popupAnchor)
+    ? marker.popupAnchor
+    : [0, -iconSize[1]];
+
+  return L.icon({
+    iconUrl: marker.icon,
+    iconSize,
+    iconAnchor,
+    popupAnchor,
+    className: marker.iconClass || "custom-map-icon"
+  });
+}
+
+function createMarkerIcon(marker) {
+  // Optioneel: als je toch een eigen icon-afbeelding gebruikt, krijgt die voorrang.
+  if (marker.icon && typeof marker.icon === "string") {
+    return createImageMarkerIcon(marker);
+  }
+
+  return createColoredMarkerIcon(marker);
 }
 
 async function loadMarkers() {
@@ -40,11 +121,46 @@ function createPopupHtml(marker) {
     ? `<p>${escapeHtml(marker.description)}</p>`
     : "";
 
+  const icon = marker.icon
+    ? `<div class="popup-meta">Icon: ${escapeHtml(marker.icon)}</div>`
+    : "";
+
+  const color = getMarkerColor(marker);
+
   return `
     <strong class="popup-title">${escapeHtml(marker.name)}</strong>
     ${description}
+    ${icon}
+    <div class="popup-meta">Kleur: ${escapeHtml(color)}</div>
     <div class="popup-meta">x: ${Math.round(marker.x)}, y: ${Math.round(marker.y)}</div>
   `;
+}
+
+function createMarkerListButton(marker, onClick) {
+  const button = document.createElement("button");
+  button.className = "marker-button";
+  button.type = "button";
+  button.addEventListener("click", onClick);
+
+  if (marker.icon) {
+    const img = document.createElement("img");
+    img.className = "marker-button-icon";
+    img.src = marker.icon;
+    img.alt = "";
+    img.loading = "lazy";
+    button.appendChild(img);
+  } else {
+    const colorDot = document.createElement("span");
+    colorDot.className = "marker-color-dot";
+    colorDot.style.setProperty("--marker-color", getMarkerColor(marker));
+    button.appendChild(colorDot);
+  }
+
+  const label = document.createElement("span");
+  label.textContent = marker.name;
+  button.appendChild(label);
+
+  return button;
 }
 
 async function initMap() {
@@ -81,16 +197,13 @@ async function initMap() {
 
     markers.forEach((marker) => {
       const leafletMarker = L.marker(toLatLng(marker.x, marker.y), {
-        title: marker.name
+        title: marker.name,
+        icon: createMarkerIcon(marker)
       })
         .addTo(markerLayer)
         .bindPopup(createPopupHtml(marker));
 
-      const button = document.createElement("button");
-      button.className = "marker-button";
-      button.type = "button";
-      button.textContent = marker.name;
-      button.addEventListener("click", () => {
+      const button = createMarkerListButton(marker, () => {
         map.setView(toLatLng(marker.x, marker.y), Math.max(map.getZoom(), 0.5));
         leafletMarker.openPopup();
       });
@@ -105,7 +218,8 @@ async function initMap() {
   "name": "Nieuwe marker",
   "x": ${x},
   "y": ${y},
-  "description": ""
+  "description": "",
+  "color": "#e74c3c"
 }`;
 
       try {

@@ -1,4 +1,4 @@
-# Interactieve kaart met GitHub Pages
+# Interactieve kaart met markerkleuren
 
 Deze map bevat een statische interactieve kaart die geschikt is voor GitHub Pages.
 
@@ -6,7 +6,7 @@ Deze map bevat een statische interactieve kaart die geschikt is voor GitHub Page
 
 - `index.html` — de pagina
 - `app.js` — laadt de kaart, afbeelding en markers
-- `styles.css` — opmaak
+- `styles.css` — opmaak, inclusief de gekleurde marker
 - `map.png` — jouw kaartafbeelding
 - `markers.json` — markerdata
 
@@ -14,7 +14,7 @@ Deze map bevat een statische interactieve kaart die geschikt is voor GitHub Page
 
 `markers.json` gebruikt x/y-coördinaten in pixels vanaf linksboven op de afbeelding.
 
-Voorbeeld:
+Per marker stel je de kleur in met `color`:
 
 ```json
 [
@@ -22,12 +22,73 @@ Voorbeeld:
     "name": "Mijn marker",
     "x": 958,
     "y": 259,
-    "description": "Optionele tekst"
+    "description": "Optionele tekst",
+    "color": "#e74c3c"
   }
 ]
 ```
 
+Je kunt hexkleuren gebruiken, zoals:
+
+```json
+"color": "#e74c3c"
+```
+
+Maar gewone CSS-kleurnamen werken ook, bijvoorbeeld:
+
+```json
+"color": "red"
+```
+
+Of rgb:
+
+```json
+"color": "rgb(52, 152, 219)"
+```
+
+Laat je `color` weg, dan gebruikt de kaart standaard rood.
+
 Klik in de webpagina op de kaart om de x/y-coördinaten van dat punt te zien. Je kunt het getoonde JSON-object kopiëren naar `markers.json`.
+
+## Voorbeeld meerdere kleuren
+
+```json
+[
+  {
+    "name": "Politie",
+    "x": 1000,
+    "y": 1200,
+    "color": "#3498db"
+  },
+  {
+    "name": "Ambulance",
+    "x": 1100,
+    "y": 1300,
+    "color": "#2ecc71"
+  },
+  {
+    "name": "Brandweer",
+    "x": 900,
+    "y": 1250,
+    "color": "#e74c3c"
+  }
+]
+```
+
+## Optioneel: eigen icon-afbeelding
+
+De code ondersteunt nog steeds eigen icon-afbeeldingen. Als je `icon` invult, krijgt die afbeelding voorrang op de gekleurde marker:
+
+```json
+{
+  "name": "Vliegveld",
+  "x": 820,
+  "y": 1788,
+  "color": "#9b59b6",
+  "icon": "icons/airport.svg",
+  "iconSize": [36, 36]
+}
+```
 
 ## Lokaal testen
 
