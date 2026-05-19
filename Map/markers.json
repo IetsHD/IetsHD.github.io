@@ -31,28 +31,28 @@
   "name": "Wiet Verwerk",
   "x": 939,
   "y": 1679,
-  "description": "Requirement: chemische kennis 0",
+  "description": "Requirement: Chemische kennis 0",
   "color": "red"
 },
 {
   "name": "Coke Verwerk",
   "x": 1342,
   "y": 561,
-  "description": "Requirement: chemische kennis 4",
+  "description": "Requirement: Chemische kennis 4",
   "color": "red"
 },
 {
   "name": "Paddo Verwerk",
   "x": 817,
   "y": 460,
-  "description": "Requirement: chemische kennis 5",
+  "description": "Requirement: Chemische kennis 5",
   "color": "red"
 },
 {
   "name": "Poppy Verwerk",
   "x": 747,
   "y": 1465,
-  "description": "Requirement: chemische kennis 6",
+  "description": "Requirement: Chemische kennis 6",
   "color": "red"
 },
 {
@@ -82,5 +82,12 @@
   "y": 1457,
   "description": "Requirement: Crafting 0",
   "color": "blue"
+},
+{
+  "name": "Fishing: Priatecove",
+  "x": 1446,
+  "y": 1036,
+  "description": "Requirement: Fishing 4",
+  "color": "lightblue"
 }
 ]
