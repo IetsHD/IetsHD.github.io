@@ -1,148 +1,148 @@
 [
   {
   "name": "Wiet Pluk",
-  "x": 1155,
-  "y": 321,
+  "x": 4620,
+  "y": 1279,
   "description": "Requirement: Planten kennis 0",
   "color": "green"
   },
   {
   "name": "Coke Pluk",
-  "x": 713,
-  "y": 653,
+  "x": 2860,
+  "y": 2610,
   "description": "Requirement: Planten kennis 4",
   "color": "green"
   },
   {
   "name": "Paddo Pluk",
-  "x": 1199,
-  "y": 1824,
+  "x": 4811,
+  "y": 7297,
   "description": "Requirement: Planten kennis 5",
   "color": "green"
   },
   {
   "name": "Poppy Pluk",
-  "x": 990,
-  "y": 672,
+  "x": 3964,
+  "y": 2683,
   "description": "Requirement: Planten kennis 6",
   "color": "green"
   },
   {
   "name": "Wiet Verwerk",
-  "x": 939,
-  "y": 1679,
+  "x": 3756,
+  "y": 6718,
   "description": "Requirement: Chemische kennis 0",
   "color": "red"
 },
 {
   "name": "Coke Verwerk",
-  "x": 1342,
-  "y": 561,
+  "x": 5369,
+  "y": 2241,
   "description": "Requirement: Chemische kennis 4",
   "color": "red"
 },
 {
   "name": "Paddo Verwerk",
-  "x": 817,
-  "y": 460,
+  "x": 3267,
+  "y": 1831,
   "description": "Requirement: Chemische kennis 5",
   "color": "red"
 },
 {
   "name": "Poppy Verwerk",
-  "x": 747,
-  "y": 1465,
+  "x": 2973,
+  "y": 5863,
   "description": "Requirement: Chemische kennis 6",
   "color": "red"
 },
 {
   "name": "Repair Tafel",
-  "x": 1169,
-  "y": 1745,
+  "x": 4671,
+  "y": 6980,
   "description": "Requirement: Crafting 5",
   "color": "blue"
 },
 {
   "name": "Craft / Refine",
-  "x": 1192,
-  "y": 790,
+  "x": 4769,
+  "y": 3158,
   "description": "Requirement: Crafting 0",
   "color": "blue"
 },
 {
   "name": "Weapon Craft",
-  "x": 1105,
-  "y": 1640,
+  "x": 4418,
+  "y": 6562,
   "description": "Requirement: Crafting 0",
   "color": "blue"
 },
 {
   "name": "Zwerver Craft",
-  "x": 1038,
-  "y": 1457,
+  "x": 4153,
+  "y": 5828,
   "description": "Requirement: Crafting 0",
   "color": "blue"
 },
 {
   "name": "Fishing BP",
-  "x": 972,
-  "y": 1526,
+  "x": 3884,
+  "y": 6093,
   "description": "Requirement: Fishing 0",
   "color": "lightblue"
 },
 {
   "name": "Fishing: Casidy Greek",
-  "x": 837,
-  "y": 652,
+  "x": 3238,
+  "y": 2599,
   "description": "Requirement: Fishing 1",
   "color": "lightblue"
 },
 {
   "name": "Fishing: Pier",
-  "x": 649,
-  "y": 1569,
+  "x": 2593,
+  "y": 6284,
   "description": "Requirement: Fishing 3",
   "color": "lightblue"
 },
 {
   "name": "Fishing: Priatecove",
-  "x": 1446,
-  "y": 1036,
+  "x": 5786,
+  "y": 4155,
   "description": "Requirement: Fishing 4",
   "color": "lightblue"
 },
 {
   "name": "Fishing: Hobo",
-  "x": 912,
-  "y": 682,
+  "x": 3648,
+  "y": 2726,
   "description": "Requirement: Fishing 5",
   "color": "lightblue"
 },
 {
   "name": "Verkoop: Illegale vis",
-  "x": 1212,
-  "y": 1379,
+  "x": 4846,
+  "y": 5518,
   "description": "Verkoop punt voor illegale vis",
   "color": "yellow"
 },
 {
   "name": "Verkoop: Huisjes",
-  "x": 1124,
-  "y": 1511,
+  "x": 4500,
+  "y": 6039,
   "description": "Verkoop punt voor loot huisjes",
   "color": "yellow"
 },
 {
   "name": "Verkoop: Vliegtuig Heist",
-  "x": 1377,
-  "y": 735,
+  "x": 5517,
+  "y": 2941,
   "description": "Verkoop punt voor de loot van de vliegtuig heist",
   "color": "yellow"
 },
 {
   "name": "Verkoop: Metaaldetector",
-  "x": 1225,
-  "y": 882,
+  "x": 4901,
+  "y": 3526,
   "description": "Verkoop punt voor de spullen van metaal detector",
   "color": "yellow"
 }
