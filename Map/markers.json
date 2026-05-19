@@ -32,28 +32,28 @@
   "x": 939,
   "y": 1679,
   "description": "Requirement: Chemische kennis 0",
-  "color": "red"
+  "color": "grey"
 },
 {
   "name": "Coke Verwerk",
   "x": 1342,
   "y": 561,
   "description": "Requirement: Chemische kennis 4",
-  "color": "red"
+  "color": "grey"
 },
 {
   "name": "Paddo Verwerk",
   "x": 817,
   "y": 460,
   "description": "Requirement: Chemische kennis 5",
-  "color": "red"
+  "color": "grey"
 },
 {
   "name": "Poppy Verwerk",
   "x": 747,
   "y": 1465,
   "description": "Requirement: Chemische kennis 6",
-  "color": "red"
+  "color": "grey"
 },
 {
   "name": "Repair Tafel",
@@ -84,10 +84,38 @@
   "color": "blue"
 },
 {
+  "name": "Fishing BP",
+  "x": 972,
+  "y": 1526,
+  "description": "Requirement: Fishing 0",
+  "color": "lightblue"
+},
+{
+  "name": "Fishing: Casidy Greek",
+  "x": 837,
+  "y": 652,
+  "description": "Requirement: Fishing 1",
+  "color": "lightblue"
+},
+{
+  "name": "Fishing: Pier",
+  "x": 649,
+  "y": 1569,
+  "description": "Requirement: Fishing 3",
+  "color": "lightblue"
+},
+{
   "name": "Fishing: Priatecove",
   "x": 1446,
   "y": 1036,
   "description": "Requirement: Fishing 4",
+  "color": "lightblue"
+},
+{
+  "name": "Fishing: Hobo",
+  "x": 912,
+  "y": 682,
+  "description": "Requirement: Fishing 5",
   "color": "lightblue"
 }
 ]
