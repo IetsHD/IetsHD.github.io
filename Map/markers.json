@@ -145,5 +145,12 @@
   "y": 3526,
   "description": "Verkoop punt voor de spullen van metaal detector",
   "color": "yellow"
+},
+{
+  "name": "Black Market",
+  "x": 2853,
+  "y": 6593,
+  "description": "Zwart geld voor nodig om te kopen",
+  "color": "black"
 }
 ]
