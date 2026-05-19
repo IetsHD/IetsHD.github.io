@@ -32,28 +32,28 @@
   "x": 939,
   "y": 1679,
   "description": "Requirement: Chemische kennis 0",
-  "color": "grey"
+  "color": "red"
 },
 {
   "name": "Coke Verwerk",
   "x": 1342,
   "y": 561,
   "description": "Requirement: Chemische kennis 4",
-  "color": "grey"
+  "color": "red"
 },
 {
   "name": "Paddo Verwerk",
   "x": 817,
   "y": 460,
   "description": "Requirement: Chemische kennis 5",
-  "color": "grey"
+  "color": "red"
 },
 {
   "name": "Poppy Verwerk",
   "x": 747,
   "y": 1465,
   "description": "Requirement: Chemische kennis 6",
-  "color": "grey"
+  "color": "red"
 },
 {
   "name": "Repair Tafel",
@@ -117,5 +117,19 @@
   "y": 682,
   "description": "Requirement: Fishing 5",
   "color": "lightblue"
+},
+{
+  "name": "Verkoop: Illegale vis",
+  "x": 1212,
+  "y": 1379,
+  "description": "Verkoop punt voor illegale vis",
+  "color": "yellow"
+},
+{
+  "name": "Verkoop: Huisjes",
+  "x": 1124,
+  "y": 1511,
+  "description": "Verkoop punt voor loot huisjes",
+  "color": "yellow"
 }
 ]
