@@ -1,5 +1,5 @@
-const IMAGE_WIDTH = 2048;
-const IMAGE_HEIGHT = 2048;
+const IMAGE_WIDTH = 8192;
+const IMAGE_HEIGHT = 8192;
 
 const viewport = document.querySelector("#mapViewport");
 const content = document.querySelector("#mapContent");
