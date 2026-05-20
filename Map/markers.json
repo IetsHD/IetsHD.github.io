@@ -147,6 +147,30 @@
   "color": "yellow"
 },
 {
+  "name": "Verkoop: Jewelry",
+  "x": 4397,
+  "y": 6318,
+  "description": "Verkooppunt voor jewelry",
+  "color": "yellow",
+  "visible": true
+},
+{
+  "name": "Verkoop: Duiken",
+  "x": 3069,
+  "y": 6440,
+  "description": "Hier kan je al je duik loot verkopen",
+  "color": "pink",
+  "visible": true
+},
+{
+  "name": "Verkoop: Krant/brieven",
+  "x": 3713,
+  "y": 5476,
+  "description": "Hier kan je kranten en belastingen brieven verkopen",
+  "color": "yellow",
+  "visible": true
+},
+{
   "name": "Black Market",
   "x": 2853,
   "y": 6593,
@@ -170,14 +194,6 @@
   "visible": true
 },
 {
-  "name": "Verkoop: Duiken",
-  "x": 3069,
-  "y": 6440,
-  "description": "Hier kan je al je duik loot verkopen",
-  "color": "pink",
-  "visible": true
-},
-{
   "name": "Boosting Shop",
   "x": 2990,
   "y": 6859,
@@ -190,7 +206,7 @@
   "x": 4504,
   "y": 6846,
   "description": "Oxy run",
-  "color": "white",
+  "color": "silver",
   "visible": true
 },
 {
@@ -210,19 +226,35 @@
   "visible": true
 },
 {
-  "name": "Verkoop: Jewelry",
-  "x": 4397,
-  "y": 6318,
-  "description": "Verkooppunt voor jewelry",
-  "color": "yellow",
-  "visible": true
-},
-{
   "name": "Witwas Easy",
   "x": 3239,
   "y": 6004,
   "description": "Makkelijke witwas punt",
-  "color": "white",
+  "color": "silver",
+  "visible": true
+},
+{
+  "name": "Startpunt: Oilrig Heist",
+  "x": 3992,
+  "y": 3268,
+  "description": "Startpunt voor de oilrig",
+  "color": "purple",
+  "visible": true
+},
+{
+  "name": "Startpunt: Vliegtuig Heist",
+  "x": 4900,
+  "y": 3339,
+  "description": "Startpunt voor de  vliegtuig heist",
+  "color": "purple",
+  "visible": true
+},
+{
+  "name": "Startpunt: Geldtruck",
+  "x": 5458,
+  "y": 4442,
+  "description": "Startpunt voor de geldtruck",
+  "color": "purple",
   "visible": true
 }
 ]
