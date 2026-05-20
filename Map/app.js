@@ -4,6 +4,7 @@ const MARKERS_URL = "markers.json";
 const DEFAULT_MARKER_COLOR = "#e74c3c";
 const DEFAULT_COLOR_MARKER_SIZE = [30, 42];
 const DEFAULT_CUSTOM_ICON_SIZE = [36, 36];
+const VISIBILITY_STORAGE_PREFIX = "interactieve-kaart-marker-zichtbaar:";
 
 function escapeHtml(value) {
   return String(value)
@@ -136,11 +137,55 @@ function createPopupHtml(marker) {
   `;
 }
 
-function createMarkerListButton(marker, onClick) {
-  const button = document.createElement("button");
-  button.className = "marker-button";
-  button.type = "button";
-  button.addEventListener("click", onClick);
+function isMarkerVisibleByDefault(marker) {
+  // Je kunt in markers.json bijvoorbeeld "visible": false of "hidden": true gebruiken.
+  if (marker.visible === false || marker.hidden === true) {
+    return false;
+  }
+
+  return true;
+}
+
+function getMarkerKey(marker, index) {
+  if (typeof marker.id === "string" && marker.id.trim()) {
+    return marker.id.trim();
+  }
+
+  return `${marker.name}:${Math.round(marker.x)}:${Math.round(marker.y)}:${index}`;
+}
+
+function readStoredVisibility(key, fallback) {
+  try {
+    const stored = localStorage.getItem(VISIBILITY_STORAGE_PREFIX + key);
+    if (stored === "true") return true;
+    if (stored === "false") return false;
+  } catch (_) {
+    // localStorage kan uitstaan. Dan gebruiken we de waarde uit markers.json.
+  }
+
+  return fallback;
+}
+
+function writeStoredVisibility(key, visible) {
+  try {
+    localStorage.setItem(VISIBILITY_STORAGE_PREFIX + key, String(Boolean(visible)));
+  } catch (_) {
+    // Geen probleem: de filter werkt nog steeds, alleen zonder onthouden na refresh.
+  }
+}
+
+function createMarkerListItem(marker, initialVisible, onVisibilityChange, onFocus) {
+  const item = document.createElement("div");
+  item.className = "marker-item";
+
+  const label = document.createElement("label");
+  label.className = "marker-toggle";
+
+  const checkbox = document.createElement("input");
+  checkbox.type = "checkbox";
+  checkbox.checked = initialVisible;
+  checkbox.setAttribute("aria-label", `${marker.name} tonen of verbergen`);
+  label.appendChild(checkbox);
 
   if (marker.icon) {
     const img = document.createElement("img");
@@ -148,24 +193,49 @@ function createMarkerListButton(marker, onClick) {
     img.src = marker.icon;
     img.alt = "";
     img.loading = "lazy";
-    button.appendChild(img);
+    label.appendChild(img);
   } else {
     const colorDot = document.createElement("span");
     colorDot.className = "marker-color-dot";
     colorDot.style.setProperty("--marker-color", getMarkerColor(marker));
-    button.appendChild(colorDot);
+    label.appendChild(colorDot);
   }
 
-  const label = document.createElement("span");
-  label.textContent = marker.name;
-  button.appendChild(label);
+  const name = document.createElement("span");
+  name.className = "marker-name";
+  name.textContent = marker.name;
+  label.appendChild(name);
 
-  return button;
+  const focusButton = document.createElement("button");
+  focusButton.className = "marker-focus-button";
+  focusButton.type = "button";
+  focusButton.textContent = "Bekijk";
+  focusButton.addEventListener("click", onFocus);
+
+  checkbox.addEventListener("change", () => {
+    onVisibilityChange(checkbox.checked);
+  });
+
+  item.appendChild(label);
+  item.appendChild(focusButton);
+
+  function setVisible(visible) {
+    checkbox.checked = visible;
+    item.classList.toggle("is-hidden", !visible);
+    focusButton.disabled = !visible;
+    focusButton.textContent = visible ? "Bekijk" : "Verborgen";
+  }
+
+  setVisible(initialVisible);
+
+  return { element: item, setVisible };
 }
 
 async function initMap() {
   const status = document.getElementById("status");
   const markerList = document.getElementById("markerList");
+  const showAllButton = document.getElementById("showAllMarkers");
+  const hideAllButton = document.getElementById("hideAllMarkers");
 
   try {
     const { width, height } = await loadImageSize(IMAGE_URL);
@@ -194,23 +264,80 @@ async function initMap() {
 
     const markerLayer = L.layerGroup().addTo(map);
     const markers = await loadMarkers();
+    const markerEntries = [];
 
-    markers.forEach((marker) => {
+    function updateStatus() {
+      const visibleCount = markerEntries.filter((entry) => entry.visible).length;
+      status.textContent = `${visibleCount} van ${markerEntries.length} marker(s) zichtbaar.`;
+    }
+
+    function setMarkerVisibility(entry, visible, shouldRemember = true) {
+      entry.visible = visible;
+
+      if (visible) {
+        if (!markerLayer.hasLayer(entry.leafletMarker)) {
+          entry.leafletMarker.addTo(markerLayer);
+        }
+      } else {
+        if (entry.leafletMarker.isPopupOpen()) {
+          map.closePopup();
+        }
+        markerLayer.removeLayer(entry.leafletMarker);
+      }
+
+      entry.ui.setVisible(visible);
+
+      if (shouldRemember) {
+        writeStoredVisibility(entry.key, visible);
+      }
+
+      updateStatus();
+    }
+
+    markers.forEach((marker, index) => {
+      const key = getMarkerKey(marker, index);
+      const defaultVisible = isMarkerVisibleByDefault(marker);
+      const initialVisible = readStoredVisibility(key, defaultVisible);
+
       const leafletMarker = L.marker(toLatLng(marker.x, marker.y), {
         title: marker.name,
         icon: createMarkerIcon(marker)
-      })
-        .addTo(markerLayer)
-        .bindPopup(createPopupHtml(marker));
+      }).bindPopup(createPopupHtml(marker));
 
-      const button = createMarkerListButton(marker, () => {
-        map.setView(toLatLng(marker.x, marker.y), Math.max(map.getZoom(), 0.5));
-        leafletMarker.openPopup();
-      });
-      markerList.appendChild(button);
+      const entry = {
+        key,
+        marker,
+        leafletMarker,
+        visible: false,
+        ui: null
+      };
+
+      const ui = createMarkerListItem(
+        marker,
+        initialVisible,
+        (visible) => setMarkerVisibility(entry, visible),
+        () => {
+          if (!entry.visible) return;
+          map.setView(toLatLng(marker.x, marker.y), Math.max(map.getZoom(), 0.5));
+          leafletMarker.openPopup();
+        }
+      );
+
+      entry.ui = ui;
+      markerEntries.push(entry);
+      markerList.appendChild(ui.element);
+      setMarkerVisibility(entry, initialVisible, false);
     });
 
-    status.textContent = `${markers.length} marker(s) geladen.`;
+    showAllButton.addEventListener("click", () => {
+      markerEntries.forEach((entry) => setMarkerVisibility(entry, true));
+    });
+
+    hideAllButton.addEventListener("click", () => {
+      markerEntries.forEach((entry) => setMarkerVisibility(entry, false));
+    });
+
+    updateStatus();
 
     map.on("click", async (event) => {
       const { x, y } = toXY(event.latlng);
@@ -219,7 +346,8 @@ async function initMap() {
   "x": ${x},
   "y": ${y},
   "description": "",
-  "color": "#e74c3c"
+  "color": "#e74c3c",
+  "visible": true
 }`;
 
       try {

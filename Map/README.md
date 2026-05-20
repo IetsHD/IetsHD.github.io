@@ -1,4 +1,4 @@
-# Interactieve kaart met markerkleuren
+# Interactieve kaart met kleuren en zichtbaarheid
 
 Deze map bevat een statische interactieve kaart die geschikt is voor GitHub Pages.
 
@@ -6,7 +6,7 @@ Deze map bevat een statische interactieve kaart die geschikt is voor GitHub Page
 
 - `index.html` — de pagina
 - `app.js` — laadt de kaart, afbeelding en markers
-- `styles.css` — opmaak, inclusief de gekleurde marker
+- `styles.css` — opmaak, inclusief gekleurde markers en de toon/verberg-knoppen
 - `map.png` — jouw kaartafbeelding
 - `markers.json` — markerdata
 
@@ -14,7 +14,7 @@ Deze map bevat een statische interactieve kaart die geschikt is voor GitHub Page
 
 `markers.json` gebruikt x/y-coördinaten in pixels vanaf linksboven op de afbeelding.
 
-Per marker stel je de kleur in met `color`:
+Per marker kun je een kleur instellen met `color`:
 
 ```json
 [
@@ -23,7 +23,8 @@ Per marker stel je de kleur in met `color`:
     "x": 958,
     "y": 259,
     "description": "Optionele tekst",
-    "color": "#e74c3c"
+    "color": "#e74c3c",
+    "visible": true
   }
 ]
 ```
@@ -34,7 +35,7 @@ Je kunt hexkleuren gebruiken, zoals:
 "color": "#e74c3c"
 ```
 
-Maar gewone CSS-kleurnamen werken ook, bijvoorbeeld:
+Gewone CSS-kleurnamen werken ook:
 
 ```json
 "color": "red"
@@ -48,32 +49,47 @@ Of rgb:
 
 Laat je `color` weg, dan gebruikt de kaart standaard rood.
 
-Klik in de webpagina op de kaart om de x/y-coördinaten van dat punt te zien. Je kunt het getoonde JSON-object kopiëren naar `markers.json`.
+## Markers standaard verbergen
 
-## Voorbeeld meerdere kleuren
+Een marker is standaard zichtbaar. Wil je dat een marker bij het openen van de kaart standaard verborgen is, zet dan `visible` op `false`:
 
 ```json
-[
-  {
-    "name": "Politie",
-    "x": 1000,
-    "y": 1200,
-    "color": "#3498db"
-  },
-  {
-    "name": "Ambulance",
-    "x": 1100,
-    "y": 1300,
-    "color": "#2ecc71"
-  },
-  {
-    "name": "Brandweer",
-    "x": 900,
-    "y": 1250,
-    "color": "#e74c3c"
-  }
-]
+{
+  "name": "Geheime locatie",
+  "x": 1000,
+  "y": 1200,
+  "color": "#9b59b6",
+  "visible": false
+}
 ```
+
+Dit kan ook met:
+
+```json
+"hidden": true
+```
+
+In de zijbalk kan de gebruiker elke marker apart aan- of uitvinken. Met **Alles tonen** en **Alles verbergen** kun je alle markers tegelijk aan- of uitzetten.
+
+De zichtbaarheid wordt per browser onthouden met `localStorage`. Daardoor blijven jouw keuzes bewaard na het verversen van de pagina.
+
+## Stabiele marker-id gebruiken
+
+Als je veel markers toevoegt of namen wijzigt, is het handig om een vaste `id` te gebruiken. Daarmee blijft de opgeslagen zichtbaarheid aan dezelfde marker gekoppeld:
+
+```json
+{
+  "id": "politie-sandy-shores",
+  "name": "Politie Sandy Shores",
+  "x": 1257,
+  "y": 774,
+  "color": "#3498db"
+}
+```
+
+## Coördinaten bepalen
+
+Klik in de webpagina op de kaart om de x/y-coördinaten van dat punt te zien. Je kunt het getoonde JSON-object kopiëren naar `markers.json`.
 
 ## Optioneel: eigen icon-afbeelding
 

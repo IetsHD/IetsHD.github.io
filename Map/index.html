@@ -15,13 +15,19 @@
   <aside class="panel">
     <h1>Interactieve kaart</h1>
     <p>
-      Hieronder een overzicht van alle loctie's en onderscheide van kleur.
+      Markers worden geladen uit <code>markers.json</code>. Per marker kun je een eigen kleur instellen en markers apart tonen of verbergen.
     </p>
     <p class="hint">
-      Mis je nog iets laat het me weten.
+      Tip: klik op de kaart om de x/y-coördinaten te tonen. Gebruik die waarden in <code>markers.json</code>.
     </p>
+
     <div id="status">Markers laden...</div>
+
     <h2>Markers</h2>
+    <div class="marker-controls" aria-label="Marker bediening">
+      <button id="showAllMarkers" type="button">Alles tonen</button>
+      <button id="hideAllMarkers" type="button">Alles verbergen</button>
+    </div>
     <div id="markerList" class="marker-list"></div>
   </aside>
 
