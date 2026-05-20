@@ -253,7 +253,7 @@
   "name": "Startpunt: Geldtruck",
   "x": 5458,
   "y": 4442,
-  "description": "Startpunt voor de geldtruck",
+  "description": "Startpunt voor de geldtruck.",
   "color": "purple",
   "visible": true
 }
