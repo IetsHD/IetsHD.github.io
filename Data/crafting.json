@@ -603,7 +603,7 @@
         "amount": 2
       },
       {
-        "name": "Verroeste spijkers",
+        "name": "Verroeste Spijkers",
         "amount": 4
       }
     ],
@@ -613,7 +613,7 @@
       "Oude Duct Tape",
       "WD-40",
       "Metalen Blik",
-      "Verroeste spijkers"
+      "Verroeste Spijkers"
     ]
   },
   {
@@ -885,7 +885,7 @@
         "amount": 10
       },
       {
-        "name": "Verroeste spijkers",
+        "name": "Verroeste Spijkers",
         "amount": 10
       },
       {
@@ -901,7 +901,7 @@
       "Hammer",
       "Koperen Klomp",
       "Roestige Veer",
-      "Verroeste spijkers",
+      "Verroeste Spijkers",
       "Gebroken Rommel",
       "Geld"
     ]
@@ -1456,14 +1456,14 @@
         "amount": 1
       },
       {
-        "name": "Verroeste spijkers",
+        "name": "Verroeste Spijkers",
         "amount": 3
       }
     ],
     "tags": [
       "Hammer",
       "WD-40",
-      "Verroeste spijkers"
+      "Verroeste Spijkers"
     ]
   },
   {

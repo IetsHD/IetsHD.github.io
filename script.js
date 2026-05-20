@@ -193,8 +193,7 @@ function renderItems() {
 
     card.innerHTML = `
       <div class="item-top">
-        <div class="item-icon">${item.icon || ""}</div>
-
+      
         <div>
           <h3>${item.name}</h3>
           <p>Categorie: <span class="gold">${item.category}</span></p>
