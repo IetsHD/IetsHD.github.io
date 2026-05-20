@@ -152,5 +152,37 @@
   "y": 6593,
   "description": "Zwart geld voor nodig om te kopen.",
   "color": "black"
+},
+{
+  "name": "Craft Parts Trade",
+  "x": 2435,
+  "y": 5736,
+  "description": "Hier kan je Craft Part omzetten naar andere materialen",
+  "color": "pink",
+  "visible": true
+},
+{
+  "name": "Krant / Puzzel",
+  "x": 2646,
+  "y": 5708,
+  "description": "Geen idee meer",
+  "color": "pink",
+  "visible": true
+},
+{
+  "name": "Verkoop: Duiken",
+  "x": 3069,
+  "y": 6440,
+  "description": "Hier kan je al je duik loot verkopen",
+  "color": "pink",
+  "visible": true
+},
+{
+  "name": "Boosting Shop",
+  "x": 2990,
+  "y": 6859,
+  "description": "Hier kan je tablets kopen",
+  "color": "orange",
+  "visible": true
 }
 ]
