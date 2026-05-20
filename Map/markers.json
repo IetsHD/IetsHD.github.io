@@ -184,5 +184,45 @@
   "description": "Hier kan je tablets kopen",
   "color": "orange",
   "visible": true
+},
+{
+  "name": "Witwas Oxy",
+  "x": 4504,
+  "y": 6846,
+  "description": "Oxy run",
+  "color": "white",
+  "visible": true
+},
+{
+  "name": "Chop shop",
+  "x": 4081,
+  "y": 6524,
+  "description": "Start punt voor ChopShop",
+  "color": "orange",
+  "visible": true
+},
+{
+  "name": "Wisselpunt Car/Craft Parts",
+  "x": 4355,
+  "y": 6269,
+  "description": "Hier kan je car/craft parts wisselen",
+  "color": "pink",
+  "visible": true
+},
+{
+  "name": "Verkoop: Jewelry",
+  "x": 4397,
+  "y": 6318,
+  "description": "Verkooppunt voor jewelry",
+  "color": "yellow",
+  "visible": true
+},
+{
+  "name": "Witwas Easy",
+  "x": 3239,
+  "y": 6004,
+  "description": "Makkelijke witwas punt",
+  "color": "white",
+  "visible": true
 }
 ]
