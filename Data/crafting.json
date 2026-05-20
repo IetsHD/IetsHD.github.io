@@ -9,5 +9,3280 @@
       { "name": "Rotte Appel", "amount": 3 }
     ],
     "tags": ["Lege Fles", "Rotte Appel"]
+  },
+  {
+    "name": "Hobo Azijn",
+    "category": "Crafting",
+    "type": "Zwerver Tafel",
+    "icon": "",
+    "materials": [
+      { "name": "Lege Fles", "amount": 1 },
+      { "name": "Rotte Perzik", "amount": 3 }
+    ],
+    "tags": [ "Lege Fles", "Rotte Perzik"
+    ]
+  },
+  {
+    "name": "Hobo Azijn",
+    "category": "Crafting",
+    "type": "Zwerver Tafel",
+    "icon": "",
+    "materials": [
+      { "name": "Lege Fles", "amount": 1 },
+      { "name": "Rotte Peer", "amount": 3 }
+    ],
+    "tags": [
+      "Lege Fles",
+      "Rotte Peer"
+    ]
+  },
+  {
+    "name": "Trash-Juice Moonshine",
+    "category": "Crafting",
+    "type": "Zwerver Tafel",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Lege Wijnfles",
+        "amount": 1
+      },
+      {
+        "name": "Hobo Azijn",
+        "amount": 1
+      },
+      {
+        "name": "Beschimmeld Brood",
+        "amount": 4
+      },
+      {
+        "name": "Rotte Appel",
+        "amount": 5
+      }
+    ],
+    "tags": [
+      "Lege Wijnfles",
+      "Hobo Azijn",
+      "Beschimmeld Brood",
+      "Rotte Appel"
+    ]
+  },
+  {
+    "name": "Trash-Juice Moonshine",
+    "category": "Crafting",
+    "type": "Zwerver Tafel",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Lege Wijnfles",
+        "amount": 1
+      },
+      {
+        "name": "Hobo Azijn",
+        "amount": 1
+      },
+      {
+        "name": "Rotte Perzik",
+        "amount": 4
+      },
+      {
+        "name": "Rotte Peer",
+        "amount": 5
+      }
+    ],
+    "tags": [
+      "Lege Wijnfles",
+      "Hobo Azijn",
+      "Rotte Perzik",
+      "Rotte Peer"
+    ]
+  },
+  {
+    "name": "Hobo-Balls (Licht)",
+    "category": "Crafting",
+    "type": "Zwerver Tafel",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Rotte Appel",
+        "amount": 1
+      },
+      {
+        "name": "Rotte Aardbeien",
+        "amount": 1
+      },
+      {
+        "name": "Rotte Banaan",
+        "amount": 2
+      }
+    ],
+    "tags": [
+      "Rotte Appel",
+      "Rotte Aardbeien",
+      "Rotte Banaan"
+    ]
+  },
+  {
+    "name": "Hobo-Balls (Licht)",
+    "category": "Crafting",
+    "type": "Zwerver Tafel",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Oude Kaas",
+        "amount": 1
+      },
+      {
+        "name": "Open Blik Maïs",
+        "amount": 1
+      },
+      {
+        "name": "Beschimmeld Brood",
+        "amount": 2
+      }
+    ],
+    "tags": [
+      "Oude Kaas",
+      "Open Blik Maïs",
+      "Beschimmeld Brood"
+    ]
+  },
+  {
+    "name": "Hobo-Balls (Zoet)",
+    "category": "Crafting",
+    "type": "Zwerver Tafel",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Rotte Aardbeien",
+        "amount": 1
+      },
+      {
+        "name": "Rotte Banaan",
+        "amount": 1
+      },
+      {
+        "name": "Rotte Perzik",
+        "amount": 1
+      }
+    ],
+    "tags": [
+      "Rotte Aardbeien",
+      "Rotte Banaan",
+      "Rotte Perzik"
+    ]
+  },
+  {
+    "name": "Hobo-Balls (Zoet)",
+    "category": "Crafting",
+    "type": "Zwerver Tafel",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Oude Kaas",
+        "amount": 1
+      },
+      {
+        "name": "Beschimmeld Brood",
+        "amount": 1
+      },
+      {
+        "name": "Rotte Peer",
+        "amount": 3
+      }
+    ],
+    "tags": [
+      "Oude Kaas",
+      "Beschimmeld Brood",
+      "Rotte Peer"
+    ]
+  },
+  {
+    "name": "Hobo-Balls (Zwaar)",
+    "category": "Crafting",
+    "type": "Zwerver Tafel",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Restje Sterke Drank",
+        "amount": 2
+      },
+      {
+        "name": "Rotte Banaan",
+        "amount": 2
+      },
+      {
+        "name": "Rotte Appel",
+        "amount": 4
+      }
+    ],
+    "tags": [
+      "Restje Sterke Drank",
+      "Rotte Banaan",
+      "Rotte Appel"
+    ]
+  },
+  {
+    "name": "Hobo-Balls (Zwaar)",
+    "category": "Crafting",
+    "type": "Zwerver Tafel",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Rotte Peer",
+        "amount": 2
+      },
+      {
+        "name": "Oude Kaas",
+        "amount": 2
+      },
+      {
+        "name": "Beschimmeld Brood",
+        "amount": 4
+      }
+    ],
+    "tags": [
+      "Rotte Peer",
+      "Oude Kaas",
+      "Beschimmeld Brood"
+    ]
+  },
+  {
+    "name": "Oude Rugzak",
+    "category": "Crafting",
+    "type": "Zwerver Tafel",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 10
+      },
+      {
+        "name": "Oude Duct Tape",
+        "amount": 15
+      },
+      {
+        "name": "Rubber",
+        "amount": 20
+      },
+      {
+        "name": "Gescheurde Kleding",
+        "amount": 50
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "Oude Duct Tape",
+      "Rubber",
+      "Gescheurde Kleding"
+    ]
+  },
+  {
+    "name": "Oude Tacklebox",
+    "category": "Crafting",
+    "type": "Zwerver Tafel",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 10
+      },
+      {
+        "name": "Verroeste Spijkers",
+        "amount": 4
+      },
+      {
+        "name": "Metalen Blik",
+        "amount": 8
+      },
+      {
+        "name": "Oude Duct Tape",
+        "amount": 15
+      },
+      {
+        "name": "Rubber",
+        "amount": 15
+      },
+      {
+        "name": "Gebroken Rommel",
+        "amount": 40
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "Verroeste Spijkers",
+      "Metalen Blik",
+      "Oude Duct Tape",
+      "Rubber",
+      "Gebroken Rommel"
+    ]
+  },
+  {
+    "name": "Vis Emmer",
+    "category": "Crafting",
+    "type": "Zwerver Tafel",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 10
+      },
+      {
+        "name": "Rubber",
+        "amount": 10
+      },
+      {
+        "name": "Oude Duct Tape",
+        "amount": 15
+      },
+      {
+        "name": "Metalen Blik",
+        "amount": 20
+      },
+      {
+        "name": "Gebroken Rommel",
+        "amount": 25
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "Rubber",
+      "Oude Duct Tape",
+      "Metalen Blik",
+      "Gebroken Rommel"
+    ]
+  },
+  {
+    "name": "Vieze Bandage",
+    "category": "Crafting",
+    "type": "Zwerver Tafel",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Restje Sterke Drank",
+        "amount": 1
+      },
+      {
+        "name": "Oude Duct Tape",
+        "amount": 1
+      },
+      {
+        "name": "Gescheurde Kleding",
+        "amount": 3
+      }
+    ],
+    "tags": [
+      "Restje Sterke Drank",
+      "Oude Duct Tape",
+      "Gescheurde Kleding"
+    ]
+  },
+  {
+    "name": "Zware Vieze Bandage",
+    "category": "Crafting",
+    "type": "Zwerver Tafel",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Oude Duct Tape",
+        "amount": 1
+      },
+      {
+        "name": "Beschimmeld Brood",
+        "amount": 2
+      },
+      {
+        "name": "Restje Sterke Drank",
+        "amount": 2
+      },
+      {
+        "name": "Gescheurde Kleding",
+        "amount": 3
+      }
+    ],
+    "tags": [
+      "Oude Duct Tape",
+      "Beschimmeld Brood",
+      "Restje Sterke Drank",
+      "Gescheurde Kleding"
+    ]
+  },
+  {
+    "name": "Aluminium poeder",
+    "category": "Crafting",
+    "type": "Zwerver Tafel",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 0.5
+      },
+      {
+        "name": "Hobo Azijn",
+        "amount": 1
+      },
+      {
+        "name": "Roestige Schaar",
+        "amount": 2
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "Hobo Azijn",
+      "Roestige Schaar"
+    ]
+  },
+  {
+    "name": "IJzer poeder",
+    "category": "Crafting",
+    "type": "Zwerver Tafel",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 0.5
+      },
+      {
+        "name": "Hobo Azijn",
+        "amount": 1
+      },
+      {
+        "name": "Roestige Tang",
+        "amount": 2
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "Hobo Azijn",
+      "Roestige Tang"
+    ]
+  },
+  {
+    "name": "Aluminium poeder",
+    "category": "Crafting",
+    "type": "Zwerver Tafel",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 0.5
+      },
+      {
+        "name": "Hobo Azijn",
+        "amount": 1
+      },
+      {
+        "name": "Metalen Blik",
+        "amount": 2
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "Hobo Azijn",
+      "Metalen Blik"
+    ]
+  },
+  {
+    "name": "IJzer poeder",
+    "category": "Crafting",
+    "type": "Zwerver Tafel",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 0.5
+      },
+      {
+        "name": "Hobo Azijn",
+        "amount": 1
+      },
+      {
+        "name": "Oude Hagelpatroon",
+        "amount": 2
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "Hobo Azijn",
+      "Oude Hagelpatroon"
+    ]
+  },
+  {
+    "name": "Tuinhandschoenen",
+    "category": "Crafting",
+    "type": "Zwerver Tafel",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Gescheurde Kleding",
+        "amount": 2
+      },
+      {
+        "name": "Oude Duct Tape",
+        "amount": 2
+      },
+      {
+        "name": "Oude Paperclip",
+        "amount": 3
+      }
+    ],
+    "tags": [
+      "Gescheurde Kleding",
+      "Oude Duct Tape",
+      "Oude Paperclip"
+    ]
+  },
+  {
+    "name": "Fijne weegschaal",
+    "category": "Crafting",
+    "type": "Zwerver Tafel",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Wrench",
+        "amount": 5
+      },
+      {
+        "name": "Blueprint Weegschaal",
+        "amount": 10
+      },
+      {
+        "name": "Gebroken Telefoon",
+        "amount": 1
+      },
+      {
+        "name": "Oude Duct Tape",
+        "amount": 3
+      },
+      {
+        "name": "Elektronisch afval",
+        "amount": 3
+      },
+      {
+        "name": "Flessendoppen",
+        "amount": 5
+      },
+      {
+        "name": "Oude Paperclip",
+        "amount": 8
+      }
+    ],
+    "tags": [
+      "Wrench",
+      "Blueprint",
+      "Gebroken Telefoon",
+      "Oude Duct Tape",
+      "Elektronisch afval",
+      "Flessendoppen",
+      "Oude Paperclip"
+    ]
+  },
+  {
+    "name": "Grinder",
+    "category": "Crafting",
+    "type": "Zwerver Tafel",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Wrench",
+        "amount": 5
+      },
+      {
+        "name": "Roestige Schroevendraaier",
+        "amount": 1
+      },
+      {
+        "name": "Oude Duct Tape",
+        "amount": 1
+      },
+      {
+        "name": "WD-40",
+        "amount": 1
+      },
+      {
+        "name": "Metalen Blik",
+        "amount": 2
+      },
+      {
+        "name": "Verroeste spijkers",
+        "amount": 4
+      }
+    ],
+    "tags": [
+      "Wrench",
+      "Roestige Schroevendraaier",
+      "Oude Duct Tape",
+      "WD-40",
+      "Metalen Blik",
+      "Verroeste spijkers"
+    ]
+  },
+  {
+    "name": "Geavanceerde lockpick",
+    "category": "Crafting",
+    "type": "Zwerver Tafel",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 0.5
+      },
+      {
+        "name": "Roestige Schroevendraaier",
+        "amount": 1
+      },
+      {
+        "name": "Roestige Veer",
+        "amount": 2
+      },
+      {
+        "name": "Roestige Schaar",
+        "amount": 2
+      },
+      {
+        "name": "Oude Duct Tape",
+        "amount": 3
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "Roestige Schroevendraaier",
+      "Roestige Veer",
+      "Roestige Schaar",
+      "Oude Duct Tape"
+    ]
+  },
+  {
+    "name": "Thermiet",
+    "category": "Crafting",
+    "type": "Zwerver Tafel",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 0.5
+      },
+      {
+        "name": "Lege fles",
+        "amount": 1
+      },
+      {
+        "name": "Restje Sterke Drank",
+        "amount": 2
+      },
+      {
+        "name": "IJzer poeder",
+        "amount": 3
+      },
+      {
+        "name": "Aluminium poeder",
+        "amount": 3
+      },
+      {
+        "name": "Koperen Klomp",
+        "amount": 3
+      },
+      {
+        "name": "Oude Duct Tape",
+        "amount": 5
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "Lege fles",
+      "Restje Sterke Drank",
+      "IJzer poeder",
+      "Aluminium poeder",
+      "Koperen Klomp",
+      "Oude Duct Tape"
+    ]
+  },
+  {
+    "name": "Body Armor",
+    "category": "Crafting",
+    "type": "Zwerver Tafel",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 0.5
+      },
+      {
+        "name": "Rubber",
+        "amount": 5
+      },
+      {
+        "name": "Verpletterd Blikje",
+        "amount": 8
+      },
+      {
+        "name": "Gescheurde Kleding",
+        "amount": 8
+      },
+      {
+        "name": "Oude Duct Tape",
+        "amount": 8
+      },
+      {
+        "name": "Metalen Blik",
+        "amount": 10
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "Rubber",
+      "Verpletterd Blikje",
+      "Gescheurde Kleding",
+      "Oude Duct Tape",
+      "Metalen Blik"
+    ]
+  },
+  {
+    "name": "Armor Plate",
+    "category": "Crafting",
+    "type": "Zwerver Tafel",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 0.5
+      },
+      {
+        "name": "Oude Duct Tape",
+        "amount": 2
+      },
+      {
+        "name": "Kogelhuls",
+        "amount": 2
+      },
+      {
+        "name": "Rubber",
+        "amount": 2
+      },
+      {
+        "name": "Metalen Blik",
+        "amount": 3
+      },
+      {
+        "name": "Koperen Klomp",
+        "amount": 3
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "Oude Duct Tape",
+      "Kogelhuls",
+      "Rubber",
+      "Metalen Blik",
+      "Koperen Klomp"
+    ]
+  },
+  {
+    "name": "SNS Frame",
+    "category": "Crafting",
+    "type": "Zwerver Tafel",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 10
+      },
+      {
+        "name": "IJzeren Klomp",
+        "amount": 4
+      },
+      {
+        "name": "Oude Aansteker",
+        "amount": 5
+      },
+      {
+        "name": "Gebroken Rommel",
+        "amount": 8
+      },
+      {
+        "name": "Verpletterd Blikje",
+        "amount": 15
+      },
+      {
+        "name": "Oude Duct Tape",
+        "amount": 15
+      },
+      {
+        "name": "Metalen Blik",
+        "amount": 20
+      },
+      {
+        "name": "Geld",
+        "amount": 250
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "IJzeren Klomp",
+      "Oude Aansteker",
+      "Gebroken Rommel",
+      "Verpletterd Blikje",
+      "Oude Duct Tape",
+      "Metalen Blik",
+      "Geld"
+    ]
+  },
+  {
+    "name": "SNS Grip",
+    "category": "Crafting",
+    "type": "Zwerver Tafel",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 10
+      },
+      {
+        "name": "Gebroken Rommel",
+        "amount": 4
+      },
+      {
+        "name": "Lege fles",
+        "amount": 6
+      },
+      {
+        "name": "Gescheurde Kleding",
+        "amount": 15
+      },
+      {
+        "name": "Oude Duct Tape",
+        "amount": 20
+      },
+      {
+        "name": "Geld",
+        "amount": 150
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "Gebroken Rommel",
+      "Lege fles",
+      "Gescheurde Kleding",
+      "Oude Duct Tape",
+      "Geld"
+    ]
+  },
+  {
+    "name": "SNS Trigger",
+    "category": "Crafting",
+    "type": "Zwerver Tafel",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 10
+      },
+      {
+        "name": "Koperen Klomp",
+        "amount": 3
+      },
+      {
+        "name": "Roestige Veer",
+        "amount": 10
+      },
+      {
+        "name": "Verroeste spijkers",
+        "amount": 10
+      },
+      {
+        "name": "Gebroken Rommel",
+        "amount": 12
+      },
+      {
+        "name": "Geld",
+        "amount": 150
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "Koperen Klomp",
+      "Roestige Veer",
+      "Verroeste spijkers",
+      "Gebroken Rommel",
+      "Geld"
+    ]
+  },
+  {
+    "name": "P890 Frame",
+    "category": "Crafting",
+    "type": "Zwerver Tafel",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 10
+      },
+      {
+        "name": "Gebroken handboeien",
+        "amount": 3
+      },
+      {
+        "name": "Aluminium poeder",
+        "amount": 5
+      },
+      {
+        "name": "IJzeren Klomp",
+        "amount": 10
+      },
+      {
+        "name": "Metalen Blik",
+        "amount": 15
+      },
+      {
+        "name": "Oude Duct Tape",
+        "amount": 35
+      },
+      {
+        "name": "Geld",
+        "amount": 350
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "Gebroken handboeien",
+      "Aluminium poeder",
+      "IJzeren Klomp",
+      "Metalen Blik",
+      "Oude Duct Tape",
+      "Geld"
+    ]
+  },
+  {
+    "name": "P890 Slide",
+    "category": "Crafting",
+    "type": "Zwerver Tafel",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 10
+      },
+      {
+        "name": "Platina Klomp",
+        "amount": 4
+      },
+      {
+        "name": "IJzer poeder",
+        "amount": 5
+      },
+      {
+        "name": "WD-40",
+        "amount": 5
+      },
+      {
+        "name": "Metalen Blik",
+        "amount": 10
+      },
+      {
+        "name": "Koperen Klomp",
+        "amount": 10
+      },
+      {
+        "name": "Gebroken Rommel",
+        "amount": 12
+      },
+      {
+        "name": "Geld",
+        "amount": 250
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "Platina Klomp",
+      "IJzer poeder",
+      "WD-40",
+      "Metalen Blik",
+      "Koperen Klomp",
+      "Gebroken Rommel",
+      "Geld"
+    ]
+  },
+  {
+    "name": "P890 Grip",
+    "category": "Crafting",
+    "type": "Zwerver Tafel",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 10
+      },
+      {
+        "name": "Versleten autoband",
+        "amount": 2
+      },
+      {
+        "name": "Gebroken Rommel",
+        "amount": 5
+      },
+      {
+        "name": "Elektronisch afval",
+        "amount": 10
+      },
+      {
+        "name": "Gescheurde Kleding",
+        "amount": 15
+      },
+      {
+        "name": "Oude Duct Tape",
+        "amount": 40
+      },
+      {
+        "name": "Geld",
+        "amount": 250
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "Versleten autoband",
+      "Gebroken Rommel",
+      "Elektronisch afval",
+      "Gescheurde Kleding",
+      "Oude Duct Tape",
+      "Geld"
+    ]
+  },
+  {
+    "name": "P890 Trigger",
+    "category": "Crafting",
+    "type": "Zwerver Tafel",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 10
+      },
+      {
+        "name": "Gouden Klomp",
+        "amount": 3
+      },
+      {
+        "name": "Elektronisch afval",
+        "amount": 5
+      },
+      {
+        "name": "Gebroken Rommel",
+        "amount": 10
+      },
+      {
+        "name": "Oude Duct Tape",
+        "amount": 15
+      },
+      {
+        "name": "Roestige Veer",
+        "amount": 15
+      },
+      {
+        "name": "Geld",
+        "amount": 250
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "Gouden Klomp",
+      "Elektronisch afval",
+      "Gebroken Rommel",
+      "Oude Duct Tape",
+      "Roestige Veer",
+      "Geld"
+    ]
+  },
+  {
+    "name": "Switchblade",
+    "category": "Crafting",
+    "type": "Zwerver Tafel",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 10
+      },
+      {
+        "name": "Roestige Schaar",
+        "amount": 2
+      },
+      {
+        "name": "WD-40",
+        "amount": 2
+      },
+      {
+        "name": "Gescheurde Kleding",
+        "amount": 3
+      },
+      {
+        "name": "Oude Sleutels",
+        "amount": 4
+      },
+      {
+        "name": "Roestige Veer",
+        "amount": 5
+      },
+      {
+        "name": "Oude Duct Tape",
+        "amount": 6
+      },
+      {
+        "name": "Geld",
+        "amount": 250
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "Roestige Schaar",
+      "WD-40",
+      "Gescheurde Kleding",
+      "Oude Sleutels",
+      "Roestige Veer",
+      "Oude Duct Tape",
+      "Geld"
+    ]
+  },
+  {
+    "name": "Flashlight",
+    "category": "Crafting",
+    "type": "Zwerver Tafel",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 10
+      },
+      {
+        "name": "Gebroken Telefoon",
+        "amount": 1
+      },
+      {
+        "name": "Gescheurde Kleding",
+        "amount": 2
+      },
+      {
+        "name": "Oude Duct Tape",
+        "amount": 8
+      },
+      {
+        "name": "Oude Paperclip",
+        "amount": 10
+      },
+      {
+        "name": "Gebroken Rommel",
+        "amount": 10
+      },
+      {
+        "name": "Elektronisch afval",
+        "amount": 12
+      },
+      {
+        "name": "Geld",
+        "amount": 250
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "Gebroken Telefoon",
+      "Gescheurde Kleding",
+      "Oude Duct Tape",
+      "Oude Paperclip",
+      "Gebroken Rommel",
+      "Elektronisch afval",
+      "Geld"
+    ]
+  },
+  {
+    "name": "Aluminium",
+    "category": "Crafting",
+    "type": "Werkbank",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 0.5
+      },
+      {
+        "name": "Leeg blikje",
+        "amount": 3
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "Leeg blikje"
+    ]
+  },
+  {
+    "name": "Plastic",
+    "category": "Crafting",
+    "type": "Werkbank",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 0.5
+      },
+      {
+        "name": "Lege fles",
+        "amount": 3
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "Lege fles"
+    ]
+  },
+  {
+    "name": "Plastic",
+    "category": "Crafting",
+    "type": "Werkbank",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 0.5
+      },
+      {
+        "name": "Flessendoppen",
+        "amount": 3
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "Flessendoppen"
+    ]
+  },
+  {
+    "name": "Plastic",
+    "category": "Crafting",
+    "type": "Werkbank",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 0.5
+      },
+      {
+        "name": "Zonnebril",
+        "amount": 3
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "Zonnebril"
+    ]
+  },
+  {
+    "name": "Glasplaat",
+    "category": "Crafting",
+    "type": "Werkbank",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 0.5
+      },
+      {
+        "name": "Gebroken fles",
+        "amount": 5
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "Gebroken fles"
+    ]
+  },
+  {
+    "name": "Rubber",
+    "category": "Crafting",
+    "type": "Werkbank",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 0.5
+      },
+      {
+        "name": "Versleten fietsband",
+        "amount": 3
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "Versleten fietsband"
+    ]
+  },
+  {
+    "name": "Rubber",
+    "category": "Crafting",
+    "type": "Werkbank",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 0.5
+      },
+      {
+        "name": "Versleten autoband",
+        "amount": 1
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "Versleten autoband"
+    ]
+  },
+  {
+    "name": "Elektronische schroot",
+    "category": "Crafting",
+    "type": "Werkbank",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Wrench",
+        "amount": 0.5
+      },
+      {
+        "name": "Gebroken Radio",
+        "amount": 3
+      }
+    ],
+    "tags": [
+      "Wrench",
+      "Gebroken Radio"
+    ]
+  },
+  {
+    "name": "Elektronische schroot",
+    "category": "Crafting",
+    "type": "Werkbank",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Wrench",
+        "amount": 0.5
+      },
+      {
+        "name": "Gebroken Telefoon",
+        "amount": 3
+      }
+    ],
+    "tags": [
+      "Wrench",
+      "Gebroken Telefoon"
+    ]
+  },
+  {
+    "name": "Stof",
+    "category": "Crafting",
+    "type": "Werkbank",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 0.5
+      },
+      {
+        "name": "Acetaat Vezels",
+        "amount": 3
+      },
+      {
+        "name": "Teddybeer",
+        "amount": 3
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "Acetaat Vezels",
+      "Teddybeer"
+    ]
+  },
+  {
+    "name": "Leer",
+    "category": "Crafting",
+    "type": "Werkbank",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 0.5
+      },
+      {
+        "name": "Lege Oude portemonee",
+        "amount": 3
+      },
+      {
+        "name": "Acetaat Vezels",
+        "amount": 3
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "Lege Oude portemonee",
+      "Acetaat Vezels"
+    ]
+  },
+  {
+    "name": "Metaalschroot",
+    "category": "Crafting",
+    "type": "Werkbank",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 0.5
+      },
+      {
+        "name": "Gebroken handboeien",
+        "amount": 3
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "Gebroken handboeien"
+    ]
+  },
+  {
+    "name": "Metaalschroot",
+    "category": "Crafting",
+    "type": "Werkbank",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 0.5
+      },
+      {
+        "name": "WD-40",
+        "amount": 1
+      },
+      {
+        "name": "Verroeste spijkers",
+        "amount": 3
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "WD-40",
+      "Verroeste spijkers"
+    ]
+  },
+  {
+    "name": "Metaalschroot",
+    "category": "Crafting",
+    "type": "Werkbank",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Wrench",
+        "amount": 0.5
+      },
+      {
+        "name": "Oude Sleutels",
+        "amount": 3
+      }
+    ],
+    "tags": [
+      "Wrench",
+      "Oude Sleutels"
+    ]
+  },
+  {
+    "name": "Houten planken",
+    "category": "Crafting",
+    "type": "Werkbank",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 0.5
+      },
+      {
+        "name": "Gebroken Hamer",
+        "amount": 3
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "Gebroken Hamer"
+    ]
+  },
+  {
+    "name": "Houten planken",
+    "category": "Crafting",
+    "type": "Werkbank",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 0.5
+      },
+      {
+        "name": "Boomschors",
+        "amount": 25
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "Boomschors"
+    ]
+  },
+  {
+    "name": "Houten planken",
+    "category": "Crafting",
+    "type": "Werkbank",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 0.5
+      },
+      {
+        "name": "Houtblok",
+        "amount": 4
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "Houtblok"
+    ]
+  },
+  {
+    "name": "Houten planken",
+    "category": "Crafting",
+    "type": "Werkbank",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 0.5
+      },
+      {
+        "name": "Dunne boomtak",
+        "amount": 3
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "Dunne boomtak"
+    ]
+  },
+  {
+    "name": "Houten planken",
+    "category": "Crafting",
+    "type": "Werkbank",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 0.5
+      },
+      {
+        "name": "Medium boomtak",
+        "amount": 1
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "Medium boomtak"
+    ]
+  },
+  {
+    "name": "Houten planken",
+    "category": "Crafting",
+    "type": "Werkbank",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 0.5
+      },
+      {
+        "name": "Dikke boomtak",
+        "amount": 2
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "Dikke boomtak"
+    ]
+  },
+  {
+    "name": "Houten planken",
+    "category": "Crafting",
+    "type": "Werkbank",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 0.5
+      },
+      {
+        "name": "Boomstam",
+        "amount": 2
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "Boomstam"
+    ]
+  },
+  {
+    "name": "Papier",
+    "category": "Crafting",
+    "type": "Werkbank",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Krant",
+        "amount": 2
+      }
+    ],
+    "tags": [
+      "Krant"
+    ]
+  },
+  {
+    "name": "Papier",
+    "category": "Crafting",
+    "type": "Werkbank",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Reclame",
+        "amount": 2
+      }
+    ],
+    "tags": [
+      "Reclame"
+    ]
+  },
+  {
+    "name": "Papier",
+    "category": "Crafting",
+    "type": "Werkbank",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Brief",
+        "amount": 2
+      }
+    ],
+    "tags": [
+      "Brief"
+    ]
+  },
+  {
+    "name": "Blanco Kaart",
+    "category": "Crafting",
+    "type": "Werkbank",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Reclame",
+        "amount": 2
+      }
+    ],
+    "tags": [
+      "Reclame"
+    ]
+  },
+  {
+    "name": "Lamineer vellen",
+    "category": "Crafting",
+    "type": "Werkbank",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Plastic",
+        "amount": 2
+      }
+    ],
+    "tags": [
+      "Plastic"
+    ]
+  },
+  {
+    "name": "Lockpick",
+    "category": "Crafting",
+    "type": "Craft",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 5
+      },
+      {
+        "name": "Plastic",
+        "amount": 3
+      },
+      {
+        "name": "Metaalschroot",
+        "amount": 10
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "Plastic",
+      "Metaalschroot"
+    ]
+  },
+  {
+    "name": "Geavanceerde lockpick",
+    "category": "Crafting",
+    "type": "Craft",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 5
+      },
+      {
+        "name": "Blueprint Advanced Lockpick",
+        "amount": 10
+      },
+      {
+        "name": "Schroevendraaierset",
+        "amount": 1
+      },
+      {
+        "name": "Rubber",
+        "amount": 2
+      },
+      {
+        "name": "Koper",
+        "amount": 3
+      },
+      {
+        "name": "Metaalschroot",
+        "amount": 6
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "Blueprint",
+      "Schroevendraaierset",
+      "Rubber",
+      "Koper",
+      "Metaalschroot"
+    ]
+  },
+  {
+    "name": "Schroevendraaierset",
+    "category": "Crafting",
+    "type": "Craft",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 5
+      },
+      {
+        "name": "Rubber",
+        "amount": 5
+      },
+      {
+        "name": "Plastic",
+        "amount": 6
+      },
+      {
+        "name": "Metaalschroot",
+        "amount": 10
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "Rubber",
+      "Plastic",
+      "Metaalschroot"
+    ]
+  },
+  {
+    "name": "Tang",
+    "category": "Crafting",
+    "type": "Craft",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 5
+      },
+      {
+        "name": "Blueprint Tang",
+        "amount": 10
+      },
+      {
+        "name": "Rubber",
+        "amount": 2
+      },
+      {
+        "name": "Plastic",
+        "amount": 4
+      },
+      {
+        "name": "Craft Parts",
+        "amount": 5
+      },
+      {
+        "name": "Metaalschroot",
+        "amount": 6
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "Blueprint",
+      "Rubber",
+      "Plastic",
+      "Craft Parts",
+      "Metaalschroot"
+    ]
+  },
+  {
+    "name": "Vishengel",
+    "category": "Crafting",
+    "type": "Craft",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 5
+      },
+      {
+        "name": "Blueprint Hengel",
+        "amount": 10
+      },
+      {
+        "name": "Houten planken",
+        "amount": 1
+      },
+      {
+        "name": "Molen",
+        "amount": 1
+      },
+      {
+        "name": "Stof",
+        "amount": 1
+      },
+      {
+        "name": "Rubber",
+        "amount": 1
+      },
+      {
+        "name": "Aluminium Folie",
+        "amount": 1
+      },
+      {
+        "name": "Acetaat Vezels",
+        "amount": 10
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "Blueprint",
+      "Houten planken",
+      "Molen",
+      "Stof",
+      "Rubber",
+      "Aluminium Folie",
+      "Acetaat Vezels"
+    ]
+  },
+  {
+    "name": "ZipTie",
+    "category": "Crafting",
+    "type": "Craft",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 5
+      },
+      {
+        "name": "Blueprint Zip Ties",
+        "amount": 10
+      },
+      {
+        "name": "Plastic",
+        "amount": 6
+      },
+      {
+        "name": "Acetaat Vezels",
+        "amount": 10
+      },
+      {
+        "name": "Rubber",
+        "amount": 10
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "Blueprint",
+      "Plastic",
+      "Acetaat Vezels",
+      "Rubber"
+    ]
+  },
+  {
+    "name": "Kniptang",
+    "category": "Crafting",
+    "type": "Craft",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 10
+      },
+      {
+        "name": "Blueprint Kniptang",
+        "amount": 10
+      },
+      {
+        "name": "Craft Parts",
+        "amount": 5
+      },
+      {
+        "name": "Aluminium",
+        "amount": 5
+      },
+      {
+        "name": "Metaalschroot",
+        "amount": 6
+      },
+      {
+        "name": "Rubber",
+        "amount": 6
+      },
+      {
+        "name": "Staal",
+        "amount": 8
+      },
+      {
+        "name": "Acetaat Vezels",
+        "amount": 10
+      },
+      {
+        "name": "Koper",
+        "amount": 10
+      }
+    ],
+    "tags": [
+      "Blueprint",
+      "Hammer",
+      "Craft Parts",
+      "Aluminium",
+      "Metaalschroot",
+      "Rubber",
+      "Staal",
+      "Acetaat Vezels",
+      "Koper"
+    ]
+  },
+  {
+    "name": "Handboeien",
+    "category": "Crafting",
+    "type": "Craft",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 10
+      },
+      {
+        "name": "Blueprint Handboeien",
+        "amount": 20
+      },
+      {
+        "name": "Koper",
+        "amount": 8
+      },
+      {
+        "name": "IJzer",
+        "amount": 10
+      },
+      {
+        "name": "Staal",
+        "amount": 10
+      },
+      {
+        "name": "Aluminium",
+        "amount": 15
+      },
+      {
+        "name": "Metaalschroot",
+        "amount": 15
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "Blueprint",
+      "Koper",
+      "IJzer",
+      "Staal",
+      "Aluminium",
+      "Metaalschroot"
+    ]
+  },
+  {
+    "name": "Betonschaar",
+    "category": "Crafting",
+    "type": "Craft",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 10
+      },
+      {
+        "name": "Blueprint Betonschaar",
+        "amount": 20
+      },
+      {
+        "name": "Koper",
+        "amount": 4
+      },
+      {
+        "name": "Craft Parts",
+        "amount": 5
+      },
+      {
+        "name": "IJzer",
+        "amount": 5
+      },
+      {
+        "name": "Aluminium",
+        "amount": 8
+      },
+      {
+        "name": "Metaalschroot",
+        "amount": 10
+      },
+      {
+        "name": "Rubber",
+        "amount": 10
+      },
+      {
+        "name": "Staal",
+        "amount": 15
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "Blueprint",
+      "Koper",
+      "Craft Parts",
+      "IJzer",
+      "Aluminium",
+      "Metaalschroot",
+      "Rubber",
+      "Staal"
+    ]
+  },
+  {
+    "name": "Elektrische zaag",
+    "category": "Crafting",
+    "type": "Craft",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 10
+      },
+      {
+        "name": "Rubber",
+        "amount": 4
+      },
+      {
+        "name": "Koper",
+        "amount": 4
+      },
+      {
+        "name": "Aluminium",
+        "amount": 5
+      },
+      {
+        "name": "IJzer",
+        "amount": 5
+      },
+      {
+        "name": "Craft Parts",
+        "amount": 5
+      },
+      {
+        "name": "Metaalschroot",
+        "amount": 8
+      },
+      {
+        "name": "Staal",
+        "amount": 10
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "Rubber",
+      "Koper",
+      "Aluminium",
+      "IJzer",
+      "Craft Parts",
+      "Metaalschroot",
+      "Staal"
+    ]
+  },
+  {
+    "name": "Electronic Kit",
+    "category": "Crafting",
+    "type": "Craft",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Wrench",
+        "amount": 5
+      },
+      {
+        "name": "Blueprint Electronic Kit",
+        "amount": 10
+      },
+      {
+        "name": "Aluminium",
+        "amount": 2
+      },
+      {
+        "name": "Elektronische schroot",
+        "amount": 5
+      },
+      {
+        "name": "Rubber",
+        "amount": 5
+      },
+      {
+        "name": "Craft Parts",
+        "amount": 5
+      },
+      {
+        "name": "Plastic",
+        "amount": 8
+      },
+      {
+        "name": "Metaalschroot",
+        "amount": 10
+      },
+      {
+        "name": "Koper",
+        "amount": 20
+      }
+    ],
+    "tags": [
+      "Wrench",
+      "Blueprint",
+      "Aluminium",
+      "Elektronische schroot",
+      "Rubber",
+      "Craft Parts",
+      "Plastic",
+      "Metaalschroot",
+      "Koper"
+    ]
+  },
+  {
+    "name": "Circuit Tester",
+    "category": "Crafting",
+    "type": "Craft",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Wrench",
+        "amount": 5
+      },
+      {
+        "name": "Blueprint Circuit Tester",
+        "amount": 10
+      },
+      {
+        "name": "Aluminium",
+        "amount": 3
+      },
+      {
+        "name": "Plastic",
+        "amount": 5
+      },
+      {
+        "name": "Elektronische schroot",
+        "amount": 5
+      },
+      {
+        "name": "Rubber",
+        "amount": 5
+      },
+      {
+        "name": "Craft Parts",
+        "amount": 5
+      },
+      {
+        "name": "Metaalschroot",
+        "amount": 6
+      },
+      {
+        "name": "Koper",
+        "amount": 10
+      }
+    ],
+    "tags": [
+      "Wrench",
+      "Blueprint",
+      "Aluminium",
+      "Plastic",
+      "Elektronische schroot",
+      "Rubber",
+      "Craft Parts",
+      "Metaalschroot",
+      "Koper"
+    ]
+  },
+  {
+    "name": "Glas Snijder",
+    "category": "Crafting",
+    "type": "Craft",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Wrench",
+        "amount": 5
+      },
+      {
+        "name": "Blueprint Glas Snijder",
+        "amount": 10
+      },
+      {
+        "name": "Metaalschroot",
+        "amount": 5
+      },
+      {
+        "name": "Rubber",
+        "amount": 5
+      },
+      {
+        "name": "Craft Parts",
+        "amount": 5
+      },
+      {
+        "name": "Staal",
+        "amount": 10
+      },
+      {
+        "name": "Koper",
+        "amount": 10
+      }
+    ],
+    "tags": [
+      "Wrench",
+      "Blueprint",
+      "Metaalschroot",
+      "Rubber",
+      "Craft Parts",
+      "Staal",
+      "Koper"
+    ]
+  },
+  {
+    "name": "Fijne weegschaal",
+    "category": "Crafting",
+    "type": "Craft",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Wrench",
+        "amount": 5
+      },
+      {
+        "name": "Blueprint Weegschaal",
+        "amount": 20
+      },
+      {
+        "name": "Electronic Kit",
+        "amount": 1
+      },
+      {
+        "name": "Koper",
+        "amount": 4
+      },
+      {
+        "name": "Plastic",
+        "amount": 5
+      },
+      {
+        "name": "Metaalschroot",
+        "amount": 5
+      },
+      {
+        "name": "IJzer",
+        "amount": 5
+      },
+      {
+        "name": "Elektronische schroot",
+        "amount": 8
+      },
+      {
+        "name": "Aluminium",
+        "amount": 10
+      }
+    ],
+    "tags": [
+      "Wrench",
+      "Blueprint",
+      "Electronic Kit",
+      "Koper",
+      "Plastic",
+      "Metaalschroot",
+      "IJzer",
+      "Elektronische schroot",
+      "Aluminium"
+    ]
+  },
+  {
+    "name": "Leeg zakje",
+    "category": "Crafting",
+    "type": "Craft",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 1
+      },
+      {
+        "name": "Plastic",
+        "amount": 1
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "Plastic"
+    ]
+  },
+  {
+    "name": "Gieter",
+    "category": "Crafting",
+    "type": "Craft",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 1
+      },
+      {
+        "name": "Aluminium",
+        "amount": 3
+      },
+      {
+        "name": "Koper",
+        "amount": 5
+      },
+      {
+        "name": "Metaalschroot",
+        "amount": 5
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "Aluminium",
+      "Koper",
+      "Metaalschroot"
+    ]
+  },
+  {
+    "name": "Goudpan",
+    "category": "Crafting",
+    "type": "Craft",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 1
+      },
+      {
+        "name": "IJzer",
+        "amount": 5
+      },
+      {
+        "name": "Staal",
+        "amount": 10
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "IJzer",
+      "Staal"
+    ]
+  },
+  {
+    "name": "Snoeischaar",
+    "category": "Crafting",
+    "type": "Craft",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 1
+      },
+      {
+        "name": "Plastic",
+        "amount": 2
+      },
+      {
+        "name": "IJzer",
+        "amount": 3
+      },
+      {
+        "name": "Rubber",
+        "amount": 5
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "Plastic",
+      "IJzer",
+      "Rubber"
+    ]
+  },
+  {
+    "name": "Grinder",
+    "category": "Crafting",
+    "type": "Craft",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 1
+      },
+      {
+        "name": "Rubber",
+        "amount": 2
+      },
+      {
+        "name": "IJzer",
+        "amount": 4
+      },
+      {
+        "name": "Plastic",
+        "amount": 6
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "Rubber",
+      "IJzer",
+      "Plastic"
+    ]
+  },
+  {
+    "name": "Pickaxe",
+    "category": "Crafting",
+    "type": "Craft",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 1
+      },
+      {
+        "name": "Houten planken",
+        "amount": 2
+      },
+      {
+        "name": "IJzer",
+        "amount": 5
+      },
+      {
+        "name": "Acetaat Vezels",
+        "amount": 8
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "Houten planken",
+      "IJzer",
+      "Acetaat Vezels"
+    ]
+  },
+  {
+    "name": "Schep",
+    "category": "Crafting",
+    "type": "Craft",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 1
+      },
+      {
+        "name": "Houten planken",
+        "amount": 2
+      },
+      {
+        "name": "IJzer",
+        "amount": 5
+      },
+      {
+        "name": "Acetaat Vezels",
+        "amount": 8
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "Houten planken",
+      "IJzer",
+      "Acetaat Vezels"
+    ]
+  },
+  {
+    "name": "Lege Spuit",
+    "category": "Crafting",
+    "type": "Craft",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 1
+      },
+      {
+        "name": "Blueprint Lege Spuit",
+        "amount": 5
+      },
+      {
+        "name": "Plastic",
+        "amount": 1
+      },
+      {
+        "name": "Aluminium",
+        "amount": 1
+      },
+      {
+        "name": "IJzer",
+        "amount": 1
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "Blueprint",
+      "Plastic",
+      "Aluminium",
+      "IJzer"
+    ]
+  },
+  {
+    "name": "Tuinhandschoenen",
+    "category": "Crafting",
+    "type": "Craft",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 1
+      },
+      {
+        "name": "Stof",
+        "amount": 5
+      },
+      {
+        "name": "Acetaat Vezels",
+        "amount": 10
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "Stof",
+      "Acetaat Vezels"
+    ]
+  },
+  {
+    "name": "Duffel Bag",
+    "category": "Crafting",
+    "type": "Craft",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 1
+      },
+      {
+        "name": "Stof",
+        "amount": 10
+      },
+      {
+        "name": "Acetaat Vezels",
+        "amount": 15
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "Stof",
+      "Acetaat Vezels"
+    ]
+  },
+  {
+    "name": "Body Armor",
+    "category": "Crafting",
+    "type": "Craft",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Hammer",
+        "amount": 5
+      },
+      {
+        "name": "Blueprint vest",
+        "amount": 5
+      },
+      {
+        "name": "Aluminium",
+        "amount": 1
+      },
+      {
+        "name": "Metaalschroot",
+        "amount": 2
+      },
+      {
+        "name": "Craft Parts",
+        "amount": 3
+      },
+      {
+        "name": "Stof",
+        "amount": 5
+      },
+      {
+        "name": "Leer",
+        "amount": 6
+      },
+      {
+        "name": "Acetaat Vezels",
+        "amount": 10
+      }
+    ],
+    "tags": [
+      "Hammer",
+      "Blueprint",
+      "Aluminium",
+      "Metaalschroot",
+      "Craft Parts",
+      "Stof",
+      "Leer",
+      "Acetaat Vezels"
+    ]
+  },
+  {
+    "name": "Thermiet",
+    "category": "Crafting",
+    "type": "Craft",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Wrench",
+        "amount": 10
+      },
+      {
+        "name": "Blueprint Thermiet",
+        "amount": 20
+      },
+      {
+        "name": "IJzer poeder",
+        "amount": 2
+      },
+      {
+        "name": "Aluminium poeder",
+        "amount": 2
+      },
+      {
+        "name": "Craft Parts",
+        "amount": 3
+      },
+      {
+        "name": "Elektronische schroot",
+        "amount": 15
+      },
+      {
+        "name": "Koper",
+        "amount": 25
+      },
+      {
+        "name": "Staal",
+        "amount": 40
+      }
+    ],
+    "tags": [
+      "Wrench",
+      "Blueprint",
+      "IJzer poeder",
+      "Aluminium poeder",
+      "Craft Parts",
+      "Elektronische schroot",
+      "Koper",
+      "Staal"
+    ]
+  },
+  {
+    "name": "Dynamiet",
+    "category": "Crafting",
+    "type": "Craft",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Wrench",
+        "amount": 10
+      },
+      {
+        "name": "Blueprint Dynamiet",
+        "amount": 20
+      },
+      {
+        "name": "Houten planken",
+        "amount": 1
+      },
+      {
+        "name": "Aluminium poeder",
+        "amount": 2
+      },
+      {
+        "name": "IJzer poeder",
+        "amount": 3
+      },
+      {
+        "name": "Elektronische schroot",
+        "amount": 15
+      },
+      {
+        "name": "Staal",
+        "amount": 35
+      },
+      {
+        "name": "Koper",
+        "amount": 40
+      }
+    ],
+    "tags": [
+      "Wrench",
+      "Blueprint Dynamiet",
+      "Houten planken",
+      "Aluminium poeder",
+      "IJzer poeder",
+      "Elektronische schroot",
+      "Staal",
+      "Koper"
+    ]
+  },
+  {
+    "name": "C4",
+    "category": "Crafting",
+    "type": "Craft",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Wrench",
+        "amount": 10
+      },
+      {
+        "name": "Blueprint C4",
+        "amount": 20
+      },
+      {
+        "name": "IJzer poeder",
+        "amount": 3
+      },
+      {
+        "name": "Aluminium poeder",
+        "amount": 3
+      },
+      {
+        "name": "Elektronische schroot",
+        "amount": 15
+      },
+      {
+        "name": "Staal",
+        "amount": 30
+      },
+      {
+        "name": "Koper",
+        "amount": 35
+      }
+    ],
+    "tags": [
+      "Wrench",
+      "Blueprint",
+      "IJzer poeder",
+      "Aluminium poeder",
+      "Elektronische schroot",
+      "Staal",
+      "Koper"
+    ]
+  },
+  {
+    "name": "Diamandboormachine",
+    "category": "Crafting",
+    "type": "Craft",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Wrench",
+        "amount": 15
+      },
+      {
+        "name": "Blueprint Diamandboormachine",
+        "amount": 25
+      },
+      {
+        "name": "Electronic Kit",
+        "amount": 1
+      },
+      {
+        "name": "IJzer poeder",
+        "amount": 1
+      },
+      {
+        "name": "Ongesneden diamant",
+        "amount": 1
+      },
+      {
+        "name": "Kristallijn",
+        "amount": 2
+      },
+      {
+        "name": "Craft Parts",
+        "amount": 5
+      },
+      {
+        "name": "Elektronische schroot",
+        "amount": 15
+      },
+      {
+        "name": "Rubber",
+        "amount": 20
+      },
+      {
+        "name": "Koper",
+        "amount": 30
+      }
+    ],
+    "tags": [
+      "Wrench",
+      "Blueprint",
+      "Electronic Kit",
+      "IJzer poeder",
+      "Ongesneden diamant",
+      "Kristallijn",
+      "Craft Parts",
+      "Elektronische schroot",
+      "Rubber",
+      "Koper"
+    ]
+  },
+  {
+    "name": "Laser Drill",
+    "category": "Crafting",
+    "type": "Craft",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Wrench",
+        "amount": 15
+      },
+      {
+        "name": "Blueprint Laser Drill",
+        "amount": 25
+      },
+      {
+        "name": "Electronic Kit",
+        "amount": 1
+      },
+      {
+        "name": "Kristallijn",
+        "amount": 5
+      },
+      {
+        "name": "Koper",
+        "amount": 10
+      },
+      {
+        "name": "Craft Parts",
+        "amount": 15
+      },
+      {
+        "name": "Rubber",
+        "amount": 15
+      },
+      {
+        "name": "Elektronische schroot",
+        "amount": 20
+      },
+      {
+        "name": "Metaalschroot",
+        "amount": 20
+      }
+    ],
+    "tags": [
+      "Wrench",
+      "Blueprint",
+      "Electronic Kit",
+      "Kristallijn",
+      "Koper",
+      "Craft Parts",
+      "Rubber",
+      "Elektronische schroot",
+      "Metaalschroot"
+    ]
+  },
+  {
+    "name": "Trojan USB",
+    "category": "Crafting",
+    "type": "Craft",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Wrench",
+        "amount": 10
+      },
+      {
+        "name": "Blueprint Trojan USB",
+        "amount": 10
+      },
+      {
+        "name": "Staal",
+        "amount": 2
+      },
+      {
+        "name": "Aluminium poeder",
+        "amount": 3
+      },
+      {
+        "name": "Elektronische schroot",
+        "amount": 5
+      },
+      {
+        "name": "Plastic",
+        "amount": 5
+      }
+    ],
+    "tags": [
+      "Wrench",
+      "Blueprint",
+      "Staal",
+      "Aluminium poeder",
+      "Elektronische schroot",
+      "Plastic"
+    ]
+  },
+  {
+    "name": "Gasbrander",
+    "category": "Crafting",
+    "type": "Craft",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Wrench",
+        "amount": 15
+      },
+      {
+        "name": "Blueprint Gasbrander",
+        "amount": 25
+      },
+      {
+        "name": "IJzer poeder",
+        "amount": 3
+      },
+      {
+        "name": "Elektronische schroot",
+        "amount": 5
+      },
+      {
+        "name": "Craft Parts",
+        "amount": 10
+      },
+      {
+        "name": "Koper",
+        "amount": 10
+      },
+      {
+        "name": "Rubber",
+        "amount": 15
+      },
+      {
+        "name": "Metaalschroot",
+        "amount": 20
+      }
+    ],
+    "tags": [
+      "Wrench",
+      "Blueprint",
+      "IJzer poeder",
+      "Elektronische schroot",
+      "Craft Parts",
+      "Koper",
+      "Rubber",
+      "Metaalschroot"
+    ]
+  },
+  {
+    "name": "Beginnersbaken",
+    "category": "Crafting",
+    "type": "Craft",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Wrench",
+        "amount": 15
+      },
+      {
+        "name": "Electronic Kit",
+        "amount": 1
+      },
+      {
+        "name": "IJzer poeder",
+        "amount": 1
+      },
+      {
+        "name": "Kristallijn",
+        "amount": 1
+      },
+      {
+        "name": "Craft Parts",
+        "amount": 10
+      },
+      {
+        "name": "Rubber",
+        "amount": 10
+      },
+      {
+        "name": "Elektronische schroot",
+        "amount": 10
+      },
+      {
+        "name": "Metaalschroot",
+        "amount": 15
+      },
+      {
+        "name": "Koper",
+        "amount": 20
+      }
+    ],
+    "tags": [
+      "Wrench",
+      "Electronic Kit",
+      "IJzer poeder",
+      "Kristallijn",
+      "Craft Parts",
+      "Rubber",
+      "Elektronische schroot",
+      "Metaalschroot",
+      "20x Koper"
+    ]
+  },
+  {
+    "name": "Lustrous Locator",
+    "category": "Crafting",
+    "type": "Craft",
+    "icon": "",
+    "materials": [
+      {
+        "name": "Wrench",
+        "amount": 15
+      },
+      {
+        "name": "Electronic Kit",
+        "amount": 1
+      },
+      {
+        "name": "Kristallijn",
+        "amount": 1
+      },
+      {
+        "name": "IJzer poeder",
+        "amount": 2
+      },
+      {
+        "name": "Craft Parts",
+        "amount": 10
+      },
+      {
+        "name": "Rubber",
+        "amount": 10
+      },
+      {
+        "name": "Elektronische schroot",
+        "amount": 10
+      },
+      {
+        "name": "Metaalschroot",
+        "amount": 15
+      },
+      {
+        "name": "Koper",
+        "amount": 20
+      }
+    ],
+    "tags": [
+      "Wrench",
+      "Electronic Kit",
+      "Kristallijn",
+      "IJzer poeder",
+      "Craft Parts",
+      "Rubber",
+      "Elektronische schroot",
+      "Metaalschroot",
+      "Koper"
+    ]
+  },
+  {
+    "name": "Schatzoeker",
+    "category": "Crafting",
+    "type": "Craft",
+    "icon": "",
+    "materials": [
+      { "name": "Wrench", "amount": 15},
+      { "name": "Electronic Kit", "amount": 1},
+      { "name": "Kristallijn","amount": 1 },
+      { "name": "IJzer poeder","amount": 3 },
+      { "name": "Craft Parts", "amount": 10 },
+      { "name": "Rubber", "amount": 10 },
+      { "name": "Elektronische schroot", "amount": 10 },
+      { "name": "Metaalschroot", "amount": 15 },
+      { "name": "Koper", "amount": 25 }
+    ],
+    "tags": [ "Wrench", "Electronic Kit", "Kristallijn", "IJzer poeder", "Craft Parts", "Rubber", "Elektronische schroot", "Metaalschroot", "Koper" ]
+  },
+  {
+    "name": "Goudzoekers Graal",
+    "category": "Crafting",
+    "type": "Craft",
+    "icon": "",
+    "materials": [
+      { "name": "Wrench", "amount": 15 },
+      { "name": "Electronic Kit", "amount": 1 },
+      { "name": "Kristallijn", "amount": 1 },
+      { "name": "IJzer poeder", "amount": 4 },
+      { "name": "Rubber", "amount": 10 },
+      { "name": "Elektronische schroot", "amount": 10 },
+      { "name": "Craft Parts", "amount": 15 },
+      { "name": "Metaalschroot", "amount": 15 },
+      { "name": "Koper", "amount": 25 }
+    ],
+    "tags": [ "Wrench", "Electronic Kit", "Kristallijn", "IJzer poeder", "Rubber", "Elektronische schroot", "Craft Parts", "Metaalschroot", "Koper" ]
+  },
+  {
+    "name": "Archeo Ace",
+    "category": "Crafting",
+    "type": "Craft",
+    "icon": "",
+    "materials": [
+      { "name": "Wrench", "amount": 15 },
+      { "name": "Electronic Kit", "amount": 1 },
+      { "name": "Kristallijn", "amount": 1 },
+      { "name": "IJzer poeder", "amount": 5 },
+      { "name": "Rubber", "amount": 10 },
+      { "name": "Elektronische schroot", "amount": 10 },
+      { "name": "Metaalschroot", "amount": 15 },
+      { "name": "Craft Parts", "amount": 20 },
+      { "name": "Koper", "amount": 25 }
+    ],
+    "tags": [ "Wrench", "Electronic Kit", "Kristallijn", "IJzer poeder", "Rubber", "Elektronische schroot", "Metaalschroot", "Craft Parts", "Koper" ]
+  },
+  {
+    "name": "Ijzer poeder",
+    "category": "Crafting",
+    "type": "Craft",
+    "icon": "",
+    "materials": [
+      { "name": "Hammer", "amount": 1 },
+      { "name": "Glasplaat", "amount": 2 },
+      { "name": "Kristallijn", "amount": 2 },
+      { "name": "IJzer", "amount": 5 }
+    ],
+    "tags": [ "Hammer", "Glasplaat", "Kristallijn", "IJzer" ]
+  },
+  {
+    "name": "Aluminium poeder",
+    "category": "Crafting",
+    "type": "Craft",
+    "icon": "",
+    "materials": [
+      { "name": "Hammer", "amount": 1 },
+      { "name": "Kristallijn", "amount": 2 },
+      { "name": "Aluminium", "amount": 4 }
+    ],
+    "tags": [ "Hammer", "Kristallijn", "Aluminium" ]
+  },
+  {
+    "name": "Kristalijn",
+    "category": "Crafting",
+    "type": "Craft",
+    "icon": "",
+    "materials": [
+      { "name": "Hammer", "amount": 1 },
+      { "name": "Robijn", "amount": 1 }
+    ],
+    "tags": [ "Hammer", "Robijn" ]
+  },
+  {
+    "name": "Aluminium Folie",
+    "category": "Crafting",
+    "type": "Craft",
+    "icon": "",
+    "materials": [
+      { "name": "Hammer", "amount": 1 },
+      { "name": "Gesmolten Aluminium", "amount": 1 }
+    ],
+    "tags": [ "Hammer", "Gesmolten Aluminium" ]
+  },
+  {
+    "name": "Nylon Touw",
+    "category": "Crafting",
+    "type": "Craft",
+    "icon": "",
+    "materials": [
+      { "name": "Wrench", "amount": 15 },
+      { "name": "Kristallijn", "amount": 1 },
+      { "name": "Gesmolten Aluminium", "amount": 3 },
+      { "name": "Rubber", "amount": 5 },
+      { "name": "Stof", "amount": 8 },
+      { "name": "Acetaat Vezels", "amount": 10 },
+      { "name": "Gesmolten Plastic", "amount": 64 }
+    ],
+    "tags": [ "Wrench", "Kristallijn", "Gesmolten Aluminium", "Rubber", "Stof", "Acetaat Vezels", "Gesmolten Plastic" ]
+  },
+  {
+    "name": "Crowbar",
+    "category": "Crafting",
+    "type": "Craft",
+    "icon": "",
+    "materials": [
+      { "name": "Hammer", "amount": 20 },
+      { "name": "Rubber", "amount": 5 },
+      { "name": "Craft Parts", "amount": 10 },
+      { "name": "Staal", "amount": 15 },
+      { "name": "Metaalschroot", "amount": 20 }
+    ],
+    "tags": [ "Hammer",	"Rubber",	"Craft Parts",	"Staal",	"Metaalschroot" ]
+  },
+  {
+    "name": "Jutten Zak",
+    "category": "Crafting",
+    "type": "Craft",
+    "icon": "",
+    "materials": [
+      { "name": "Wrench", "amount": 20 },
+      { "name": "Nylon Touw", "amount": 2 },
+      { "name": "Craft Parts", "amount": 5 },
+      { "name": "Leer", "amount": 10 },
+      { "name": "Stof", "amount": 20 },
+      { "name": "Acetaat Vezels", "amount": 25 }
+    ],
+    "tags": [ "Wrench",	"Nylon Touw",	"Craft Parts",	"Leer",	"Stof",	"Acetaat Vezels" ]
+  },
+  {
+    "name": "Adrenaline Injectie",
+    "category": "Crafting",
+    "type": "Craft",
+    "icon": "",
+    "materials": [
+      { "name": "Adrenaline Ampul", "amount": 1 },
+      { "name": "Lege spuit", "amount": 1 },
+      { "name": "Alcohol Doekje", "amount": 2 },
+      { "name": "Geld", "amount": 3000 }
+    ],
+    "tags": [ "Adrenaline Ampul", "Lege spuit", "Alcohol Doekje", "Geld" ]
   }
 ]
