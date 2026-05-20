@@ -193,7 +193,7 @@ function renderItems() {
 
     card.innerHTML = `
       <div class="item-top">
-        <div class="item-icon">${item.icon || "📦"}</div>
+        <div class="item-icon">${item.icon || ""}</div>
 
         <div>
           <h3>${item.name}</h3>
