@@ -1,13 +1,73 @@
 [
   {
-    "name": "Hobo Azijn 4",
-    "category": "Crafting",
-    "type": "Zwerver Tafel",
+    "name": "Gesmolten Aluminium",
+    "category": "Smelting",
+    "type": "Furnace",
     "icon": "",
     "materials": [
-      { "name": "Lege Fles", "amount": 1 },
-      { "name": "NRotte Appel", "amount": 3 }
+      { "name": "Aluminium", "amount": 3 }
     ],
-    "tags": ["Lege Fles", "Rotte Appel"]
+    "tags": ["Aluminium"]
+  },
+  {
+    "name": "Gesmolten Goud",
+    "category": "Smelting",
+    "type": "Furnace",
+    "icon": "",
+    "materials": [
+      { "name": "Gouderts", "amount": 2 }
+    ],
+    "tags": ["Gouderts"]
+  },
+  {
+    "name": "Gesmolten Plastic",
+    "category": "Smelting",
+    "type": "Furnace",
+    "icon": "",
+    "materials": [
+      { "name": "Plastic", "amount": 3 }
+    ],
+    "tags": ["Gouderts"]
+  },
+  {
+    "name": "Ijzer",
+    "category": "Smelting",
+    "type": "Furnace",
+    "icon": "",
+    "materials": [
+      { "name": "Ijzererts", "amount": 1 }
+    ],
+    "tags": ["Ijzererts"]
+  },
+  {
+    "name": "Koper",
+    "category": "Smelting",
+    "type": "Furnace",
+    "icon": "",
+    "materials": [
+      { "name": "Kopererts", "amount": 1 }
+    ],
+    "tags": ["Kopererts"]
+  },
+  {
+    "name": "Staal",
+    "category": "Smelting",
+    "type": "Furnace",
+    "icon": "",
+    "materials": [
+      { "name": "Ijzererts", "amount": 1 },
+      { "name": "Carbon", "amount": 1 }
+    ],
+    "tags": ["Ijzererts", "Carbon"]
+  },
+  {
+    "name": "Zilverenstaaf",
+    "category": "Smelting",
+    "type": "Furnace",
+    "icon": "",
+    "materials": [
+      { "name": "Zilvererts", "amount": 2 }
+    ],
+    "tags": ["Zilvererts"]
   }
 ]
