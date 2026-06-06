@@ -264,13 +264,5 @@
   "description": "",
   "color": "purple",
   "visible": true
-},
-{
-  "name": "Carboost",
-  "x": 152,
-  "y": -1498,
-  "description": "",
-  "color": "pink",
-  "visible": true
 }
 ]
