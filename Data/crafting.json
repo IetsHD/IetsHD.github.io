@@ -2344,7 +2344,7 @@
     "materials": [
       {
         "name": "Hammer",
-        "amount": 1
+        "amount": "1%"
       },
       {
         "name": "Plastic",
