@@ -253,7 +253,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 10
       },
       {
@@ -283,7 +283,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 10
       },
       {
@@ -323,7 +323,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 10
       },
       {
@@ -413,7 +413,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 0.5
       },
       {
@@ -438,7 +438,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 0.5
       },
       {
@@ -463,7 +463,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 0.5
       },
       {
@@ -488,7 +488,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 0.5
       },
       {
@@ -623,7 +623,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 0.5
       },
       {
@@ -658,7 +658,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 0.5
       },
       {
@@ -703,7 +703,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 0.5
       },
       {
@@ -743,7 +743,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 0.5
       },
       {
@@ -783,7 +783,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 10
       },
       {
@@ -833,7 +833,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 10
       },
       {
@@ -873,7 +873,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 10
       },
       {
@@ -913,7 +913,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 10
       },
       {
@@ -958,7 +958,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 10
       },
       {
@@ -1008,7 +1008,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 10
       },
       {
@@ -1053,7 +1053,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 10
       },
       {
@@ -1098,7 +1098,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 10
       },
       {
@@ -1148,7 +1148,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 10
       },
       {
@@ -1198,7 +1198,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 0.5
       },
       {
@@ -1218,7 +1218,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 0.5
       },
       {
@@ -1238,7 +1238,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 0.5
       },
       {
@@ -1258,7 +1258,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 0.5
       },
       {
@@ -1278,7 +1278,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 0.5
       },
       {
@@ -1298,7 +1298,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 0.5
       },
       {
@@ -1318,7 +1318,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 0.5
       },
       {
@@ -1378,7 +1378,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 0.5
       },
       {
@@ -1403,7 +1403,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 0.5
       },
       {
@@ -1428,7 +1428,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 0.5
       },
       {
@@ -1448,7 +1448,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 0.5
       },
       {
@@ -1493,7 +1493,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 0.5
       },
       {
@@ -1513,7 +1513,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 0.5
       },
       {
@@ -1533,7 +1533,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 0.5
       },
       {
@@ -1553,7 +1553,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 0.5
       },
       {
@@ -1573,7 +1573,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 0.5
       },
       {
@@ -1593,7 +1593,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 0.5
       },
       {
@@ -1613,7 +1613,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 0.5
       },
       {
@@ -1708,7 +1708,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 5
       },
       {
@@ -1733,7 +1733,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 5
       },
       {
@@ -1773,7 +1773,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 5
       },
       {
@@ -1803,7 +1803,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 5
       },
       {
@@ -1843,7 +1843,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 5
       },
       {
@@ -1893,7 +1893,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 5
       },
       {
@@ -1928,7 +1928,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 10
       },
       {
@@ -1983,7 +1983,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 10
       },
       {
@@ -2028,7 +2028,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 10
       },
       {
@@ -2083,7 +2083,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 10
       },
       {
@@ -2343,8 +2343,8 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
-        "amount": "1%"
+        "name": "Hammer %",
+        "amount": 1
       },
       {
         "name": "Plastic",
@@ -2363,7 +2363,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 1
       },
       {
@@ -2393,7 +2393,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 1
       },
       {
@@ -2418,7 +2418,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 1
       },
       {
@@ -2448,7 +2448,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 1
       },
       {
@@ -2478,7 +2478,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 1
       },
       {
@@ -2508,7 +2508,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 1
       },
       {
@@ -2538,7 +2538,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 1
       },
       {
@@ -2573,7 +2573,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 1
       },
       {
@@ -2598,7 +2598,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 1
       },
       {
@@ -2623,7 +2623,7 @@
     "icon": "",
     "materials": [
       {
-        "name": "Hammer",
+        "name": "Hammer %",
         "amount": 5
       },
       {
@@ -3186,7 +3186,7 @@
     "type": "Craft",
     "icon": "",
     "materials": [
-      { "name": "Hammer", "amount": 1 },
+      { "name": "Hammer %", "amount": 1 },
       { "name": "Glasplaat", "amount": 2 },
       { "name": "Kristallijn", "amount": 2 },
       { "name": "IJzer", "amount": 5 }
@@ -3199,7 +3199,7 @@
     "type": "Craft",
     "icon": "",
     "materials": [
-      { "name": "Hammer", "amount": 1 },
+      { "name": "Hammer %", "amount": 1 },
       { "name": "Kristallijn", "amount": 2 },
       { "name": "Aluminium", "amount": 4 }
     ],
@@ -3211,7 +3211,7 @@
     "type": "Craft",
     "icon": "",
     "materials": [
-      { "name": "Hammer", "amount": 1 },
+      { "name": "Hammer %", "amount": 1 },
       { "name": "Robijn", "amount": 1 }
     ],
     "tags": [ "Hammer", "Robijn" ]
@@ -3222,7 +3222,7 @@
     "type": "Craft",
     "icon": "",
     "materials": [
-      { "name": "Hammer", "amount": 1 },
+      { "name": "Hammer %", "amount": 1 },
       { "name": "Gesmolten Aluminium", "amount": 1 }
     ],
     "tags": [ "Hammer", "Gesmolten Aluminium" ]
@@ -3249,7 +3249,7 @@
     "type": "Craft",
     "icon": "",
     "materials": [
-      { "name": "Hammer", "amount": 20 },
+      { "name": "Hammer %", "amount": 20 },
       { "name": "Rubber", "amount": 5 },
       { "name": "Craft Parts", "amount": 10 },
       { "name": "Staal", "amount": 15 },
