@@ -10,5 +10,29 @@
     "name": "Combat",
     "category": "Pistols",
     "price": 30
+  },
+  {
+    "id": 3,
+    "name": "AP",
+    "category": "Pistols",
+    "price": 30
+  },
+  {
+    "id": 4,
+    "name": "Pistol 50",
+    "category": "Pistols",
+    "price": 30
+  },
+  {
+    "id": 5,
+    "name": "Heavy",
+    "category": "Pistols",
+    "price": 30
+  },
+  {
+    "id": 6,
+    "name": "Vintage",
+    "category": "Pistols",
+    "price": 30
   }
 ] 
