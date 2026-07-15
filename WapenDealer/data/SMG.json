@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "Bier",
+    "category": "SMG",
+    "price": 10
+  },
+  {
+    "id": 2,
+    "name": "Bruine Rum",
+    "category": "SMG",
+    "price": 10
+  }
+]

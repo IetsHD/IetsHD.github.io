@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "SNS",
+    "category": "Pistols",
+    "price": 20
+  },
+  {
+    "id": 2,
+    "name": "Combat",
+    "category": "Pistols",
+    "price": 30
+  }
+]

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Netjes Geregeld - Bestellijst</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">
+        <img src="logo.png" alt="Netjes Geregeld logo" onerror="this.style.display='none'" />
+      </div>
+
+      <div>
+        <h1>Netjes Geregeld</h1>
+        <p>Bestellijst</p>
+      </div>
+    </div>
+
+    <div class="top-actions">
+      <button class="secondary-button" id="resetQuantitiesBtn">
+      <span>↺</span>
+        Aantallen resetten
+      </button>
+
+      <button class="cart-button" id="openCartBtn">
+        🛒 Bestellijst
+        <span id="cartCount" class="cart-count">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="toolbar">
+      <div class="search-wrap">
+        <span>🔍</span>
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Zoek producten..."
+          autocomplete="off"
+        />
+      </div>
+
+      <div id="categoryFilters" class="category-filters"></div>
+    </section>
+
+    <section id="productList" class="product-list"></section>
+  </main>
+
+  <!-- Winkelwagen scherm -->
+  <aside class="cart-screen" id="cartScreen" aria-hidden="true">
+    <div class="cart-panel">
+      <div class="cart-header">
+        <div>
+          <h2>Bestellijst</h2>
+          <p>Overzicht van de bestelling</p>
+        </div>
+
+        <button class="icon-button" id="closeCartBtn" aria-label="Sluit winkelwagen">
+          ✕
+        </button>
+      </div>
+
+      <div id="cartItems" class="cart-items"></div>
+
+      <div class="cart-summary">
+        <div class="summary-row">
+          <span>Aantal producten</span>
+          <strong id="summaryItems">0</strong>
+        </div>
+
+        <div class="summary-row total">
+          <span>Totaal</span>
+          <strong id="summaryTotal">€0</strong>
+        </div>
+
+        <button class="danger-button" id="clearCartBtn">
+          Winkelwagen leegmaken
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <script src="app.js"></script>
+</body>
+</html>
