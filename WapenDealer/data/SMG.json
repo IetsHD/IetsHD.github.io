@@ -1,13 +1,43 @@
 [
   {
     "id": 1,
-    "name": "Bier",
+    "name": "Micro SMG",
     "category": "SMG",
     "price": 10
   },
   {
     "id": 2,
-    "name": "Bruine Rum",
+    "name": "SMG",
+    "category": "SMG",
+    "price": 10
+  },
+  {
+    "id": 2,
+    "name": "Assault SMG",
+    "category": "SMG",
+    "price": 10
+  },
+    {
+    "id": 2,
+    "name": "Combat PDW",
+    "category": "SMG",
+    "price": 10
+  },
+    {
+    "id": 2,
+    "name": "Machine Pistol",
+    "category": "SMG",
+    "price": 10
+  },
+    {
+    "id": 2,
+    "name": "Mini SMG",
+    "category": "SMG",
+    "price": 10
+  },
+    {
+    "id": 2,
+    "name": "Tactical SMG",
     "category": "SMG",
     "price": 10
   }
