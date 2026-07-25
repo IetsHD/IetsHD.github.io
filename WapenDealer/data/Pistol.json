@@ -9,7 +9,7 @@
     "id": 2,
     "name": "Combat",
     "category": "Pistols",
-    "price": 30
+    "price": "30.000"
   },
   {
     "id": 3,
@@ -21,12 +21,12 @@
     "id": 4,
     "name": "Heavy",
     "category": "Pistols",
-    "price": 30
+    "price": "40.000"
   },
   {
     "id": 5,
     "name": "Vintage",
     "category": "Pistols",
-    "price": 30
+    "price": "30.000"
   }
 ] 
