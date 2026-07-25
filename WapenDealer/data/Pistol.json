@@ -3,30 +3,30 @@
     "id": 1,
     "name": "SNS",
     "category": "Pistols",
-    "price": 20
+    "price": 20.000
   },
   {
     "id": 2,
     "name": "Combat",
     "category": "Pistols",
-    "price": "30.000"
+    "price": 30.000
   },
   {
     "id": 3,
     "name": "Pistol .50",
     "category": "Pistols",
-    "price": 30
+    "price": 50.000
   },
   {
     "id": 4,
     "name": "Heavy",
     "category": "Pistols",
-    "price": "40.000"
+    "price": 40.000
   },
   {
     "id": 5,
     "name": "Vintage",
     "category": "Pistols",
-    "price": "30.000"
+    "price": 30.000
   }
 ] 
