@@ -1,5 +1,5 @@
 :root {
---bg: #090b0c;
+    --bg: #090b0c;
     --panel: #040406;
     --panel-light: #6f40be;
     --border: #601eab;
@@ -39,7 +39,7 @@ button {
 .topbar {
   height: 72px;
   border-bottom: 1px solid var(--border);
-  background: #151b24;
+  background: #040406;
   display: flex;
   align-items: center;
   justify-content: space-between;
