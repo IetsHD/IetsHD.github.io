@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "acp",
+    "category": "Ammo",
+    "price": 10
+  },
+  {
+    "id": 2,
+    "name": "9mm",
+    "category": "Ammo",
+    "price": 10
+  },
+  {
+    "id": 3,
+    "name": ".50",
+    "category": "Ammo",
+    "price": 10
+  },
+    {
+    "id": 4,
+    "name": "Combat PDW",
+    "category": "SMG",
+    "price": 10
+  }
+]
