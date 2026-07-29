@@ -42,7 +42,8 @@ async function init() {
 async function loadProducts() {
   const categoryFiles = [
     "data/Pistol.json",
-    "data/SMG.json"
+    "data/SMG.json",
+    "data/Ammo.json"
   ];
 
   try {

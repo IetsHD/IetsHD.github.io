@@ -1,26 +1,32 @@
 [
   {
     "id": 1,
-    "name": "acp",
+    "name": ".45 ACP Box",
     "category": "Ammo",
-    "price": 10
+    "price": 500
   },
   {
     "id": 2,
-    "name": "9mm",
+    "name": "9mm Box",
     "category": "Ammo",
-    "price": 10
+    "price": 500
   },
   {
     "id": 3,
-    "name": ".50",
+    "name": "7.62x39 Box",
     "category": "Ammo",
-    "price": 10
+    "price": 500
   },
     {
     "id": 4,
-    "name": "Combat PDW",
-    "category": "SMG",
-    "price": 10
+    "name": ".44 Magnum Box",
+    "category": "Ammo",
+    "price": 500
+  },
+      {
+    "id": 5,
+    "name": "Shotgun Shells",
+    "category": "Ammo",
+    "price": 500
   }
 ]
