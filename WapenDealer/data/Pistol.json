@@ -3,7 +3,7 @@
     "id": 1,
     "name": "SNS",
     "category": "Pistols",
-    "price": 20000
+    "price": 15000
   },
   {
     "id": 2,
@@ -19,7 +19,7 @@
   },
   {
     "id": 4,
-    "name": "Heavy",
+    "name": "Heavy Pistol",
     "category": "Pistols",
     "price": 40000
   },

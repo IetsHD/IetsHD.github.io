@@ -1,32 +1,38 @@
 [
   {
     "id": 1,
-    "name": ".45 ACP Box",
+    "name": ".45 ACP",
     "category": "Ammo",
-    "price": 500
+    "price": 10
   },
   {
     "id": 2,
-    "name": "9mm Box",
+    "name": "9mm",
     "category": "Ammo",
-    "price": 500
+    "price": 10
+  },
+   {
+    "id": 3,
+    "name": "5.56x45",
+    "category": "Ammo",
+    "price": 10
   },
   {
-    "id": 3,
-    "name": "7.62x39 Box",
+    "id": 4,
+    "name": "7.62x39",
     "category": "Ammo",
-    "price": 500
+    "price": 10
   },
     {
-    "id": 4,
-    "name": ".44 Magnum Box",
-    "category": "Ammo",
-    "price": 500
-  },
-      {
     "id": 5,
-    "name": "Shotgun Shells",
+    "name": ".44 Magnum",
     "category": "Ammo",
-    "price": 500
+    "price": 10
+  },
+    {
+    "id": 6,
+    "name": "12 Gauge",
+    "category": "Ammo",
+    "price": 10
   }
 ]
