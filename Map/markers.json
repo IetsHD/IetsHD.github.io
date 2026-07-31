@@ -171,6 +171,14 @@
   "visible": true
 },
 {
+  "name": "Verkoop: Huiden en Vlees",
+  "x": 4876,
+  "y": 2308,
+  "description": "Hier kan je al je spullen van het jagen vekopen",
+  "color": "yellow",
+  "visible": true
+},
+{
   "name": "Black Market",
   "x": 2853,
   "y": 6593,
