@@ -1702,7 +1702,7 @@
     ]
   },
   {
-    "name": "Lockpick",
+    "name": "Lockpick x3",
     "category": "Crafting",
     "type": "Craft",
     "icon": "",
@@ -1727,7 +1727,7 @@
     ]
   },
   {
-    "name": "Geavanceerde lockpick",
+    "name": "Geavanceerde lockpick x2",
     "category": "Crafting",
     "type": "Craft",
     "icon": "",
@@ -1767,7 +1767,7 @@
     ]
   },
   {
-    "name": "Schroevendraaierset",
+    "name": "Schroevendraaierset x2",
     "category": "Crafting",
     "type": "Craft",
     "icon": "",
@@ -1887,7 +1887,7 @@
     ]
   },
   {
-    "name": "ZipTie",
+    "name": "ZipTie x2",
     "category": "Crafting",
     "type": "Craft",
     "icon": "",
@@ -2127,7 +2127,7 @@
     ]
   },
   {
-    "name": "Electronic Kit",
+    "name": "Electronic Kit x2",
     "category": "Crafting",
     "type": "Craft",
     "icon": "",
@@ -2337,7 +2337,7 @@
     ]
   },
   {
-    "name": "Leeg zakje",
+    "name": "Leeg zakje x5",
     "category": "Crafting",
     "type": "Craft",
     "icon": "",
@@ -2532,7 +2532,7 @@
     ]
   },
   {
-    "name": "Lege Spuit",
+    "name": "Lege Spuit x3",
     "category": "Crafting",
     "type": "Craft",
     "icon": "",
@@ -2617,7 +2617,7 @@
     ]
   },
   {
-    "name": "Body Armor",
+    "name": "Body Armor x2",
     "category": "Crafting",
     "type": "Craft",
     "icon": "",
@@ -3181,7 +3181,7 @@
     "tags": [ "Wrench", "Electronic Kit", "Kristallijn", "IJzer poeder", "Rubber", "Elektronische schroot", "Metaalschroot", "Craft Parts", "Koper" ]
   },
   {
-    "name": "Ijzer poeder",
+    "name": "Ijzer poeder x2",
     "category": "Crafting",
     "type": "Craft",
     "icon": "",
@@ -3194,7 +3194,7 @@
     "tags": [ "Hammer", "Glasplaat", "Kristallijn", "IJzer" ]
   },
   {
-    "name": "Aluminium poeder",
+    "name": "Aluminium poeder x2",
     "category": "Crafting",
     "type": "Craft",
     "icon": "",
@@ -3217,7 +3217,7 @@
     "tags": [ "Hammer", "Robijn" ]
   },
   {
-    "name": "Aluminium Folie",
+    "name": "Aluminium Folie x3",
     "category": "Crafting",
     "type": "Craft",
     "icon": "",
