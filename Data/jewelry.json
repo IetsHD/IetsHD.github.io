@@ -1,13 +1,344 @@
 [
   {
-    "name": "Hobo Azijn 2",
+    "name": "Smaragd",
     "category": "Crafting",
-    "type": "Zwerver Tafel",
+    "type": "Jewelry",
     "icon": "",
     "materials": [
-      { "name": "Lege Fles", "amount": 1 },
-      { "name": "NRotte Appel", "amount": 3 }
+      { "name": "Ongesneden smaragd", "amount": 1 }
     ],
-    "tags": ["Lege Fles", "Rotte Appel"]
+    "tags": ["Ongesneden smaragd"]
+  },
+  {
+    "name": "Diamant",
+    "category": "Crafting",
+    "type": "Jewelry",
+    "icon": "",
+    "materials": [
+      { "name": "Ongesneden diamant", "amount": 1 }
+    ],
+    "tags": ["Ongesneden diamant"]
+  },
+  {
+    "name": "Robijn",
+    "category": "Crafting",
+    "type": "Jewelry",
+    "icon": "",
+    "materials": [
+      { "name": "Ongesneden robijn", "amount": 1 }
+    ],
+    "tags": ["Ongesneden robijn"]
+  },
+  {
+    "name": "Saffier",
+    "category": "Crafting",
+    "type": "Jewelry",
+    "icon": "",
+    "materials": [
+      { "name": "Ongesneden saffier", "amount": 1 }
+    ],
+    "tags": ["Ongesneden saffier"]
+  },
+  {
+    "name": "Gouden Ring",
+    "category": "Crafting",
+    "type": "Jewelry",
+    "icon": "",
+    "materials": [
+      { "name": "Gesmolten Goud", "amount": 1 }
+    ],
+    "tags": ["Gesmolten Goud"]
+  },
+  {
+    "name": "Zilveren Ring",
+    "category": "Crafting",
+    "type": "Jewelry",
+    "icon": "",
+    "materials": [
+      { "name": "Zilverenstaaf", "amount": 1 }
+    ],
+    "tags": ["Zilverenstaaf"]
+  },
+  {
+    "name": "Gouden Oorbellen",
+    "category": "Crafting",
+    "type": "Jewelry",
+    "icon": "",
+    "materials": [
+      { "name": "Gesmolten Goud", "amount": 1 }
+    ],
+    "tags": ["Gesmolten Goud"]
+  },
+  {
+    "name": "Zilveren Oorbellen",
+    "category": "Crafting",
+    "type": "Jewelry",
+    "icon": "",
+    "materials": [
+      { "name": "Zilverenstaaf", "amount": 1 }
+    ],
+    "tags": ["Zilverenstaaf"]
+  },
+  {
+    "name": "Gouden Ketting",
+    "category": "Crafting",
+    "type": "Jewelry",
+    "icon": "",
+    "materials": [
+      { "name": "Gesmolten Goud", "amount": 1 }
+    ],
+    "tags": ["Gesmolten Goud"]
+  },
+  {
+    "name": "Zilveren Ketting",
+    "category": "Crafting",
+    "type": "Jewelry",
+    "icon": "",
+    "materials": [
+      { "name": "Zilverenstaaf", "amount": 1 }
+    ],
+    "tags": ["Zilverenstaaf"]
+  },
+  {
+    "name": "Gouden Ring - Smaragd",
+    "category": "Crafting",
+    "type": "Jewelry",
+    "icon": "",
+    "materials": [
+      { "name": "Gouden Ring", "amount": 1 },
+      { "name": "Smaragd", "amount": 2 }
+    ],
+    "tags": ["Gouden Ring", "Smaragd"]
+  },
+  {
+    "name": "Gouden Ring - Diamant",
+    "category": "Crafting",
+    "type": "Jewelry",
+    "icon": "",
+    "materials": [
+      { "name": "Gouden Ring", "amount": 1 },
+      { "name": "Diamant", "amount": 2 }
+    ],
+    "tags": ["Gouden Ring", "Diamant"]
+  },
+  {
+    "name": "Gouden Ring - Robijn",
+    "category": "Crafting",
+    "type": "Jewelry",
+    "icon": "",
+    "materials": [
+      { "name": "Gouden Ring", "amount": 1 },
+      { "name": "Robijn", "amount": 2 }
+    ],
+    "tags": ["Gouden Ring", "Robijn"]
+  },
+  {
+    "name": "Gouden Ring - Saffier",
+    "category": "Crafting",
+    "type": "Jewelry",
+    "icon": "",
+    "materials": [
+      { "name": "Gouden Ring", "amount": 1 },
+      { "name": "Saffier", "amount": 2 }
+    ],
+    "tags": ["Gouden Ring", "Saffier"]
+  },
+  {
+    "name": "Gouden Oorbellen - Diamant",
+    "category": "Crafting",
+    "type": "Jewelry",
+    "icon": "",
+    "materials": [
+      { "name": "Gouden - Oorbellen", "amount": 1 },
+      { "name": "Diamant", "amount": 2 }
+    ],
+    "tags": ["Gouden - Oorbellen", "Diamant"]
+  },
+  {
+    "name": "Gouden Oorbellen - Smaragd",
+    "category": "Crafting",
+    "type": "Jewelry",
+    "icon": "",
+   "materials": [
+      { "name": "Gouden - Oorbellen", "amount": 1 },
+      { "name": "Smaragd", "amount": 2 }
+    ],
+    "tags": ["Gouden - Oorbellen", "Smaragd"]
+  },
+  {
+    "name": "Gouden Oorbellen - Robijn",
+    "category": "Crafting",
+    "type": "Jewelry",
+    "icon": "",
+   "materials": [
+      { "name": "Gouden - Oorbellen", "amount": 1 },
+      { "name": "Robijn", "amount": 2 }
+    ],
+    "tags": ["Gouden - Oorbellen", "Robijn"]
+  },
+  {
+    "name": "Gouden Oorbellen - Saffier",
+    "category": "Crafting",
+    "type": "Jewelry",
+    "icon": "",
+   "materials": [
+      { "name": "Gouden - Oorbellen", "amount": 1 },
+      { "name": "Saffier", "amount": 2 }
+    ],
+    "tags": ["Gouden - Oorbellen", "Saffier"]
+  },
+  {
+    "name": "Gouden Ketting - Diamant",
+    "category": "Crafting",
+    "type": "Jewelry",
+    "icon": "",
+   "materials": [
+      { "name": "Gouden ketting", "amount": 1 },
+      { "name": "Diamant", "amount": 2 }
+    ],
+    "tags": ["Gouden ketting", "Diamant"]
+  },
+  {
+    "name": "Gouden Ketting - Smaragd",
+    "category": "Crafting",
+    "type": "Jewelry",
+    "icon": "",
+   "materials": [
+      { "name": "Gouden ketting", "amount": 1 },
+      { "name": "Smaragd", "amount": 3 }
+    ],
+    "tags": ["Gouden ketting", "Smaragd"]
+  },
+  {
+    "name": "Gouden Ketting - Robijn",
+    "category": "Crafting",
+    "type": "Jewelry",
+    "icon": "Robijn",
+   "materials": [
+      { "name": "Gouden ketting", "amount": 1 },
+      { "name": "Robijn", "amount": 3 }
+    ],
+    "tags": ["Gouden ketting", "Robijn"]
+  },
+  {
+    "name": "Zilveren Ring - Diamant",
+    "category": "Crafting",
+    "type": "Jewelry",
+    "icon": "",
+   "materials": [
+      { "name": "Zilveren Ring", "amount": 1 },
+      { "name": "Diamant", "amount": 2 }
+    ],
+    "tags": ["Zilveren Ring", "Diamant"]
+  },
+  {
+    "name": "Zilveren Ring - Robijn",
+    "category": "Crafting",
+    "type": "Jewelry",
+    "icon": "",
+   "materials": [
+      { "name": "Zilveren Ring", "amount": 1 },
+      { "name": "Robijn", "amount": 2 }
+    ],
+    "tags": ["Zilveren Ring", "Robijn"]
+  },
+  {
+    "name": "",
+    "category": "Crafting",
+    "type": "Jewelry",
+    "icon": "",
+    "materials": [
+      { "name": "", "amount": 1 },
+      { "name": "", "amount": 1 }
+    ],
+    "tags": ["", ""]
+  },
+  {
+    "name": "",
+    "category": "Crafting",
+    "type": "Jewelry",
+    "icon": "",
+    "materials": [
+      { "name": "", "amount": 1 },
+      { "name": "", "amount": 1 }
+    ],
+    "tags": ["", ""]
+  },
+  {
+    "name": "",
+    "category": "Crafting",
+    "type": "Jewelry",
+    "icon": "",
+    "materials": [
+      { "name": "", "amount": 1 },
+      { "name": "", "amount": 1 }
+    ],
+    "tags": ["", ""]
+  },
+  {
+    "name": "",
+    "category": "Crafting",
+    "type": "Jewelry",
+    "icon": "",
+    "materials": [
+      { "name": "", "amount": 1 },
+      { "name": "", "amount": 1 }
+    ],
+    "tags": ["", ""]
+  },
+  {
+    "name": "",
+    "category": "Crafting",
+    "type": "Jewelry",
+    "icon": "",
+    "materials": [
+      { "name": "", "amount": 1 },
+      { "name": "", "amount": 1 }
+    ],
+    "tags": ["", ""]
+  },
+  {
+    "name": "",
+    "category": "Crafting",
+    "type": "Jewelry",
+    "icon": "",
+    "materials": [
+      { "name": "", "amount": 1 },
+      { "name": "", "amount": 1 }
+    ],
+    "tags": ["", ""]
+  },
+  {
+    "name": "",
+    "category": "Crafting",
+    "type": "Jewelry",
+    "icon": "",
+    "materials": [
+      { "name": "", "amount": 1 },
+      { "name": "", "amount": 1 }
+    ],
+    "tags": ["", ""]
+  },
+  {
+    "name": "",
+    "category": "Crafting",
+    "type": "Jewelry",
+    "icon": "",
+    "materials": [
+      { "name": "", "amount": 1 },
+      { "name": "", "amount": 1 }
+    ],
+    "tags": ["", ""]
+  },
+  {
+    "name": "",
+    "category": "Crafting",
+    "type": "Jewelry",
+    "icon": "",
+    "materials": [
+      { "name": "", "amount": 1 },
+      { "name": "", "amount": 1 }
+    ],
+    "tags": ["", ""]
   }
 ]
