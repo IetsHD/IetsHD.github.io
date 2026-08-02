@@ -345,7 +345,7 @@
     "name": "Zilveren Ketting - Saffier",
     "category": "Jewelry",
     "type": "Jewelry",
-    "icon": "",
+    "icon": "1",
     "materials": [
       { "name": "Zilveren Ketting", "amount": 1 },
       { "name": "Saffier", "amount": 2 }
