@@ -243,102 +243,113 @@
     "tags": ["Zilveren Ring", "Robijn"]
   },
   {
-    "name": "",
+    "name": "Zilveren Ring - Smaragd",
     "category": "Crafting",
     "type": "Jewelry",
     "icon": "",
     "materials": [
-      { "name": "", "amount": 1 },
-      { "name": "", "amount": 1 }
+      { "name": "Zilveren Ring", "amount": 1 },
+      { "name": "Smaragd", "amount": 2 }
     ],
-    "tags": ["", ""]
+    "tags": ["Zilveren Ring", "Smaragd"]
   },
   {
-    "name": "",
+    "name": "Zilveren Ring - Saffier",
     "category": "Crafting",
     "type": "Jewelry",
     "icon": "",
     "materials": [
-      { "name": "", "amount": 1 },
-      { "name": "", "amount": 1 }
+      { "name": "Zilveren Ring", "amount": 1 },
+      { "name": "Saffier", "amount": 2 }
     ],
-    "tags": ["", ""]
+    "tags": ["Zilveren Ring", "Saffier"]
   },
   {
-    "name": "",
+    "name": "Zilveren Oorbellen - Diamant",
     "category": "Crafting",
     "type": "Jewelry",
     "icon": "",
     "materials": [
-      { "name": "", "amount": 1 },
-      { "name": "", "amount": 1 }
+      { "name": "Zilveren Oorbellen", "amount": 1 },
+      { "name": "Diamant", "amount": 2 }
     ],
-    "tags": ["", ""]
+    "tags": ["Zilveren Oorbellen", "Diamant"]
   },
   {
-    "name": "",
+    "name": "Zilveren Oorbellen - Smaragd",
     "category": "Crafting",
     "type": "Jewelry",
     "icon": "",
     "materials": [
-      { "name": "", "amount": 1 },
-      { "name": "", "amount": 1 }
+      { "name": "Zilveren Oorbellen", "amount": 1 },
+      { "name": "Smaragd", "amount": 2 }
     ],
-    "tags": ["", ""]
+    "tags": ["Zilveren Oorbellen", "Smaragd"]
   },
   {
-    "name": "",
+    "name": "Zilveren Oorbellen - Robijn",
     "category": "Crafting",
     "type": "Jewelry",
     "icon": "",
     "materials": [
-      { "name": "", "amount": 1 },
-      { "name": "", "amount": 1 }
+      { "name": "Zilveren Oorbellen", "amount": 1 },
+      { "name": "Robijn", "amount": 2 }
     ],
-    "tags": ["", ""]
+    "tags": ["Zilveren Oorbellen", "Robijn"]
   },
   {
-    "name": "",
+    "name": "Zilveren Oorbellen - Saffier",
     "category": "Crafting",
     "type": "Jewelry",
     "icon": "",
     "materials": [
-      { "name": "", "amount": 1 },
-      { "name": "", "amount": 1 }
+      { "name": "Zilveren Oorbellen", "amount": 1 },
+      { "name": "Saffier", "amount": 2 }
     ],
-    "tags": ["", ""]
+    "tags": ["Zilveren Oorbellen", "Saffier"]
   },
   {
-    "name": "",
+    "name": "Zilveren Ketting - Diamant",
     "category": "Crafting",
     "type": "Jewelry",
     "icon": "",
     "materials": [
-      { "name": "", "amount": 1 },
-      { "name": "", "amount": 1 }
+      { "name": "Zilveren Ketting", "amount": 1 },
+      { "name": "Diamant", "amount": 2 }
     ],
-    "tags": ["", ""]
+    "tags": ["Zilveren Ketting", "Diamant"]
   },
   {
-    "name": "",
+    "name": "Zilveren Ketting - Smaragd",
     "category": "Crafting",
     "type": "Jewelry",
     "icon": "",
     "materials": [
-      { "name": "", "amount": 1 },
-      { "name": "", "amount": 1 }
+      { "name": "Zilveren Ketting", "amount": 1 },
+      { "name": "Smaragd", "amount": 2 }
     ],
-    "tags": ["", ""]
+    "tags": ["Zilveren Ketting", "Smaragd"]
   },
   {
-    "name": "",
+    "name": "Zilveren Ketting - Robijn",
     "category": "Crafting",
     "type": "Jewelry",
     "icon": "",
     "materials": [
-      { "name": "", "amount": 1 },
-      { "name": "", "amount": 1 }
+      { "name": "Zilveren Ketting", "amount": 1 },
+      { "name": "Robijn", "amount": 2 }
     ],
-    "tags": ["", ""]
+    "tags": ["Zilveren Ketting", "Robijn"]
+  },
+  {
+    "name": "Zilveren Ketting - Saffier",
+    "category": "Crafting",
+    "type": "Jewelry",
+    "icon": "",
+    "materials": [
+      { "name": "Zilveren Ketting", "amount": 1 },
+      { "name": "Saffier", "amount": 2 }
+    ],
+    "tags": ["Zilveren Ketting", "Saffier"]
   }
 ]
