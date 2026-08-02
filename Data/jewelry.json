@@ -1,7 +1,7 @@
 [
   {
     "name": "Smaragd",
-    "category": "Crafting",
+    "category": "Jewelry",
     "type": "Jewelry",
     "icon": "",
     "materials": [
@@ -11,7 +11,7 @@
   },
   {
     "name": "Diamant",
-    "category": "Crafting",
+    "category": "Jewelry",
     "type": "Jewelry",
     "icon": "",
     "materials": [
@@ -21,7 +21,7 @@
   },
   {
     "name": "Robijn",
-    "category": "Crafting",
+    "category": "Jewelry",
     "type": "Jewelry",
     "icon": "",
     "materials": [
@@ -31,7 +31,7 @@
   },
   {
     "name": "Saffier",
-    "category": "Crafting",
+    "category": "Jewelry",
     "type": "Jewelry",
     "icon": "",
     "materials": [
@@ -41,7 +41,7 @@
   },
   {
     "name": "Gouden Ring",
-    "category": "Crafting",
+    "category": "Jewelry",
     "type": "Jewelry",
     "icon": "",
     "materials": [
@@ -51,7 +51,7 @@
   },
   {
     "name": "Zilveren Ring",
-    "category": "Crafting",
+    "category": "Jewelry",
     "type": "Jewelry",
     "icon": "",
     "materials": [
@@ -61,7 +61,7 @@
   },
   {
     "name": "Gouden Oorbellen",
-    "category": "Crafting",
+    "category": "Jewelry",
     "type": "Jewelry",
     "icon": "",
     "materials": [
@@ -71,7 +71,7 @@
   },
   {
     "name": "Zilveren Oorbellen",
-    "category": "Crafting",
+    "category": "Jewelry",
     "type": "Jewelry",
     "icon": "",
     "materials": [
@@ -81,7 +81,7 @@
   },
   {
     "name": "Gouden Ketting",
-    "category": "Crafting",
+    "category": "Jewelry",
     "type": "Jewelry",
     "icon": "",
     "materials": [
@@ -91,7 +91,7 @@
   },
   {
     "name": "Zilveren Ketting",
-    "category": "Crafting",
+    "category": "Jewelry",
     "type": "Jewelry",
     "icon": "",
     "materials": [
@@ -101,7 +101,7 @@
   },
   {
     "name": "Gouden Ring - Smaragd",
-    "category": "Crafting",
+    "category": "Jewelry",
     "type": "Jewelry",
     "icon": "",
     "materials": [
@@ -112,7 +112,7 @@
   },
   {
     "name": "Gouden Ring - Diamant",
-    "category": "Crafting",
+    "category": "Jewelry",
     "type": "Jewelry",
     "icon": "",
     "materials": [
@@ -123,7 +123,7 @@
   },
   {
     "name": "Gouden Ring - Robijn",
-    "category": "Crafting",
+    "category": "Jewelry",
     "type": "Jewelry",
     "icon": "",
     "materials": [
@@ -134,7 +134,7 @@
   },
   {
     "name": "Gouden Ring - Saffier",
-    "category": "Crafting",
+    "category": "Jewelry",
     "type": "Jewelry",
     "icon": "",
     "materials": [
@@ -145,7 +145,7 @@
   },
   {
     "name": "Gouden Oorbellen - Diamant",
-    "category": "Crafting",
+    "category": "Jewelry",
     "type": "Jewelry",
     "icon": "",
     "materials": [
@@ -156,7 +156,7 @@
   },
   {
     "name": "Gouden Oorbellen - Smaragd",
-    "category": "Crafting",
+    "category": "Jewelry",
     "type": "Jewelry",
     "icon": "",
    "materials": [
@@ -167,7 +167,7 @@
   },
   {
     "name": "Gouden Oorbellen - Robijn",
-    "category": "Crafting",
+    "category": "Jewelry",
     "type": "Jewelry",
     "icon": "",
    "materials": [
@@ -178,7 +178,7 @@
   },
   {
     "name": "Gouden Oorbellen - Saffier",
-    "category": "Crafting",
+    "category": "Jewelry",
     "type": "Jewelry",
     "icon": "",
    "materials": [
@@ -189,7 +189,7 @@
   },
   {
     "name": "Gouden Ketting - Diamant",
-    "category": "Crafting",
+    "category": "Jewelry",
     "type": "Jewelry",
     "icon": "",
    "materials": [
@@ -200,7 +200,7 @@
   },
   {
     "name": "Gouden Ketting - Smaragd",
-    "category": "Crafting",
+    "category": "Jewelry",
     "type": "Jewelry",
     "icon": "",
    "materials": [
@@ -211,7 +211,7 @@
   },
   {
     "name": "Gouden Ketting - Robijn",
-    "category": "Crafting",
+    "category": "Jewelry",
     "type": "Jewelry",
     "icon": "Robijn",
    "materials": [
@@ -222,7 +222,7 @@
   },
   {
     "name": "Zilveren Ring - Diamant",
-    "category": "Crafting",
+    "category": "Jewelry",
     "type": "Jewelry",
     "icon": "",
    "materials": [
@@ -233,7 +233,7 @@
   },
   {
     "name": "Zilveren Ring - Robijn",
-    "category": "Crafting",
+    "category": "Jewelry",
     "type": "Jewelry",
     "icon": "",
    "materials": [
@@ -244,7 +244,7 @@
   },
   {
     "name": "Zilveren Ring - Smaragd",
-    "category": "Crafting",
+    "category": "Jewelry",
     "type": "Jewelry",
     "icon": "",
     "materials": [
@@ -255,7 +255,7 @@
   },
   {
     "name": "Zilveren Ring - Saffier",
-    "category": "Crafting",
+    "category": "Jewelry",
     "type": "Jewelry",
     "icon": "",
     "materials": [
@@ -266,7 +266,7 @@
   },
   {
     "name": "Zilveren Oorbellen - Diamant",
-    "category": "Crafting",
+    "category": "Jewelry",
     "type": "Jewelry",
     "icon": "",
     "materials": [
@@ -277,7 +277,7 @@
   },
   {
     "name": "Zilveren Oorbellen - Smaragd",
-    "category": "Crafting",
+    "category": "Jewelry",
     "type": "Jewelry",
     "icon": "",
     "materials": [
@@ -288,7 +288,7 @@
   },
   {
     "name": "Zilveren Oorbellen - Robijn",
-    "category": "Crafting",
+    "category": "Jewelry",
     "type": "Jewelry",
     "icon": "",
     "materials": [
@@ -299,7 +299,7 @@
   },
   {
     "name": "Zilveren Oorbellen - Saffier",
-    "category": "Crafting",
+    "category": "Jewelry",
     "type": "Jewelry",
     "icon": "",
     "materials": [
@@ -310,7 +310,7 @@
   },
   {
     "name": "Zilveren Ketting - Diamant",
-    "category": "Crafting",
+    "category": "Jewelry",
     "type": "Jewelry",
     "icon": "",
     "materials": [
@@ -321,7 +321,7 @@
   },
   {
     "name": "Zilveren Ketting - Smaragd",
-    "category": "Crafting",
+    "category": "Jewelry",
     "type": "Jewelry",
     "icon": "",
     "materials": [
@@ -332,7 +332,7 @@
   },
   {
     "name": "Zilveren Ketting - Robijn",
-    "category": "Crafting",
+    "category": "Jewelry",
     "type": "Jewelry",
     "icon": "",
     "materials": [
@@ -343,7 +343,7 @@
   },
   {
     "name": "Zilveren Ketting - Saffier",
-    "category": "Crafting",
+    "category": "Jewelry",
     "type": "Jewelry",
     "icon": "",
     "materials": [
