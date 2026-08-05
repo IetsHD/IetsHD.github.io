@@ -3284,5 +3284,270 @@
       { "name": "Geld", "amount": 3000 }
     ],
     "tags": [ "Adrenaline Ampul", "Lege spuit", "Alcohol Doekje", "Geld" ]
+  },
+  {
+    "name": "9MM Box x2",
+    "category": "Crafting",
+    "type": "Weapon Craft",
+    "icon": "",
+    "materials": [
+      { "name": "Blueprint ammo-9", "amount": 5 },
+      { "name": "Hammer %", "amount": 5 },
+      { "name": "Staal", "amount": 2 },
+      { "name": "Koper", "amount": 2 },
+      { "name": "Papier", "amount": 2 },
+      { "name": "Craft Parts", "amount": 3 },
+      { "name": "Metaalschroot", "amount": 4 },
+      { "name": "Kogelhuls", "amount": 10 }
+    ],
+    "tags": [ "Blueprint", "Hammer", "Staal", "Koper", "Papier", "Craft Parts", "Metaalschroot", "Kogelhuls" ]
+  },
+  {
+    "name": ".45 ACP Box x2",
+    "category": "Crafting",
+    "type": "Weapon Craft",
+    "icon": "",
+    "materials": [
+      { "name": "Hammer %", "amount": 5 },
+      { "name": "Staal", "amount": 2 },
+      { "name": "Koper", "amount": 2 },
+      { "name": "Papier", "amount": 2 },
+      { "name": "Craft Parts", "amount": 3 },
+      { "name": "Metaalschroot", "amount": 4 },
+      { "name": "Kogelhuls", "amount": 10 }
+    ],
+    "tags": [ "Hammer", "Staal", "Koper", "Papier", "Craft Parts", "Metaalschroot", "Kogelhuls" ]
+  },
+  {
+    "name": "Wapen reparatie kit x2",
+    "category": "Crafting",
+    "type": "Weapon Craft",
+    "icon": "",
+    "materials": [
+      { "name": "Hammer %", "amount": 5 },
+      { "name": "Craft Parts", "amount": 3 },
+      { "name": "Acetaat Vezels", "amount": 10 },
+      { "name": "Rubber", "amount": 15 },
+      { "name": "Metaalschroot", "amount": 20 }
+    ],
+    "tags": [ "Hammer", "Craft Parts", "Acetaat Vezels", "Rubber", "Metaalschroot" ]
+  },
+  {
+    "name": "SNS Pistol",
+    "category": "Crafting",
+    "type": "Weapon Craft",
+    "icon": "",
+    "materials": [
+      { "name": "Wrench %", "amount": 30 },
+      { "name": "SNS Slide", "amount": 1 },
+      { "name": "SNS Frame", "amount": 1 },
+      { "name": "SNS Trigger", "amount": 1 },
+      { "name": "SNS Grip", "amount": 1 },
+      { "name": "Rubber", "amount": 5 },
+      { "name": "Staal", "amount": 8 },
+      { "name": "Metaalschroot", "amount": 10 },
+      { "name": "Craft Parts", "amount": 30 }
+    ],
+    "tags": [ "Wrench", "SNS Slide", "SNS Frame", "SNS Trigger", "SNS Grip", "Rubber", "Staal", "Metaalschroot", "Craft Parts" ]
+  },
+  {
+    "name": "SNS Pistol MK2",
+    "category": "Crafting",
+    "type": "Weapon Craft",
+    "icon": "",
+    "materials": [
+      { "name": "Wrench %", "amount": 30 },
+      { "name": "SNS Slide", "amount": 1 },
+      { "name": "SNS Frame", "amount": 1 },
+      { "name": "SNS Trigger", "amount": 1 },
+      { "name": "SNS Grip", "amount": 1 },
+      { "name": "Rubber", "amount": 5 },
+      { "name": "Staal", "amount": 10 },
+      { "name": "Metaalschroot", "amount": 15 },
+      { "name": "Craft Parts", "amount": 30 }
+    ],
+    "tags": [ "Wrench", "SNS Slide", "SNS Frame", "SNS Trigger", "SNS Grip", "Rubber", "Staal", "Metaalschroot", "Craft Parts" ]
+  },
+  {
+    "name": "P890",
+    "category": "Crafting",
+    "type": "Weapon Craft",
+    "icon": "",
+    "materials": [
+      { "name": "Wrench %", "amount": 60 },
+      { "name": "P890 Slide", "amount": 1 },
+      { "name": "P890 Frame", "amount": 1 },
+      { "name": "P890 Trigger", "amount": 1 },
+      { "name": "P890 Grip", "amount": 1 },
+      { "name": "Rubber", "amount": 20 },
+      { "name": "Staal", "amount": 30 },
+      { "name": "Metaalschroot", "amount": 25 },
+      { "name": "Craft Parts", "amount": 50 }
+    ],
+    "tags": [ "Wrench", "P890 Slide", "P890 Frame", "P890 Trigger", "P890 Grip", "Rubber", "Staal", "Metaalschroot", "Craft Parts" ]
+  },
+  {
+    "name": "Suppressor",
+    "category": "Crafting",
+    "type": "Weapon Craft",
+    "icon": "",
+    "materials": [
+      { "name": "Wrench %", "amount": 20 },
+      { "name": "Staal", "amount": 10 },
+      { "name": "Craft Parts", "amount": 10 },
+      { "name": "Koper", "amount": 10 },
+      { "name": "Metaalschroot", "amount": 20 }
+    ],
+    "tags": [ "Wrench", "Staal", "Craft Parts", "Koper", "Metaalschroot" ]
+  },
+  {
+    "name": "Extended Pistol Clip",
+    "category": "Crafting",
+    "type": "Weapon Craft",
+    "icon": "",
+    "materials": [
+      { "name": "Wrench %", "amount": 20 },
+      { "name": "Staal", "amount": 15 },
+      { "name": "Craft Parts", "amount": 15 },
+      { "name": "Koper", "amount": 15 },
+      { "name": "Metaalschroot", "amount": 20 }
+    ],
+    "tags": [ "Wrench", "Staal", "Craft Parts", "Koper", "Metaalschroot" ]
+  },
+  {
+    "name": "Dagger",
+    "category": "Crafting",
+    "type": "Weapon Craft",
+    "icon": "",
+    "materials": [
+      { "name": "Hammer %", "amount": 20 },
+      { "name": "Rubber", "amount": 5 },
+      { "name": "Craft Parts", "amount": 10 },
+      { "name": "Staal", "amount": 15 },
+      { "name": "Metaalschroot", "amount": 20 }
+    ],
+    "tags": [ "Hammer", "Rubber", "Craft Parts", "Staal", "Metaalschroot" ]
+  },
+  {
+    "name": "Crowbar",
+    "category": "Crafting",
+    "type": "Weapon Craft",
+    "icon": "",
+    "materials": [
+      { "name": "Hammer %", "amount": 20 },
+      { "name": "Rubber", "amount": 5 },
+      { "name": "Craft Parts", "amount": 5 },
+      { "name": "Staal", "amount": 10 },
+      { "name": "Metaalschroot", "amount": 10 }
+    ],
+    "tags": [ "Hammer", "Rubber", "Craft Parts", "Staal", "Metaalschroot" ]
+  },
+  {
+    "name": "Knife",
+    "category": "Crafting",
+    "type": "Weapon Craft",
+    "icon": "",
+    "materials": [
+      { "name": "Hammer %", "amount": 20 },
+      { "name": "Rubber", "amount": 5 },
+      { "name": "Craft Parts", "amount": 10 },
+      { "name": "Staal", "amount": 15 },
+      { "name": "Metaalschroot", "amount": 20 }
+    ],
+    "tags": [ "Hammer", "Rubber", "Craft Parts", "Staal", "Metaalschroot" ]
+  },
+  {
+    "name": "Machete",
+    "category": "Crafting",
+    "type": "Weapon Craft",
+    "icon": "",
+    "materials": [
+      { "name": "Hammer %", "amount": 20 },
+      { "name": "Rubber", "amount": 5 },
+      { "name": "Craft Parts", "amount": 10 },
+      { "name": "Staal", "amount": 15 },
+      { "name": "Metaalschroot", "amount": 20 }
+    ],
+    "tags": [ "Hammer", "Rubber", "Craft Parts", "Staal", "Metaalschroot" ]
+  },
+   {
+    "name": "Battle Axe",
+    "category": "Crafting",
+    "type": "Weapon Craft",
+    "icon": "",
+    "materials": [
+      { "name": "Hammer %", "amount": 20 },
+      { "name": "Rubber", "amount": 5 },
+      { "name": "Craft Parts", "amount": 10 },
+      { "name": "Staal", "amount": 15 },
+      { "name": "Metaalschroot", "amount": 20 }
+    ],
+    "tags": [ "Hammer", "Rubber", "Craft Parts", "Staal", "Metaalschroot" ]
+  },
+   {
+    "name": "Bat",
+    "category": "Crafting",
+    "type": "Weapon Craft",
+    "icon": "",
+    "materials": [
+      { "name": "Hammer %", "amount": 20 },
+      { "name": "Rubber", "amount": 3 },
+      { "name": "Craft Parts", "amount": 10 },
+      { "name": "Staal", "amount": 10 },
+      { "name": "Metaalschroot", "amount": 15 }
+    ],
+    "tags": [ "Hammer", "Rubber", "Craft Parts", "Staal", "Metaalschroot" ]
+  },
+   {
+    "name": "Knuckle Dusters",
+    "category": "Crafting",
+    "type": "Weapon Craft",
+    "icon": "",
+    "materials": [
+      { "name": "Hammer %", "amount": 20 },
+      { "name": "Staal", "amount": 10 },
+      { "name": "Craft Parts", "amount": 10 },
+      { "name": "Metaalschroot", "amount": 15 }
+    ],
+    "tags": [ "Hammer", "Staal", "Craft Parts", "Metaalschroot" ]
+  },
+   {
+    "name": "Switchblade",
+    "category": "Crafting",
+    "type": "Weapon Craft",
+    "icon": "",
+    "materials": [
+      { "name": "Hammer %", "amount": 20 },
+      { "name": "Craft Parts", "amount": 10 },
+      { "name": "Staal", "amount": 15 },
+      { "name": "Metaalschroot", "amount": 15 }
+    ],
+    "tags": [ "Hammer", "Craft Parts", "Staal", "Metaalschroot" ]
+  },
+   {
+    "name": "Smoke Grenade",
+    "category": "Crafting",
+    "type": "Weapon Craft",
+    "icon": "",
+    "materials": [
+      { "name": "Hammer %", "amount": 20 },
+      { "name": "Staal", "amount": 5 },
+      { "name": "Craft Parts", "amount": 5 },
+      { "name": "Metaalschroot", "amount": 10 }
+    ],
+    "tags": [ "Hammer", "Staal", "Craft Parts", "Metaalschroot" ]
+  },
+   {
+    "name": "Armor Plate",
+    "category": "Crafting",
+    "type": "Weapon Craft",
+    "icon": "",
+    "materials": [
+      { "name": "Hammer %", "amount": 10 },
+      { "name": "Craft Parts", "amount": 3 },
+      { "name": "Staal", "amount": 10 },
+      { "name": "Metaalschroot", "amount": 10 }
+    ],
+    "tags": [ "Hammer", "Craft Parts", "Staal", "Metaalschroot" ]
   }
 ]
