@@ -59,9 +59,9 @@ function bindEvents() {
 
 async function loadProducts() {
   const categoryFiles = [
-    { path: new URL("./data/Pistol.json", import.meta.url), source: "pistol" },
-    { path: new URL("./data/SMG.json", import.meta.url), source: "smg" },
-    { path: new URL("./data/Ammo.json", import.meta.url), source: "ammo" }
+    { path: new URL("data/Pistol.json", import.meta.url), source: "pistol" },
+    { path: new URL("data/SMG.json", import.meta.url), source: "smg" },
+    { path: new URL("data/Ammo.json", import.meta.url), source: "ammo" }
   ];
 
   try {
