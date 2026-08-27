@@ -3,88 +3,150 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wapen Dealer - Obsidian</title>
-
+  <meta
+    name="description"
+    content="De actuele Obsidian-prijslijst voor pistolen, SMG's en munitie."
+  />
+  <meta name="theme-color" content="#080908" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Obsidian — Prijslijst" />
+  <meta property="og:description" content="Geselecteerd. Discrete kwaliteit. Bekijk de actuele Obsidian-collectie." />
+  <meta property="og:url" content="__SITE_ORIGIN__/" />
+  <meta property="og:image" content="__SITE_ORIGIN__/og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Obsidian — Prijslijst" />
+  <meta name="twitter:description" content="Geselecteerd. Discrete kwaliteit. Bekijk de actuele Obsidian-collectie." />
+  <meta name="twitter:image" content="__SITE_ORIGIN__/og.png" />
+  <title>Obsidian — Prijslijst</title>
+  <link rel="icon" href="https://i.ibb.co/RTF3yn8X/Chat-GPT-Image-28-jul-2026-01-02-39.png" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="topbar">
-    <div class="brand">
-      <div class="logo">
-        <img src="https://i.ibb.co/RTF3yn8X/Chat-GPT-Image-28-jul-2026-01-02-39.png" alt="Wapen Dealer logo" onerror="this.style.display='none'" />
-      </div>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
 
-      <div>
-        <h1>Obsidian</h1>
-        <p>Prijslijst</p>
-      </div>
-    </div>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Obsidian prijslijst, naar boven">
+      <span class="logo">
+        <img
+          src="https://i.ibb.co/RTF3yn8X/Chat-GPT-Image-28-jul-2026-01-02-39.png"
+          alt="Obsidian logo"
+          onerror="this.parentElement.classList.add('logo-fallback'); this.remove()"
+        />
+        <span class="logo-letter" aria-hidden="true">O</span>
+      </span>
+
+      <span class="brand-copy">
+        <strong>OBSIDIAN</strong>
+        <small>Private catalogue</small>
+      </span>
+    </a>
 
     <div class="top-actions">
-      <button class="secondary-button" id="resetQuantitiesBtn">
-      <span>↺</span>
-        Aantallen resetten
+      <span class="status-pill"><span class="status-dot"></span> Catalogus actief</span>
+      <button class="ghost-button" id="resetQuantitiesBtn" type="button">
+        <span aria-hidden="true">↺</span>
+        <span class="button-label">Reset</span>
       </button>
-
-      <button class="cart-button" id="openCartBtn">
-        🛒 Bestellijst
+      <button class="cart-button" id="openCartBtn" type="button">
+        <span aria-hidden="true">▱</span>
+        <span>Bestellijst</span>
         <span id="cartCount" class="cart-count">0</span>
       </button>
     </div>
   </header>
 
-  <main class="container">
-    <section class="toolbar">
-      <div class="search-wrap">
-        <span>🔍</span>
-        <input
-          type="text"
-          id="searchInput"
-          placeholder="Zoek producten..."
-          autocomplete="off"
-        />
+  <main id="top">
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> Officiële prijslijst</p>
+        <h1>Geselecteerd.<br /><em>Discrete kwaliteit.</em></h1>
+        <p class="hero-description">
+          Bekijk de actuele collectie, stel je aantallen samen en bewaar alles
+          overzichtelijk in één bestellijst.
+        </p>
       </div>
 
-      <div id="categoryFilters" class="category-filters"></div>
+      <div class="hero-stats" aria-label="Catalogus statistieken">
+        <div class="stat-card">
+          <span id="productStat">—</span>
+          <small>Producten</small>
+        </div>
+        <div class="stat-card">
+          <span id="categoryStat">—</span>
+          <small>Categorieën</small>
+        </div>
+        <div class="stat-card featured-stat">
+          <span>24/7</span>
+          <small>Beschikbaar</small>
+        </div>
+      </div>
     </section>
 
-    <section id="productList" class="product-list"></section>
-  </main>
-
-  <!-- Winkelwagen scherm -->
-  <aside class="cart-screen" id="cartScreen" aria-hidden="true">
-    <div class="cart-panel">
-      <div class="cart-header">
+    <section class="catalogue container" aria-labelledby="catalogueTitle">
+      <div class="catalogue-heading">
         <div>
-          <h2>Bestellijst</h2>
-          <p>Overzicht van de bestelling</p>
+          <p class="section-kicker">Collectie</p>
+          <h2 id="catalogueTitle">Vind wat je zoekt</h2>
+        </div>
+        <p id="resultCount" class="result-count" aria-live="polite"></p>
+      </div>
+
+      <div class="toolbar">
+        <div class="search-wrap">
+          <label class="visually-hidden" for="searchInput">Zoek in de catalogus</label>
+          <span class="search-icon" aria-hidden="true"></span>
+          <input
+            type="search"
+            id="searchInput"
+            placeholder="Zoek op naam of categorie"
+            autocomplete="off"
+          />
+          <button id="clearSearchBtn" class="clear-search" type="button" aria-label="Zoekopdracht wissen">×</button>
         </div>
 
-        <button class="icon-button" id="closeCartBtn" aria-label="Sluit winkelwagen">
-          ✕
-        </button>
+        <div id="categoryFilters" class="category-filters" aria-label="Filter op categorie"></div>
+      </div>
+
+      <div id="productList" class="product-list" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <div class="footer-brand"><span>O</span> OBSIDIAN</div>
+    <p>Prijzen en beschikbaarheid kunnen wijzigen.</p>
+  </footer>
+
+  <aside class="cart-screen" id="cartScreen" aria-hidden="true">
+    <div class="cart-panel" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+      <div class="cart-header">
+        <div>
+          <p class="section-kicker">Jouw selectie</p>
+          <h2 id="cartTitle">Bestellijst</h2>
+        </div>
+
+        <button class="icon-button" id="closeCartBtn" type="button" aria-label="Sluit bestellijst">×</button>
       </div>
 
       <div id="cartItems" class="cart-items"></div>
 
       <div class="cart-summary">
         <div class="summary-row">
-          <span>Aantal producten</span>
+          <span>Aantal items</span>
           <strong id="summaryItems">0</strong>
         </div>
-
         <div class="summary-row total">
           <span>Totaal</span>
-          <strong id="summaryTotal">€0</strong>
+          <strong id="summaryTotal">€ 0</strong>
         </div>
 
-        <button class="danger-button" id="clearCartBtn">
-          Winkelwagen leegmaken
-        </button>
+        <button class="danger-button" id="clearCartBtn" type="button">Lijst leegmaken</button>
       </div>
     </div>
   </aside>
 
-  <script src="app.js"></script>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script type="module" src="/app.js"></script>
 </body>
 </html>

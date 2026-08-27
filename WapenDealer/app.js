@@ -1,6 +1,11 @@
 const productList = document.getElementById("productList");
 const categoryFilters = document.getElementById("categoryFilters");
 const searchInput = document.getElementById("searchInput");
+const clearSearchBtn = document.getElementById("clearSearchBtn");
+const searchWrap = document.querySelector(".search-wrap");
+const resultCount = document.getElementById("resultCount");
+const productStat = document.getElementById("productStat");
+const categoryStat = document.getElementById("categoryStat");
 
 const openCartBtn = document.getElementById("openCartBtn");
 const closeCartBtn = document.getElementById("closeCartBtn");
@@ -10,86 +15,126 @@ const cartCount = document.getElementById("cartCount");
 const summaryItems = document.getElementById("summaryItems");
 const summaryTotal = document.getElementById("summaryTotal");
 const clearCartBtn = document.getElementById("clearCartBtn");
-
 const resetQuantitiesBtn = document.getElementById("resetQuantitiesBtn");
+const toast = document.getElementById("toast");
+
+const CATEGORY_ORDER = ["Pistols", "SMG", "Ammo", "Not For Sale"];
 
 let products = [];
-let customProducts = loadCustomProducts();
 let cart = loadCart();
-
 let activeCategory = "Alles";
 let searchTerm = "";
+let toastTimer;
 
 init();
 
 async function init() {
+  bindEvents();
   await loadProducts();
+
+  cart = cart.filter(item => findProduct(item.id));
+  renderStats();
   renderFilters();
   renderProducts();
   renderCart();
+}
 
+function bindEvents() {
   searchInput.addEventListener("input", handleSearch);
-
+  clearSearchBtn.addEventListener("click", clearSearch);
   openCartBtn.addEventListener("click", openCart);
   closeCartBtn.addEventListener("click", closeCart);
   cartScreen.addEventListener("click", handleCartBackdropClick);
   clearCartBtn.addEventListener("click", clearCart);
-
   resetQuantitiesBtn.addEventListener("click", resetQuantityInputs);
+  productList.addEventListener("click", handleProductAction);
+  cartItems.addEventListener("click", handleCartAction);
 
+  document.addEventListener("keydown", event => {
+    if (event.key === "Escape" && cartScreen.classList.contains("open")) {
+      closeCart();
+    }
+  });
 }
 
 async function loadProducts() {
   const categoryFiles = [
-    "data/Pistol.json",
-    "data/Ammo.json"
+    { path: new URL("./data/Pistol.json", import.meta.url), source: "pistol" },
+    { path: new URL("./data/SMG.json", import.meta.url), source: "smg" },
+    { path: new URL("./data/Ammo.json", import.meta.url), source: "ammo" }
   ];
 
   try {
-    const responses = await Promise.all(
-      categoryFiles.map(file => fetch(file))
-    );
-
-    const failedResponse = responses.find(response => !response.ok);
-
-    if (failedResponse) {
-      throw new Error("Eén of meerdere JSON-bestanden konden niet geladen worden.");
-    }
-
     const productGroups = await Promise.all(
-      responses.map(response => response.json())
+      categoryFiles.map(async file => {
+        const response = await fetch(file.path);
+
+        if (!response.ok) {
+          throw new Error(`${file.path} kon niet worden geladen.`);
+        }
+
+        const items = await response.json();
+        return items.map(product => normalizeProduct(product, file.source));
+      })
     );
 
-    const jsonProducts = productGroups.flat();
+    const customProducts = loadCustomProducts().map((product, index) =>
+      normalizeProduct(product, `custom-${index + 1}`)
+    );
 
-    products = [...jsonProducts, ...customProducts];
+    products = [...productGroups.flat(), ...customProducts];
   } catch (error) {
     console.error(error);
-
     productList.innerHTML = `
       <div class="empty-state">
-        Producten konden niet geladen worden. Controleer of alle JSON-bestanden in de map data staan.
+        De catalogus kon niet worden geladen. Vernieuw de pagina om het opnieuw te proberen.
       </div>
     `;
   }
 }
 
-function renderFilters() {
-  const categories = ["Alles", ...new Set(products.map(product => product.category))];
+function normalizeProduct(product, source) {
+  return {
+    ...product,
+    id: `${source}-${product.id}`,
+    name: String(product.name),
+    category: String(product.category),
+    price: Number(product.price) || 0
+  };
+}
 
-  categoryFilters.innerHTML = categories
+function renderStats() {
+  const categories = new Set(products.map(product => product.category));
+  productStat.textContent = products.length;
+  categoryStat.textContent = categories.size;
+}
+
+function renderFilters() {
+  const categories = [...new Set(products.map(product => product.category))]
+    .sort(sortCategories);
+  const filters = ["Alles", ...categories];
+
+  categoryFilters.innerHTML = filters
     .map(category => {
       const activeClass = category === activeCategory ? "active" : "";
+      const count = category === "Alles"
+        ? products.length
+        : products.filter(product => product.category === category).length;
 
       return `
-        <button class="filter-button ${activeClass}" data-category="${escapeHtml(category)}">
-          ${escapeHtml(category)}
+        <button
+          class="filter-button ${activeClass}"
+          type="button"
+          data-category="${escapeHtml(category)}"
+          aria-pressed="${category === activeCategory}"
+        >
+          ${escapeHtml(category)} · ${count}
         </button>
       `;
     })
     .join("");
 
-  document.querySelectorAll(".filter-button").forEach(button => {
+  categoryFilters.querySelectorAll(".filter-button").forEach(button => {
     button.addEventListener("click", () => {
       activeCategory = button.dataset.category;
       renderFilters();
@@ -99,21 +144,13 @@ function renderFilters() {
 }
 
 function renderProducts() {
-  const filteredProducts = products.filter(product => {
-    const matchesCategory =
-      activeCategory === "Alles" || product.category === activeCategory;
-
-    const matchesSearch =
-      product.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      product.category.toLowerCase().includes(searchTerm.toLowerCase());
-
-    return matchesCategory && matchesSearch;
-  });
+  const filteredProducts = getFilteredProducts();
+  resultCount.textContent = `${filteredProducts.length} ${filteredProducts.length === 1 ? "resultaat" : "resultaten"}`;
 
   if (filteredProducts.length === 0) {
     productList.innerHTML = `
       <div class="empty-state">
-        Geen producten gevonden.
+        Geen producten gevonden. Probeer een andere zoekterm of categorie.
       </div>
     `;
     return;
@@ -122,83 +159,115 @@ function renderProducts() {
   const groupedProducts = groupByCategory(filteredProducts);
 
   productList.innerHTML = Object.entries(groupedProducts)
-    .map(([category, items]) => {
-      return `
-        <section class="category-section">
-          <h2 class="category-title">
-            ${escapeHtml(category)}
-            <span class="category-count">(${items.length})</span>
-          </h2>
+    .sort(([categoryA], [categoryB]) => sortCategories(categoryA, categoryB))
+    .map(([category, items]) => `
+      <section class="category-section" aria-labelledby="category-${slugify(category)}">
+        <div class="category-header">
+          <h3 class="category-title" id="category-${slugify(category)}">${escapeHtml(category)}</h3>
+          <span class="category-count">${items.length}</span>
+          <span class="category-line" aria-hidden="true"></span>
+        </div>
 
-          <div class="product-grid">
-            ${items.map(product => createProductCard(product)).join("")}
-          </div>
-        </section>
-      `;
-    })
+        <div class="product-grid">
+          ${items.map((product, index) => createProductCard(product, index)).join("")}
+        </div>
+      </section>
+    `)
     .join("");
-
-document.querySelectorAll(".add-button").forEach(button => {
-  button.addEventListener("click", () => {
-    const productId = Number(button.dataset.id);
-    const input = document.querySelector(`.quantity-input[data-id="${productId}"]`);
-    const quantity = Number(input.value);
-
-    if (!Number.isInteger(quantity) || quantity <= 0) {
-      input.value = 0;
-      return;
-    }
-
-    addToCart(productId, quantity);
-    input.value = 0;
-  });
-});
 }
 
-function createProductCard(product) {
-  const badgeClass = getBadgeClass(product.category);
+function getFilteredProducts() {
+  const normalizedSearch = searchTerm.toLocaleLowerCase("nl");
+
+  return products.filter(product => {
+    const matchesCategory = activeCategory === "Alles" || product.category === activeCategory;
+    const matchesSearch =
+      product.name.toLocaleLowerCase("nl").includes(normalizedSearch) ||
+      product.category.toLocaleLowerCase("nl").includes(normalizedSearch);
+
+    return matchesCategory && matchesSearch;
+  });
+}
+
+function createProductCard(product, index) {
+  const isUnavailable = product.category.toLowerCase() === "not for sale";
+  const productNumber = String(index + 1).padStart(2, "0");
 
   return `
     <article class="product-card">
-      <div class="product-info">
-        <h3>${escapeHtml(product.name)}</h3>
-
-        <div class="product-meta">
-          <span class="badge ${badgeClass}">
-            ${escapeHtml(product.category)}
-          </span>
-
-          <span class="price">
-            ${formatPrice(product.price)}
-          </span>
-        </div>
+      <div class="product-top">
+        <span class="category-mark" aria-hidden="true">${getCategoryMark(product.category)}</span>
+        <span class="product-index">N° ${productNumber}</span>
       </div>
 
-      <div class="add-control input-mode">
-        <input
-          class="quantity-input"
-          type="number"
-          min="0"
-          step="1"
-          value="0"
-          aria-label="Aantal voor ${escapeHtml(product.name)}"
-          data-id="${product.id}"
-        />
+      <div class="product-info">
+        <h3>${escapeHtml(product.name)}</h3>
+        <span class="badge ${isUnavailable ? "not-for-sale" : ""}">${escapeHtml(product.category)}</span>
+      </div>
 
-        <button class="add-button" data-id="${product.id}">
-          <span>＋</span>
-        </button>
+      <div class="product-bottom">
+        <span class="price">${formatPrice(product.price)}</span>
+        ${isUnavailable ? `
+          <span class="unavailable-label">Niet beschikbaar</span>
+        ` : `
+          <div class="add-control">
+            <div class="quantity-stepper">
+              <button class="step-button" type="button" data-step="-1" data-id="${escapeHtml(product.id)}" aria-label="Aantal ${escapeHtml(product.name)} verlagen">−</button>
+              <input
+                class="quantity-input"
+                type="number"
+                min="1"
+                max="9999"
+                step="1"
+                value="1"
+                inputmode="numeric"
+                aria-label="Aantal voor ${escapeHtml(product.name)}"
+                data-id="${escapeHtml(product.id)}"
+              />
+              <button class="step-button" type="button" data-step="1" data-id="${escapeHtml(product.id)}" aria-label="Aantal ${escapeHtml(product.name)} verhogen">+</button>
+            </div>
+            <button class="add-button" type="button" data-id="${escapeHtml(product.id)}">Voeg toe</button>
+          </div>
+        `}
       </div>
     </article>
   `;
 }
 
+function handleProductAction(event) {
+  const stepButton = event.target.closest(".step-button");
+
+  if (stepButton) {
+    const input = stepButton.closest(".quantity-stepper").querySelector(".quantity-input");
+    const currentValue = Number.parseInt(input.value, 10) || 1;
+    input.value = Math.min(9999, Math.max(1, currentValue + Number(stepButton.dataset.step)));
+    return;
+  }
+
+  const addButton = event.target.closest(".add-button");
+
+  if (!addButton) {
+    return;
+  }
+
+  const productId = addButton.dataset.id;
+  const card = addButton.closest(".product-card");
+  const input = card.querySelector(".quantity-input");
+  const quantity = Number.parseInt(input.value, 10);
+
+  if (!Number.isInteger(quantity) || quantity <= 0) {
+    input.value = 1;
+    return;
+  }
+
+  addToCart(productId, Math.min(quantity, 9999));
+  input.value = 1;
+}
+
 function renderCart() {
   if (cart.length === 0) {
     cartItems.innerHTML = `
-      <div class="empty-state">
-        Je winkelwagen is leeg.
-      </div>
+      <div class="empty-state">Je bestellijst is nog leeg.</div>
     `;
   } else {
     cartItems.innerHTML = cart
@@ -213,27 +282,14 @@ function renderCart() {
           <article class="cart-item">
             <div>
               <h3>${escapeHtml(product.name)}</h3>
-              <p>
-                ${escapeHtml(product.category)} ·
-                ${formatPrice(product.price)} per stuk ·
-                subtotaal ${formatPrice(product.price * item.quantity)}
-              </p>
+              <p>${escapeHtml(product.category)} · ${formatPrice(product.price)} per stuk<br />Subtotaal ${formatPrice(product.price * item.quantity)}</p>
             </div>
 
             <div class="cart-item-actions">
-              <button class="small-button" data-action="decrease" data-id="${item.id}">
-                −
-              </button>
-
+              <button class="small-button" type="button" data-action="decrease" data-id="${escapeHtml(item.id)}" aria-label="Aantal ${escapeHtml(product.name)} verlagen">−</button>
               <span class="quantity-number">${item.quantity}</span>
-
-              <button class="small-button" data-action="increase" data-id="${item.id}">
-                +
-              </button>
-
-              <button class="small-button remove-button" data-action="remove" data-id="${item.id}">
-                ✕
-              </button>
+              <button class="small-button" type="button" data-action="increase" data-id="${escapeHtml(item.id)}" aria-label="Aantal ${escapeHtml(product.name)} verhogen">+</button>
+              <button class="small-button remove-button" type="button" data-action="remove" data-id="${escapeHtml(item.id)}" aria-label="${escapeHtml(product.name)} verwijderen">×</button>
             </div>
           </article>
         `;
@@ -244,38 +300,27 @@ function renderCart() {
   const totalQuantity = cart.reduce((sum, item) => sum + item.quantity, 0);
   const totalPrice = cart.reduce((sum, item) => {
     const product = findProduct(item.id);
-
-    if (!product) {
-      return sum;
-    }
-
-    return sum + product.price * item.quantity;
+    return product ? sum + product.price * item.quantity : sum;
   }, 0);
 
   cartCount.textContent = totalQuantity;
   summaryItems.textContent = totalQuantity;
   summaryTotal.textContent = formatPrice(totalPrice);
-
   saveCart();
+}
 
-  document.querySelectorAll(".cart-item .small-button").forEach(button => {
-    button.addEventListener("click", () => {
-      const id = Number(button.dataset.id);
-      const action = button.dataset.action;
+function handleCartAction(event) {
+  const button = event.target.closest(".small-button");
 
-      if (action === "increase") {
-        changeCartQuantity(id, 1);
-      }
+  if (!button) {
+    return;
+  }
 
-      if (action === "decrease") {
-        changeCartQuantity(id, -1);
-      }
+  const { action, id } = button.dataset;
 
-      if (action === "remove") {
-        removeFromCart(id);
-      }
-    });
-  });
+  if (action === "increase") changeCartQuantity(id, 1);
+  if (action === "decrease") changeCartQuantity(id, -1);
+  if (action === "remove") removeFromCart(id);
 }
 
 function addToCart(productId, quantity) {
@@ -290,13 +335,11 @@ function addToCart(productId, quantity) {
   if (existingItem) {
     existingItem.quantity += quantity;
   } else {
-    cart.push({
-      id: productId,
-      quantity: quantity
-    });
+    cart.push({ id: productId, quantity });
   }
 
   renderCart();
+  showToast(`${quantity}× ${product.name} toegevoegd`);
 }
 
 function changeCartQuantity(productId, change) {
@@ -326,29 +369,41 @@ function clearCart() {
     return;
   }
 
-  const confirmed = confirm("Weet je zeker dat je de winkelwagen wilt leegmaken?");
-
-  if (!confirmed) {
+  if (!confirm("Weet je zeker dat je de bestellijst wilt leegmaken?")) {
     return;
   }
 
   cart = [];
   renderCart();
+  showToast("Bestellijst leeggemaakt");
 }
 
 function handleSearch(event) {
   searchTerm = event.target.value.trim();
+  searchWrap.classList.toggle("has-value", searchTerm.length > 0);
+  renderProducts();
+}
+
+function clearSearch() {
+  searchInput.value = "";
+  searchTerm = "";
+  searchWrap.classList.remove("has-value");
+  searchInput.focus();
   renderProducts();
 }
 
 function openCart() {
   cartScreen.classList.add("open");
   cartScreen.setAttribute("aria-hidden", "false");
+  document.body.classList.add("cart-open");
+  closeCartBtn.focus();
 }
 
 function closeCart() {
   cartScreen.classList.remove("open");
   cartScreen.setAttribute("aria-hidden", "true");
+  document.body.classList.remove("cart-open");
+  openCartBtn.focus();
 }
 
 function handleCartBackdropClick(event) {
@@ -359,48 +414,46 @@ function handleCartBackdropClick(event) {
 
 function resetQuantityInputs() {
   document.querySelectorAll(".quantity-input").forEach(input => {
-    input.value = 0;
+    input.value = 1;
   });
+  showToast("Aantallen gereset");
+}
+
+function showToast(message) {
+  clearTimeout(toastTimer);
+  toast.textContent = message;
+  toast.classList.add("show");
+  toastTimer = setTimeout(() => toast.classList.remove("show"), 2200);
 }
 
 function groupByCategory(items) {
   return items.reduce((groups, item) => {
-    if (!groups[item.category]) {
-      groups[item.category] = [];
-    }
-
-    groups[item.category].push(item);
+    (groups[item.category] ||= []).push(item);
     return groups;
   }, {});
 }
 
-function findProduct(productId) {
-  return products.find(product => product.id === productId);
+function sortCategories(categoryA, categoryB) {
+  const indexA = CATEGORY_ORDER.indexOf(categoryA);
+  const indexB = CATEGORY_ORDER.indexOf(categoryB);
+  const orderA = indexA === -1 ? CATEGORY_ORDER.length : indexA;
+  const orderB = indexB === -1 ? CATEGORY_ORDER.length : indexB;
+  return orderA - orderB || categoryA.localeCompare(categoryB, "nl");
 }
 
-function getBadgeClass(category) {
-  const normalized = category
-    .toLowerCase()
-    .replaceAll("/", "-")
-    .replaceAll(" ", "-");
+function findProduct(productId) {
+  return products.find(product => product.id === String(productId));
+}
 
-  if (normalized.includes("npc-fruit")) {
-    return "npc-fruit";
-  }
+function getCategoryMark(category) {
+  const marks = {
+    Pistols: "P",
+    SMG: "S",
+    Ammo: "A",
+    "Not For Sale": "—"
+  };
 
-  if (normalized.includes("fruit-pluk")) {
-    return "fruit-pluk";
-  }
-
-  if (normalized.includes("vlees-vis")) {
-    return "vlees-vis";
-  }
-
-  if (normalized.includes("groenten-pluk")) {
-    return "groenten-pluk";
-  }
-
-  return "default";
+  return marks[category] || category.slice(0, 1).toUpperCase();
 }
 
 function formatPrice(price) {
@@ -412,25 +465,24 @@ function formatPrice(price) {
 }
 
 function saveCart() {
-  localStorage.setItem("netjesGeregeldCart", JSON.stringify(cart));
+  localStorage.setItem("obsidianCart", JSON.stringify(cart));
 }
 
 function loadCart() {
-  const savedCart = localStorage.getItem("netjesGeregeldCart");
+  const savedCart = localStorage.getItem("obsidianCart") || localStorage.getItem("netjesGeregeldCart");
 
   if (!savedCart) {
     return [];
   }
 
   try {
-    return JSON.parse(savedCart);
+    return JSON.parse(savedCart).map(item => ({
+      id: String(item.id),
+      quantity: Number(item.quantity) || 0
+    }));
   } catch {
     return [];
   }
-}
-
-function saveCustomProducts() {
-  localStorage.setItem("netjesGeregeldCustomProducts", JSON.stringify(customProducts));
 }
 
 function loadCustomProducts() {
@@ -445,6 +497,15 @@ function loadCustomProducts() {
   } catch {
     return [];
   }
+}
+
+function slugify(value) {
+  return String(value)
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
 }
 
 function escapeHtml(value) {
